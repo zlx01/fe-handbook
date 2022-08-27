@@ -1,0 +1,27 @@
+import{_ as e,c as s,o as n,d as a}from"./app.384e4faa.js";const g=JSON.parse('{"title":"Code Style","description":"","frontmatter":{},"headers":[{"level":2,"title":"Flow","slug":"flow","link":"#flow","children":[]},{"level":2,"title":"TypeScript","slug":"typescript","link":"#typescript","children":[]},{"level":2,"title":"JSDoc","slug":"jsdoc","link":"#jsdoc","children":[]},{"level":2,"title":"TSDoc","slug":"tsdoc","link":"#tsdoc","children":[]},{"level":2,"title":"ESLint","slug":"eslint","link":"#eslint","children":[{"level":3,"title":"TypeScript ESLint","slug":"typescript-eslint","link":"#typescript-eslint","children":[]}]},{"level":2,"title":"Prettier","slug":"prettier","link":"#prettier","children":[]},{"level":2,"title":"EditorConfig","slug":"editorconfig","link":"#editorconfig","children":[]},{"level":2,"title":".gitignore","slug":"gitignore","link":"#gitignore","children":[]}],"relativePath":"other/code-style/index.md","lastUpdated":1661630446000}'),t={name:"other/code-style/index.md"},l=a(`<h1 id="code-style" tabindex="-1">Code Style <a class="header-anchor" href="#code-style" aria-hidden="true">#</a></h1><h2 id="flow" tabindex="-1"><a href="https://flow.org/" target="_blank" rel="noreferrer">Flow</a> <a class="header-anchor" href="#flow" aria-hidden="true">#</a></h2><p>\u4E86\u89E3\u5373\u53EF</p><h2 id="typescript" tabindex="-1"><a href="https://jsdoc.app/" target="_blank" rel="noreferrer">TypeScript</a> <a class="header-anchor" href="#typescript" aria-hidden="true">#</a></h2><h2 id="jsdoc" tabindex="-1"><a href="https://jsdoc.app/" target="_blank" rel="noreferrer">JSDoc</a> <a class="header-anchor" href="#jsdoc" aria-hidden="true">#</a></h2><p>\u4E86\u89E3\u5373\u53EF</p><h2 id="tsdoc" tabindex="-1"><a href="https://tsdoc.org/" target="_blank" rel="noreferrer">TSDoc</a> <a class="header-anchor" href="#tsdoc" aria-hidden="true">#</a></h2><h2 id="eslint" tabindex="-1"><a href="https://eslint.org/" target="_blank" rel="noreferrer">ESLint</a> <a class="header-anchor" href="#eslint" aria-hidden="true">#</a></h2><h3 id="typescript-eslint" tabindex="-1"><a href="https://typescript-eslint.io/" target="_blank" rel="noreferrer">TypeScript ESLint</a> <a class="header-anchor" href="#typescript-eslint" aria-hidden="true">#</a></h3><h2 id="prettier" tabindex="-1"><a href="https://prettier.io/" target="_blank" rel="noreferrer">Prettier</a> <a class="header-anchor" href="#prettier" aria-hidden="true">#</a></h2><p><code>.prettierrc</code></p><div class="language-text"><button class="copy"></button><span class="lang">text</span><pre><code><span class="line"><span style="color:#A6ACCD;">semi: false</span></span>
+<span class="line"><span style="color:#A6ACCD;">singleQuote: true</span></span>
+<span class="line"><span style="color:#A6ACCD;">printWidth: 80</span></span>
+<span class="line"><span style="color:#A6ACCD;">trailingComma: &#39;none&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">arrowParens: &#39;avoid&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><h2 id="editorconfig" tabindex="-1"><a href="https://editorconfig.org/" target="_blank" rel="noreferrer">EditorConfig</a> <a class="header-anchor" href="#editorconfig" aria-hidden="true">#</a></h2><p><code>.editorconfig</code></p><div class="language-text"><button class="copy"></button><span class="lang">text</span><pre><code><span class="line"><span style="color:#A6ACCD;"># https://editorconfig.org</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">root = true</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">[*]</span></span>
+<span class="line"><span style="color:#A6ACCD;">charset = utf-8</span></span>
+<span class="line"><span style="color:#A6ACCD;">indent_style = space</span></span>
+<span class="line"><span style="color:#A6ACCD;">indent_size = 2</span></span>
+<span class="line"><span style="color:#A6ACCD;">end_of_line = lf</span></span>
+<span class="line"><span style="color:#A6ACCD;">insert_final_newline = true</span></span>
+<span class="line"><span style="color:#A6ACCD;">trim_trailing_whitespace = true</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">[*.md]</span></span>
+<span class="line"><span style="color:#A6ACCD;">insert_final_newline = false</span></span>
+<span class="line"><span style="color:#A6ACCD;">trim_trailing_whitespace = false</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><h2 id="gitignore" tabindex="-1">.gitignore <a class="header-anchor" href="#gitignore" aria-hidden="true">#</a></h2><div class="language-text"><button class="copy"></button><span class="lang">text</span><pre><code><span class="line"><span style="color:#A6ACCD;">.DS_Store</span></span>
+<span class="line"><span style="color:#A6ACCD;">*.log</span></span>
+<span class="line"><span style="color:#A6ACCD;">.vscode</span></span>
+<span class="line"><span style="color:#A6ACCD;">.idea</span></span>
+<span class="line"><span style="color:#A6ACCD;">dist</span></span>
+<span class="line"><span style="color:#A6ACCD;">node_modules</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div>`,17),r=[l];function i(p,o,c,d,h,C){return n(),s("div",null,r)}const f=e(t,[["render",i]]);export{g as __pageData,f as default};
