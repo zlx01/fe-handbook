@@ -14,6 +14,7 @@ export default defineConfig({
 
     sidebar: {
       '/fundamentals/': sidebarFundamentals(),
+      '/server/': sidebarServer(),
       '/build-tools/': sidebarBuildTools(),
     },
 
@@ -42,6 +43,7 @@ function nav() {
         {text: 'HTML', link: '/fundamentals/html/'},
         {text: 'CSS', link: '/fundamentals/css/'},
         {text: 'JavaScript', link: '/fundamentals/js/'},
+        {text: 'Browser', link: '/fundamentals/browser/'},
       ]
     },
     {
@@ -58,6 +60,7 @@ function nav() {
         {
           text: 'bundler',
           items: [
+            {text: 'Vite', link: '/build-tools/bundler/vite/'},
             {text: 'Webpack', link: '/build-tools/bundler/webpack/'},
           ]
         },
@@ -70,11 +73,20 @@ function nav() {
       ]
     },
     {
+      text: 'server',
+      items: [
+        {text: 'Nodejs', link: '/server/nodejs/'},
+        {text: 'Nginx', link: '/server/nginx/'},
+      ]
+    },
+    {
       text: 'other',
       items: [
+        {text: 'CDN', link: '/other/cdn/'},
         {text: 'Useful Libraries', link: '/other/wheel/'},
         {text: 'Code Style', link: '/other/code-style/'},
-        {text: 'Polyfill vs Shim', link: '/other/polyfill-shim/'},
+        {text: '埋点和监控', link: '/other/event-tracking/'},
+        {text: 'Personal Website', link: '/other/personal-website/'},
       ]
     }
   ]
@@ -84,6 +96,7 @@ function sidebarFundamentals() {
   return [
     {
       text: 'W3C',
+      collapsible: true,
       items: [
         {text: 'W3C标准', link: '/fundamentals/w3c/'}
       ]
@@ -93,6 +106,7 @@ function sidebarFundamentals() {
       collapsible: true,
       items: [
         {text: 'HTML Notes', link: '/fundamentals/html/'},
+        {text: 'SEO', link: '/fundamentals/html/seo/'},
       ]
     },
     {
@@ -100,6 +114,7 @@ function sidebarFundamentals() {
       collapsible: true,
       items: [
         {text: 'CSS Notes', link: '/fundamentals/css/'},
+        {text: 'CSS Preprocessor', link: '/fundamentals/css/preprocessor/'},
       ]
     },
     {
@@ -111,6 +126,43 @@ function sidebarFundamentals() {
         {text: '确定值的类型', link: '/fundamentals/js/determine-type'},
         {text: '类型转换', link: '/fundamentals/js/type-conversion'},
         {text: '对象属性遍历', link: '/fundamentals/js/traverse-object-keys'},
+        {text: '位运算符的应用', link: '/fundamentals/js/bit-op'},
+      ]
+    },
+    {
+      text: 'Browser',
+      collapsible: true,
+      items: [
+        {text: 'Browser Notes', link: '/fundamentals/browser/'},
+      ]
+    },
+  ]
+}
+
+function sidebarServer() {
+  return [
+    {
+      text: 'Nodejs',
+      collapsible: true,
+      items: [
+        {
+          text: 'Nodejs',
+          items: [
+            {text: 'Nodejs Notes', link: '/server/nodejs/'},
+          ]
+        },
+      ]
+    },
+    {
+      text: 'Nginx',
+      collapsible: true,
+      items: [
+        {
+          text: 'Nginx',
+          items: [
+            {text: 'Nginx Notes', link: '/server/nginx/'},
+          ]
+        },
       ]
     },
   ]
@@ -167,6 +219,30 @@ function sidebarBuildTools() {
             {text: 'Webpack Notes', link: '/build-tools/bundler/webpack/'},
           ]
         },
+        {
+          text: 'Rollup',
+          items: [
+            {text: 'Rollup Notes', link: '/build-tools/bundler/rollup/'},
+          ]
+        },
+        {
+          text: 'esbuild',
+          items: [
+            {text: 'esbuild Notes', link: '/build-tools/bundler/esbuild/'},
+          ]
+        },
+        {
+          text: 'snowpack',
+          items: [
+            {text: 'snowpack Notes', link: '/build-tools/bundler/snowpack/'},
+          ]
+        },
+        {
+          text: 'parcel',
+          items: [
+            {text: 'parcel Notes', link: '/build-tools/bundler/parcel/'},
+          ]
+        },
       ]
     },
     {
@@ -177,6 +253,7 @@ function sidebarBuildTools() {
           text: 'Babel',
           items: [
             {text: 'Babel Notes', link: '/build-tools/compiler/babel/'},
+            {text: 'Polyfill vs Shim', link: '/build-tools/compiler/polyfill-shim/'},
           ]
         },
       ]

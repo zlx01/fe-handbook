@@ -1,6 +1,6 @@
 # Front-end Developer HandBook
 
-## reference
+## Reference
 
 * MDN：https://developer.mozilla.org/en-US/
 * w3schools：https://www.w3schools.com/html/default.asp
@@ -27,14 +27,11 @@
 * Gitpod：https://www.gitpod.io/
 * StackBlitz：https://stackblitz.com/
 
-## Browser
 
-* Chrome
-* Firefox
-* Opera
-* Safari
-* Edge
-* IE
-* Headless Browser
-* WebView
 
+## Tutorial website
+
+* https://www.w3school.com.cn/
+* https://www.w3cschool.cn/
+* https://www.runoob.com/
+* https://how2j.cn/
