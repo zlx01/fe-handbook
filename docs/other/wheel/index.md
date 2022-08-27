@@ -92,7 +92,14 @@ console.log(uniq(arr2)) // [ 1, 11, 12, 13, 2, 3 ]
 
 [v-distpicker](https://www.npmjs.com/package/v-distpicker)  中国省市区选择器
 
+## Mock数据
+
+[mockjs](https://www.npmjs.com/package/mockjs)
+
+[json-server](https://github.com/typicode/json-server)
+
 ## 测试部署
+
 [serve](https://www.npmjs.com/package/serve)
 
 [http-server](https://www.npmjs.com/package/http-server)

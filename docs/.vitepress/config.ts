@@ -16,6 +16,7 @@ export default defineConfig({
       '/fundamentals/': sidebarFundamentals(),
       '/server/': sidebarServer(),
       '/build-tools/': sidebarBuildTools(),
+      '/advance/': sidebarAdvance(),
     },
 
     socialLinks: [
@@ -76,13 +77,21 @@ function nav() {
       text: 'server',
       items: [
         {text: 'Nodejs', link: '/server/nodejs/'},
+        {text: 'SSR', link: '/server/ssr/'},
         {text: 'Nginx', link: '/server/nginx/'},
+        {text: 'CDN', link: '/server/cdn/'},
+      ]
+    },
+    {
+      text: 'advance',
+      items: [
+        {text: 'Test', link: '/advance/test/'},
+        {text: 'micro-frontends', link: '/advance/micro-frontends/'},
       ]
     },
     {
       text: 'other',
       items: [
-        {text: 'CDN', link: '/other/cdn/'},
         {text: 'Useful Libraries', link: '/other/wheel/'},
         {text: 'Code Style', link: '/other/code-style/'},
         {text: '埋点和监控', link: '/other/event-tracking/'},
@@ -115,6 +124,28 @@ function sidebarFundamentals() {
       items: [
         {text: 'CSS Notes', link: '/fundamentals/css/'},
         {text: 'CSS Preprocessor', link: '/fundamentals/css/preprocessor/'},
+        {text: 'Animations Library', link: '/fundamentals/css/animations-lib'},
+        {
+          text: 'CSS Framework',
+          items: [
+            {
+              text: 'tailwindcss',
+              link: '/fundamentals/css/framework/tailwindcss'
+            },
+            {
+              text: 'styled-components',
+              link: '/fundamentals/css/framework/styled-components'
+            },
+            {
+              text: 'styled-jsx',
+              link: '/fundamentals/css/framework/styled-jsx'
+            },
+            {
+              text: 'css-modules',
+              link: '/fundamentals/css/framework/css-modules'
+            },
+          ]
+        },
       ]
     },
     {
@@ -134,6 +165,7 @@ function sidebarFundamentals() {
       collapsible: true,
       items: [
         {text: 'Browser Notes', link: '/fundamentals/browser/'},
+        {text: 'debug', link: '/fundamentals/browser/debug'},
       ]
     },
   ]
@@ -151,6 +183,42 @@ function sidebarServer() {
             {text: 'Nodejs Notes', link: '/server/nodejs/'},
           ]
         },
+        {
+          text: 'Web Framework',
+          items: [
+            {text: 'Express', link: '/server/nodejs/express/'},
+            {text: 'Koa', link: '/server/nodejs/koa/'},
+            {text: 'Egg', link: '/server/nodejs/egg/'},
+          ]
+        },
+        {
+          text: 'Templating Language',
+          items: [
+            {text: 'ejs', link: '/server/nodejs/ejs/'},
+          ]
+        },
+        {
+          text: 'Communication',
+          items: [
+            {text: 'socket.io', link: '/server/nodejs/socket-io/'},
+          ]
+        },
+      ]
+    },
+    {
+      text: 'SSR',
+      collapsible: true,
+      items: [
+        {
+          text: 'Introduction', link: '/server/ssr/'
+        },
+        {
+          text: 'Framework',
+          items: [
+            {text: 'Nuxt', link: '/server/ssr/nuxtjs/'},
+            {text: 'Next', link: '/server/ssr/nextjs/'},
+          ]
+        },
       ]
     },
     {
@@ -158,10 +226,16 @@ function sidebarServer() {
       collapsible: true,
       items: [
         {
-          text: 'Nginx',
-          items: [
-            {text: 'Nginx Notes', link: '/server/nginx/'},
-          ]
+          text: 'Nginx Notes', link: '/server/nginx/'
+        },
+      ]
+    },
+    {
+      text: 'CDN',
+      collapsible: true,
+      items: [
+        {
+          text: 'Service Provider', link: '/server/cdn/'
         },
       ]
     },
@@ -220,28 +294,16 @@ function sidebarBuildTools() {
           ]
         },
         {
-          text: 'Rollup',
-          items: [
-            {text: 'Rollup Notes', link: '/build-tools/bundler/rollup/'},
-          ]
+          text: 'Rollup', link: '/build-tools/bundler/rollup/'
         },
         {
-          text: 'esbuild',
-          items: [
-            {text: 'esbuild Notes', link: '/build-tools/bundler/esbuild/'},
-          ]
+          text: 'esbuild', link: '/build-tools/bundler/esbuild/'
         },
         {
-          text: 'snowpack',
-          items: [
-            {text: 'snowpack Notes', link: '/build-tools/bundler/snowpack/'},
-          ]
+          text: 'snowpack', link: '/build-tools/bundler/snowpack/'
         },
         {
-          text: 'parcel',
-          items: [
-            {text: 'parcel Notes', link: '/build-tools/bundler/parcel/'},
-          ]
+          text: 'parcel', link: '/build-tools/bundler/parcel/'
         },
       ]
     },
@@ -258,5 +320,48 @@ function sidebarBuildTools() {
         },
       ]
     },
+  ]
+}
+
+function sidebarAdvance() {
+  return [
+    {
+      text: 'Test',
+      collapsible: true,
+      items: [
+        {text: 'Introduction', link: '/advance/test/'},
+        {
+          text: 'unit test',
+          items: [
+            {text: 'Jest', link: '/advance/test/unit/jest'},
+            {text: 'Mocha', link: '/advance/test/unit/mocha'},
+            {text: 'Vitest', link: '/advance/test/unit/vitest'},
+          ]
+        },
+        {
+          text: 'component test',
+          items: [
+            {text: 'vue-test-utils', link: '/advance/test/component/vue-test-utils'},
+          ]
+        },
+        {
+          text: 'e2e test',
+          items: [
+            {text: 'Cypress', link: '/advance/test/e2e/cypress'},
+            {text: 'Puppeteer', link: '/advance/test/e2e/puppeteer'},
+            {text: 'TestCafe', link: '/advance/test/e2e/testcafe'},
+          ]
+        },
+      ]
+    },
+    {
+      text: 'micro-frontends',
+      collapsible: true,
+      items: [
+        {text: 'Introduction', link: '/advance/micro-frontends/'},
+        {text: 'qiankun', link: '/advance/micro-frontends/qiankun'},
+        {text: 'single-spa', link: '/advance/micro-frontends/single-spa'},
+      ]
+    }
   ]
 }
