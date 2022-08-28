@@ -16,22 +16,6 @@
 
 
 
-## [ESLint](https://eslint.org/)
-
-### [TypeScript ESLint](https://typescript-eslint.io/)
-
-## [Prettier](https://prettier.io/)
-
-`.prettierrc`
-
-```text
-semi: false
-singleQuote: true
-printWidth: 80
-trailingComma: 'none'
-arrowParens: 'avoid'
-```
-
 ## [EditorConfig](https://editorconfig.org/)
 
 `.editorconfig`
@@ -53,6 +37,49 @@ trim_trailing_whitespace = true
 insert_final_newline = false
 trim_trailing_whitespace = false
 ```
+
+
+
+## [Prettier](https://prettier.io/)
+
+专注代码格式问题
+
+### .prettierrc
+
+```text
+semi: false
+singleQuote: true
+printWidth: 80
+trailingComma: 'none'
+arrowParens: 'avoid'
+```
+
+## [ESLint](https://eslint.org/)
+
+专注代码质量问题
+
+### .eslintrc.js
+
+```js
+
+```
+
+## ESLint + Prettier
+
+参考 [文章](https://zhuanlan.zhihu.com/p/80574300)  [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)   [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
+
+
+
+```js
+// .eslintrc
+{
+  "extends": ["plugin:prettier/recommended"]
+}
+```
+
+## [TypeScript ESLint](https://typescript-eslint.io/)
+
+
 
 ## .gitignore
 

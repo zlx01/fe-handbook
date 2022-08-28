@@ -5,13 +5,14 @@
 ### Android
 
 * Java
-
 * Kotlin
+* https://developer.android.com/
 
 ### iOS
 
 * Objective-C
 * Swift
+* https://developer.apple.com/
 
 ## 跨平台
 
@@ -27,5 +28,7 @@
 
 * 原生+H5
 
+## Cloud
 
+* https://firebase.google.com/
 

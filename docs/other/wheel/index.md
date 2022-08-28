@@ -92,11 +92,31 @@ console.log(uniq(arr2)) // [ 1, 11, 12, 13, 2, 3 ]
 
 [v-distpicker](https://www.npmjs.com/package/v-distpicker)  中国省市区选择器
 
-## Mocking
+## Lorem Ipsum
+
+https://www.lipsum.com/
+
+## Mocking Data
 
 [mockjs](https://www.npmjs.com/package/mockjs)
 
 [json-server](https://github.com/typicode/json-server)
+
+[jsonplaceholder](https://jsonplaceholder.typicode.com/)
+
+[apiopen](https://api.apiopen.top/swagger/index.html)
+
+## Mocking Image
+
+https://picsum.photos/
+
+https://unsplash.com/
+
+https://placekitten.com/
+
+https://placeholder.com/  solid color
+
+https://dummyimage.com/  solid color
 
 ## DevServer
 
