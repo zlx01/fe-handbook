@@ -171,7 +171,7 @@ export const useUsers = defineStore('users', {
 
 ### Subscribing to actions
 
-```js’
+```js
 const unsubscribe = someStore.$onAction(
 	({
 		name, // name of the action
