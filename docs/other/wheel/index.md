@@ -92,16 +92,77 @@ console.log(uniq(arr2)) // [ 1, 11, 12, 13, 2, 3 ]
 
 [v-distpicker](https://www.npmjs.com/package/v-distpicker)  中国省市区选择器
 
-## Mock数据
+## Mocking
 
 [mockjs](https://www.npmjs.com/package/mockjs)
 
 [json-server](https://github.com/typicode/json-server)
 
-## 测试部署
+## DevServer
 
 [serve](https://www.npmjs.com/package/serve)
 
 [http-server](https://www.npmjs.com/package/http-server)
 
 [nodemon](https://www.npmjs.com/package/nodemon)
+
+## Chart
+
+[echarts](https://echarts.apache.org/en/index.html)  :+1: 非常好用 ​
+
+[antv](https://antv.vision/)
+
+[gojs](https://gojs.net/latest/index.html)
+
+[d3](https://d3js.org/)
+
+[flowchart.js](https://flowchart.js.org/)  绘制流程图
+
+## Rich Text Editor
+
+[tinymce](https://www.tiny.cloud/docs/)  :+1: 功能插件很多，部分需要收费，有[中文网](http://tinymce.ax-z.cn/) ​
+
+[vue-quill-editor](https://github.surmon.me/vue-quill-editor/)
+
+[wangeditor](https://www.wangeditor.com/)  中国人维护的，也不错
+
+[ckeditor](https://ckeditor.com/)  :+1: ​
+
+[simditor](https://simditor.tower.im/)
+
+[jodit](https://xdsoft.net/jodit/)
+
+[kindeditor](http://kindeditor.net/demo.php)  out-of-date
+
+[ueditor](http://fex.baidu.com/ueditor/)  out-of-date
+
+## Font
+
+[iconfont](https://www.iconfont.cn/)
+
+[自由字体](https://ziyouziti.com/)
+
+[阿里字体素材平台 - 免费字体](https://www.taobao.com/markets/fuwu/fontmarket_freefonts)
+
+[font.google.com](https://fonts.google.com/)
+
+## Icon
+
+[iconfont](https://www.iconfont.cn/)
+
+[bootstrap](https://icons.bootcss.com/)
+
+[fontawesome](https://fontawesome.com/)
+
+[icomoon](https://icomoon.io/)
+
+[themify](https://themify.me/themify-icons)
+
+favicon
+
+* https://www.favicon-generator.org/
+* https://favicon.io/favicon-generator/
+* https://realfavicongenerator.net/
+* https://css-tricks.com/emojis-as-favicons/
+
+[gravatar](https://secure.gravatar.com/)

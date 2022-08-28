@@ -27,7 +27,7 @@ Babel is a JavaScript compiler.
 1. install dependencies
 
 
-```shell
+```bash
 npm install @babel/preset-env --save-dev
 npm install --save-dev @babel/cli
 ```
@@ -89,7 +89,7 @@ eval("const foo = () => {\r\n  const element = document.createElement('div');\r\
 
 1. install dependencies
 
-```shell
+```bash
 npm install @babel/preset-env --save-dev
 npm install --save-dev babel-loader @babel/core
 ```

@@ -14,8 +14,9 @@ export default defineConfig({
 
     sidebar: {
       '/fundamentals/': sidebarFundamentals(),
-      '/server/': sidebarServer(),
       '/build-tools/': sidebarBuildTools(),
+      '/framework/': sidebarFramework(),
+      '/server/': sidebarServer(),
       '/advance/': sidebarAdvance(),
     },
 
@@ -51,7 +52,7 @@ function nav() {
       text: 'build-tools',
       items: [
         {
-          text: 'package-manager',
+          text: 'Package-manager',
           items: [
             {text: 'npm', link: '/build-tools/package-manager/npm/'},
             {text: 'yarn', link: '/build-tools/package-manager/yarn/'},
@@ -59,18 +60,25 @@ function nav() {
           ]
         },
         {
-          text: 'bundler',
+          text: 'Bundler',
           items: [
             {text: 'Vite', link: '/build-tools/bundler/vite/'},
             {text: 'Webpack', link: '/build-tools/bundler/webpack/'},
           ]
         },
         {
-          text: 'compiler',
+          text: 'Compiler',
           items: [
             {text: 'Babel', link: '/build-tools/compiler/babel/'},
           ]
         }
+      ]
+    },
+    {
+      text: 'framework',
+      items: [
+        {text: 'Vue', link: '/framework/vue/'},
+        {text: 'React', link: '/framework/react/'},
       ]
     },
     {
@@ -87,6 +95,7 @@ function nav() {
       items: [
         {text: 'Test', link: '/advance/test/'},
         {text: 'micro-frontends', link: '/advance/micro-frontends/'},
+        {text: 'WebGL', link: '/advance/webgl/'},
       ]
     },
     {
@@ -94,8 +103,19 @@ function nav() {
       items: [
         {text: 'Useful Libraries', link: '/other/wheel/'},
         {text: 'Code Style', link: '/other/code-style/'},
-        {text: '埋点和监控', link: '/other/event-tracking/'},
+        {text: 'Event Tracking', link: '/other/event-tracking/'},
         {text: 'Personal Website', link: '/other/personal-website/'},
+        {text: 'i18n', link: '/other/i18n/'},
+        {text: 'Future', link: '/other/future/'},
+      ]
+    },
+    {
+      text: 'new world',
+      items: [
+        {text: 'Desktop App', link: '/new-world/desktop-app/'},
+        {text: 'Mobile App', link: '/new-world/mobile-app/'},
+        {text: 'MiniProgram', link: '/new-world/miniprogram/'},
+        {text: 'WeChat', link: '/new-world/wechat/'},
       ]
     }
   ]
@@ -115,6 +135,8 @@ function sidebarFundamentals() {
       collapsible: true,
       items: [
         {text: 'HTML Notes', link: '/fundamentals/html/'},
+        {text: 'Canvas', link: '/fundamentals/html/canvas/'},
+        {text: 'SVG', link: '/fundamentals/html/svg/'},
         {text: 'SEO', link: '/fundamentals/html/seo/'},
       ]
     },
@@ -158,6 +180,25 @@ function sidebarFundamentals() {
         {text: '类型转换', link: '/fundamentals/js/type-conversion'},
         {text: '对象属性遍历', link: '/fundamentals/js/traverse-object-keys'},
         {text: '位运算符的应用', link: '/fundamentals/js/bit-op'},
+        {
+          text: '模块化',
+          items: [
+            {text: 'CommonJS', link: '/fundamentals/js/modular/commonjs'},
+            {text: 'ESM', link: '/fundamentals/js/modular/esm'},
+            {text: 'AMD', link: '/fundamentals/js/modular/amd'},
+            {text: 'UMD', link: '/fundamentals/js/modular/umd'},
+          ]
+        },
+        {
+          text: '请求通信',
+          items: [
+            {text: '数据类型和格式', link: '/fundamentals/js/request/data-type-format'},
+            {text: 'XMLHttpRequest', link: '/fundamentals/js/request/xhr'},
+            {text: 'fetch', link: '/fundamentals/js/request/fetch'},
+            {text: 'WebSocket', link: '/fundamentals/js/request/websocket'},
+            {text: 'axios', link: '/fundamentals/js/request/axios'},
+          ]
+        }
       ]
     },
     {
@@ -171,6 +212,68 @@ function sidebarFundamentals() {
   ]
 }
 
+function sidebarFramework() {
+  return [
+    {
+      text: 'MVVM',
+      collapsible: true,
+      items: [
+        {text: 'MVC MVP MVVM', link: '/framework/mvvm/mvc-mvp-mvvm'}
+      ]
+    },
+    {
+      text: 'Vue',
+      collapsible: true,
+      items: [
+        {
+          text: 'Introduction', link: '/framework/vue/'
+        },
+        {
+          text: 'Vue2.x',
+          items: [
+            {text: 'Vue2 Notes', link: '/framework/vue/v2/'},
+          ]
+        },
+        {
+          text: 'Vue3.x',
+          items: [
+            {text: 'Vue3 Notes', link: '/framework/vue/v3/'},
+            {text: 'Pinia', link: '/framework/vue/v3/pinia/'},
+          ]
+        },
+        {
+          text: 'UI', link: '/framework/vue/ui'
+        },
+      ]
+    },
+    {
+      text: 'React',
+      collapsible: true,
+      items: [
+        {
+          text: 'React',
+          items: [
+            {text: 'React Notes', link: '/framework/react/'},
+          ]
+        },
+        {
+          text: 'UI', link: '/framework/react/ui'
+        },
+      ]
+    },
+    {
+      text: 'Other',
+      collapsible: true,
+      items: [
+        {text: 'Svelte', link: '/framework/other/svelte'},
+        {text: 'Angular', link: '/framework/other/angular'},
+        {text: 'Bootstrap', link: '/framework/other/bootstrap'},
+        {text: 'uiverse', link: '/framework/other/uiverse'},
+      ]
+    }
+  ]
+}
+
 function sidebarServer() {
   return [
     {
@@ -181,6 +284,7 @@ function sidebarServer() {
           text: 'Nodejs',
           items: [
             {text: 'Nodejs Notes', link: '/server/nodejs/'},
+            {text: 'V8', link: '/server/nodejs/v8/'},
           ]
         },
         {
@@ -361,6 +465,14 @@ function sidebarAdvance() {
         {text: 'Introduction', link: '/advance/micro-frontends/'},
         {text: 'qiankun', link: '/advance/micro-frontends/qiankun'},
         {text: 'single-spa', link: '/advance/micro-frontends/single-spa'},
+      ]
+    },
+    {
+      text: 'WebGL',
+      collapsible: true,
+      items: [
+        {text: 'Introduction', link: '/advance/webgl/'},
+        {text: 'Three.js', link: '/advance/webgl/threejs/'},
       ]
     }
   ]

@@ -1,0 +1,4 @@
+# fetch
+
+Window
+WorkerGlobalScope
