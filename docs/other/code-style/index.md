@@ -18,7 +18,7 @@
 
 ## [EditorConfig](https://editorconfig.org/)
 
-`.editorconfig`
+### .editorconfig
 
 ```text
 # https://editorconfig.org
@@ -64,6 +64,14 @@ arrowParens: 'avoid'
 
 ```
 
+### .eslintignore
+
+```text
+dist
+packages
+```
+
+
 ## ESLint + Prettier
 
 参考 [文章](https://zhuanlan.zhihu.com/p/80574300)  [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)   [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
@@ -73,13 +81,49 @@ arrowParens: 'avoid'
 ```js
 // .eslintrc
 {
-  "extends": ["plugin:prettier/recommended"]
+  "extends": ["plugin:prettier/recommended"],
+  "rules": {
+    'no-console': process.env.NODE_ENV !== 'production' ? 0 : 2,
+    'no-useless-escape': 0,
+    'no-empty': 0
+  }
 }
 ```
 
 ## [TypeScript ESLint](https://typescript-eslint.io/)
 
+## git-hooks
 
+commit msg from vue
+
+```bash
+#!/usr/bin/env bash
+
+# Validate commit log
+commit_regex='^Merge.+|(feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert|types)(\(.+\))?: .{1,50}'
+
+if ! grep -iqE "$commit_regex" "$1"; then
+    echo
+    echo "  Error: proper commit message format is required for automated changelog generation."
+    echo
+    echo "  - Use \`npm run commit\` to interactively generate a commit message."
+    echo "  - See .github/COMMIT_CONVENTION.md for more details."
+    echo
+    exit 1
+fi
+```
+
+pre-commit from vue
+
+```bash
+#!/usr/bin/env bash
+
+files_to_lint=$(git diff --cached --name-only --diff-filter=ACM | grep '\.js$')
+
+if [ -n "$files_to_lint" ]; then
+  NODE_ENV=production eslint --quiet $files_to_lint
+fi
+```
 
 ## .gitignore
 

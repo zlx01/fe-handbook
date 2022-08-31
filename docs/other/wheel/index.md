@@ -51,9 +51,12 @@ console.log(uniq(arr2)) // [ 1, 11, 12, 13, 2, 3 ]
 
 [sanitize-url](https://www.npmjs.com/package/@braintree/sanitize-url) url过滤
 
-[classnames](https://www.npmjs.com/package/classnames)  A simple JavaScript utility for conditionally joining classNames together. vue已经有类似的语法支持，可用于react中。
+[crypto-js](https://www.npmjs.com/package/crypto-js) 加密
+
+
 
 ## Vue相关
+
 [vuex-persist](https://www.npmjs.com/package/vuex-persist) vuex数据持久化
 
 [vue-awesome-swiper](https://www.npmjs.com/package/vue-awesome-swiper) 轮播图
@@ -83,7 +86,9 @@ console.log(uniq(arr2)) // [ 1, 11, 12, 13, 2, 3 ]
 
 [v-blur](https://www.npmjs.com/package/v-blur) 半透明遮罩
 
+## React相关
 
+[classnames](https://www.npmjs.com/package/classnames)  A simple JavaScript utility for conditionally joining classNames together. vue已经有类似的语法支持，可用于react中。
 
 ## 中国省市区地址
 [province-city-china](https://www.npmjs.com/package/province-city-china)  中华人民共和国行政区划代码

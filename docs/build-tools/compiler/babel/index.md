@@ -145,3 +145,15 @@ eval("var foo = function foo() {\n  var element = document.createElement('div');
 
 * Babel 默认只转换新的 JavaScript syntax，而不转换新的 API
 
+* 一般要忽略 dist 中的js
+
+  ```js
+  {
+    ignore: [
+      'dist/*.js'
+    ]
+  }
+  ```
+
+  
+

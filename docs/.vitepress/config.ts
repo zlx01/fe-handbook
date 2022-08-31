@@ -46,6 +46,7 @@ function nav() {
         {text: 'CSS', link: '/fundamentals/css/'},
         {text: 'JavaScript', link: '/fundamentals/js/'},
         {text: 'Browser', link: '/fundamentals/browser/'},
+        {text: 'HTTP', link: '/fundamentals/http/'},
       ]
     },
     {
@@ -202,6 +203,14 @@ function sidebarFundamentals() {
       ]
     },
     {
+      text: 'HTTP',
+      collapsible: true,
+      items: [
+        {text: 'HTTP Notes', link: '/fundamentals/http/'},
+        {text: 'Content Security Policy', link: '/fundamentals/http/csp'},
+      ]
+    },
+    {
       text: 'Browser',
       collapsible: true,
       items: [
@@ -284,6 +293,7 @@ function sidebarServer() {
           text: 'Nodejs',
           items: [
             {text: 'Nodejs Notes', link: '/server/nodejs/'},
+            {text: 'ESM vs CJS', link: '/server/nodejs/mjs-cjs'},
             {text: 'V8', link: '/server/nodejs/v8/'},
           ]
         },
