@@ -117,6 +117,7 @@ function nav() {
         {text: 'Mobile App', link: '/new-world/mobile-app/'},
         {text: 'MiniProgram', link: '/new-world/miniprogram/'},
         {text: 'WeChat', link: '/new-world/wechat/'},
+        {text: 'PWA', link: '/new-world/pwa/'},
       ]
     }
   ]

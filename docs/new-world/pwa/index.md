@@ -6,6 +6,7 @@
 
 * 强烈推荐看百度技术团队写的 [PWA应用实践](https://lavas-project.github.io/pwa-book/)
 * webpack项目可以通过配置 `workbox-webpack-plugin` 实现
+* vite项目可以通过配置 `vite-plugin-pwa` 实现
 
 ## Reference
 
@@ -13,3 +14,4 @@
 * https://web.dev/what-are-pwas/
 * https://webpack.js.org/guides/progressive-web-application/
 * https://developer.chrome.com/docs/workbox/modules/workbox-webpack-plugin/
+* https://vite-plugin-pwa.netlify.app/
