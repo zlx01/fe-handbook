@@ -29,11 +29,11 @@ export default defineConfig({
       copyright: 'Copyright © 2022-present lancekee'
     },
 
-    // algolia: {
-    //   appId: '',
-    //   apiKey: '',
-    //   indexName: ''
-    // },
+    algolia: {
+      appId: 'D5I8QWQRGT',
+      apiKey: '47979d23dd02b788a31a96a9894e6bdb',
+      indexName: 'fe-handbook'
+    },
   }
 })
 
