@@ -95,7 +95,7 @@ function nav() {
       text: 'advance',
       items: [
         {text: 'Test', link: '/advance/test/'},
-        {text: 'micro-frontends', link: '/advance/micro-frontends/'},
+        {text: 'Micro-frontends', link: '/advance/micro-frontends/'},
         {text: 'WebGL', link: '/advance/webgl/'},
       ]
     },
@@ -193,7 +193,7 @@ function sidebarFundamentals() {
         {
           text: '请求通信',
           items: [
-            {text: '数据类型和格式', link: '/fundamentals/js/request/data-type-format'},
+            {text: '数据交换格式', link: '/fundamentals/js/request/data-type-format'},
             {text: 'XMLHttpRequest', link: '/fundamentals/js/request/xhr'},
             {text: 'fetch', link: '/fundamentals/js/request/fetch'},
             {text: 'WebSocket', link: '/fundamentals/js/request/websocket'},
@@ -469,7 +469,7 @@ function sidebarAdvance() {
       ]
     },
     {
-      text: 'micro-frontends',
+      text: 'Micro-frontends',
       collapsible: true,
       items: [
         {text: 'Introduction', link: '/advance/micro-frontends/'},
