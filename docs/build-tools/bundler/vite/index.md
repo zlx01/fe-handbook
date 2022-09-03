@@ -1,5 +1,7 @@
 # [vite](https://vitejs.dev/)
 
+Fast!
+
 ## 开发配置
 
 ### 需自己安装css预处理器依赖

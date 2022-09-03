@@ -208,6 +208,7 @@ function sidebarFundamentals() {
       collapsible: true,
       items: [
         {text: 'HTTP Notes', link: '/fundamentals/http/'},
+        {text: 'HTTP Caching', link: '/fundamentals/http/caching'},
         {text: 'Content Security Policy', link: '/fundamentals/http/csp'},
       ]
     },
