@@ -20,3 +20,15 @@ nvm use <node-version>
 ```
 
 注意：切换后全局安装的依赖可能会失效，需要重新安装
+
+
+## nvm Troubleshooting on macOS
+
+`nvm: command not found`
+
+> If you use bash, the previous default shell, your system may not have a .bash_profile file where the command is set up. Create one with touch ~/.bash_profile and run the install script again. Then, run source ~/.bash_profile to pick up the nvm command.
+
+```bash
+touch ~/.bash_profile
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+```

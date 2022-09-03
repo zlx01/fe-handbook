@@ -89,12 +89,14 @@ function nav() {
         {text: 'SSR', link: '/server/ssr/'},
         {text: 'Nginx', link: '/server/nginx/'},
         {text: 'CDN', link: '/server/cdn/'},
+        {text: 'DevOps', link: '/server/DevOps/'},
       ]
     },
     {
       text: 'advance',
       items: [
         {text: 'Test', link: '/advance/test/'},
+        {text: 'Event Tracking', link: '/advance/event-tracking/'},
         {text: 'Micro-frontends', link: '/advance/micro-frontends/'},
         {text: 'WebGL', link: '/advance/webgl/'},
       ]
@@ -104,7 +106,6 @@ function nav() {
       items: [
         {text: 'Useful Libraries', link: '/other/wheel/'},
         {text: 'Code Style', link: '/other/code-style/'},
-        {text: 'Event Tracking', link: '/other/event-tracking/'},
         {text: 'Personal Website', link: '/other/personal-website/'},
         {text: 'i18n', link: '/other/i18n/'},
         {text: 'Future', link: '/other/future/'},
@@ -352,6 +353,15 @@ function sidebarServer() {
       items: [
         {
           text: 'Service Provider', link: '/server/cdn/'
+        },
+      ]
+    },
+    {
+      text: 'DevOps',
+      collapsible: true,
+      items: [
+        {
+          text: 'Introduction', link: '/server/DevOps/'
         },
       ]
     },

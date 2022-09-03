@@ -6,7 +6,7 @@
 
 ## [TypeScript](https://jsdoc.app/)
 
-
+:+1:
 
 ## [JSDoc](https://jsdoc.app/)
 
@@ -14,9 +14,11 @@
 
 ## [TSDoc](https://tsdoc.org/)
 
-
+:+1:
 
 ## [EditorConfig](https://editorconfig.org/)
+
+编辑器通用配置
 
 ### .editorconfig
 
@@ -38,11 +40,17 @@ insert_final_newline = false
 trim_trailing_whitespace = false
 ```
 
-
-
 ## [Prettier](https://prettier.io/)
 
 专注代码格式问题
+
+### Configuration File
+
+* A `"prettier"` key in your `package.json` file.
+* A `.prettierrc` file written in JSON or YAML.
+* A `.prettierrc.json`, `.prettierrc.yml`, `.prettierrc.yaml`, or `.prettierrc.json5` file.
+* A `.prettierrc.js`, `.prettierrc.cjs`, `prettier.config.js`, or `prettier.config.cjs` file that exports an object using `module.exports`.
+* A `.prettierrc.toml` file.
 
 ### .prettierrc
 
@@ -54,33 +62,31 @@ trailingComma: 'none'
 arrowParens: 'avoid'
 ```
 
+* vscode 配置：https://github.com/prettier/prettier-vscode
+* webstorm 配置：https://prettier.io/docs/en/webstorm.html
+
 ## [ESLint](https://eslint.org/)
 
 专注代码质量问题
 
+### Configuration File
+
+* **JavaScript** - use `.eslintrc.js` and export an object containing your configuration.
+* **JavaScript (ESM)** - use `.eslintrc.cjs` when running ESLint in JavaScript packages that specify `"type":"module"` in their `package.json`. Note that ESLint does not support ESM configuration at this time.
+* **YAML** - use `.eslintrc.yaml` or `.eslintrc.yml` to define the configuration structure.
+* **JSON** - use `.eslintrc.json` to define the configuration structure. ESLint’s JSON files also allow JavaScript-style comments.
+* **package.json** - create an `eslintConfig` property in your `package.json` file and define your configuration there.
+
 ### .eslintrc.js
 
-```js
-
-```
-
 ### .eslintignore
-
-```text
-dist
-packages
-```
-
 
 ## ESLint + Prettier
 
 参考 [文章](https://zhuanlan.zhihu.com/p/80574300)  [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)   [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
 
-
-
 ```js
-// .eslintrc
-{
+module.exports = {
   "extends": ["plugin:prettier/recommended"],
   "rules": {
     'no-console': process.env.NODE_ENV !== 'production' ? 0 : 2,
@@ -89,6 +95,12 @@ packages
   }
 }
 ```
+
+
+## husky lint-staged prettier eslint
+
+* vue: https://github.com/zlx01/vue-husky-test
+* react: https://github.com/zlx01/react-husky-test
 
 ## [TypeScript ESLint](https://typescript-eslint.io/)
 
@@ -126,6 +138,63 @@ fi
 ```
 
 ## .gitignore
+
+from vue project
+
+```text
+.DS_Store
+node_modules
+/dist
+
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+```
+
+from react project
+
+```text
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+```
+simple configuration
 
 ```text
 .DS_Store
