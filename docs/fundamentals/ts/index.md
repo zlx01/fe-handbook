@@ -2,7 +2,7 @@
 
 思维导图来自[博文](https://juejin.cn/post/7088304364078497800)
 
-![img](./assets/9c2fd85eed8c460ea83ea1f90f49afd5_tplv-k3u1fbpfcp-zoom-in-crop-mark_3024_0_0_0.webp)
+![ts-tree](./assets/ts-tree.webp)
 
 ## [cheatsheets](https://www.typescriptlang.org/cheatsheets)
 
