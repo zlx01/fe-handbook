@@ -104,6 +104,8 @@ module.exports = {
 
 ## [TypeScript ESLint](https://typescript-eslint.io/)
 
+## [Stylelint](https://stylelint.io/)
+
 ## git-hooks
 
 commit msg from vue

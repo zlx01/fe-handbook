@@ -244,12 +244,15 @@ function sidebarFramework() {
           text: 'Vue2.x',
           items: [
             {text: 'Vue2 Notes', link: '/framework/vue/v2/'},
+            {text: 'Vue CLI', link: '/framework/vue/v2/vue-cli/'},
+            {text: 'Vue Loader', link: '/framework/vue/v2/vue-loader/'},
           ]
         },
         {
           text: 'Vue3.x',
           items: [
             {text: 'Vue3 Notes', link: '/framework/vue/v3/'},
+            {text: 'create-vue', link: '/framework/vue/v3/create-vue/'},
             {text: 'Pinia', link: '/framework/vue/v3/pinia/'},
           ]
         },
