@@ -47,6 +47,7 @@ function nav() {
         {text: 'JavaScript', link: '/fundamentals/js/'},
         {text: 'Browser', link: '/fundamentals/browser/'},
         {text: 'HTTP', link: '/fundamentals/http/'},
+        {text: 'Network', link: '/fundamentals/network/'},
       ]
     },
     {
@@ -95,6 +96,7 @@ function nav() {
     {
       text: 'advance',
       items: [
+        {text: 'Security', link: '/advance/security/'},
         {text: 'Test', link: '/advance/test/'},
         {text: 'Event Tracking', link: '/advance/event-tracking/'},
         {text: 'Micro-frontends', link: '/advance/micro-frontends/'},
@@ -211,6 +213,14 @@ function sidebarFundamentals() {
         {text: 'HTTP Notes', link: '/fundamentals/http/'},
         {text: 'HTTP Caching', link: '/fundamentals/http/caching'},
         {text: 'Content Security Policy', link: '/fundamentals/http/csp'},
+      ]
+    },
+    {
+      text: 'Network',
+      collapsible: true,
+      items: [
+        {text: 'Network Notes', link: '/fundamentals/network/'},
+        {text: '公网ip', link: '/fundamentals/network/host-ip'},
       ]
     },
     {

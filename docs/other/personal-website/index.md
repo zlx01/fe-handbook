@@ -2,7 +2,7 @@
 
 ## Static Site Generators
 
-### 1. [hexo](https://hexo.io/zh-cn/)
+### 1.[hexo](https://hexo.io/zh-cn/)
 
 https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html
 
@@ -20,55 +20,63 @@ live2d
 * https://github.com/evgo2017/live2d-static-api
 * https://live2d.fghrsh.net/demo/1.4.2/waifu-tips.html
 
-### 2. [hugo](https://gohugo.io/)
+### 2.[hugo](https://gohugo.io/)
 
-### 3. [jekyll](https://jekyllrb.com/)
+### 3.[jekyll](https://jekyllrb.com/)
 
 ## Document
 
-### 1. [gitbook](https://www.gitbook.com/)
+### 1.[gitbook](https://www.gitbook.com/)
 
-### 2. [vuepress](https://vuepress.vuejs.org/)
+### 2.[vuepress](https://vuepress.vuejs.org/)
 
-### 3. [vitepress](https://vitepress.vuejs.org/)
+### 3.[vitepress](https://vitepress.vuejs.org/)
 
 
 
-## 增强工具
+## Tools
 
 ### 图床
 
 * [图壳](https://imgkr.com/)
 * jsDelivr，不推荐
 
-### 评论
+### Discussion
 
 * [disqus](https://disqus.com/)
 
-### 搜索
+### Search
 
 * [algolia](https://www.algolia.com/)
 
-## 数据
-
-### badage
+### Badge
 
 * [shields](https://shields.io/)  一般用于开源项目，统计 star, fork, issues, pull request, release, deploy, visitors
 
-### 分析
+### Analytics
 
 * [Google Analytics](https://marketingplatform.google.com/about/analytics/)
 
-## 部署
+## Deployment
 
-### 1. GitHub Pages
+### 1.GitHub Pages
 
-### 2. GitLab Pages
+### 2.GitLab Pages
 
-### 3. [vercel](https://vercel.com/)
+### 3.[vercel](https://vercel.com/)
 
-### 4. [netlify](https://www.netlify.com/)
+### 4.[netlify](https://www.netlify.com/)
 
-## 域名
+## Domain
 
-* [freessl](https://freessl.org/)
+* 域名注册
+  * [freessl](https://freessl.org/)
+* 域名解析
+* 域名备案
+
+## Fee
+
+* 域名费用
+* 服务器费用
+* 程序费用
+* 人工费用

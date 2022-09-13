@@ -1,5 +1,7 @@
 # Front-end Developer HandBook
 
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/zlx01/fe-handbook/Deploy)
+
 ## Reference
 
 * MDN  https://developer.mozilla.org/en-US/
@@ -27,8 +29,6 @@
 ## IDE
 
 * VSCode  https://code.visualstudio.com/
-
-
 * WebStorm  https://www.jetbrains.com/zh-cn/webstorm/
 
 
