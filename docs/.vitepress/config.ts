@@ -140,9 +140,10 @@ function sidebarFundamentals() {
       collapsible: true,
       items: [
         {text: 'HTML Notes', link: '/fundamentals/html/'},
-        {text: 'Canvas', link: '/fundamentals/html/canvas/'},
+        {text: 'Canvas', link: '/fundamentals/html/canvas'},
         {text: 'SVG', link: '/fundamentals/html/svg/'},
         {text: 'SEO', link: '/fundamentals/html/seo/'},
+        {text: '移动端适配', link: '/fundamentals/html/mobile-device-adaptation'},
       ]
     },
     {

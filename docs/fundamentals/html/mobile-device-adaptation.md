@@ -4,4 +4,5 @@
 * iPhone安全区适配，[viewport配置](https://stephenradford.me/removing-the-white-bars-in-safari-on-iphone-x/)
 * ios自动密码填充导致输入账号时键盘闪烁，详见[博文](https://juejin.cn/post/7083804990925438983)
 * Click事件300ms延迟
-
+* [emoji编码](https://github.com/gzu-liyujiang/UnicodeEmoji/blob/master/emoji.json)
+* 微信中的emoji在Android和iOS下表现一致，参考[社区问答](https://developers.weixin.qq.com/community/develop/doc/000604b75fc71889bd89d4c1a5b400)
