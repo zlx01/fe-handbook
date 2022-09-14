@@ -7,7 +7,7 @@
 ### 1.百度
 ![image-20220913233309745](./assets/image-20220913233309745.png)
 ### 2.[ip.sb](https://ip.sb/)
-详见[博客](https://u.sb/ip-sb/)
+详见[博文](https://u.sb/ip-sb/)
 
 ### 3.[ip.cn](https://ip.cn/)
 ### 4.[ipconfig](https://ipconfig.io/)

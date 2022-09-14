@@ -84,7 +84,7 @@ cnpm install [package]
 ## Semantic Versioning 语义化版本
 
 * [semver](https://semver.org/)
-* 参考[博客](https://segmentfault.com/a/1190000039684460)
+* 参考[博文](https://segmentfault.com/a/1190000039684460)
 * MAJOR MINOR PATCH
 > 指定版本：比如 1.2.2 ，遵循“大版本.次要版本.小版本”的格式规定，安装时只安装指定版本。
 > 波浪号（tilde）+指定版本：比如 ~1.2.2 ，表示安装 1.2.x 的最新版本（不低于1.2.2），但是不安装 1.3.x，也就是说安装时不改变大版本号和次要版本号。

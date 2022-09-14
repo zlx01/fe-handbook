@@ -34,7 +34,7 @@ yarn run <scriptName>
 * yarn.lock
 
 ## 与npm相比的主要优化
-参考[博客](https://segmentfault.com/a/1190000039684460)
+参考[博文](https://segmentfault.com/a/1190000039684460)
 
 >*  **并行安装**：无论 npm 还是 yarn 在执行包的安装时，都会执行一系列任务。npm 是按照队列执行每个 package，也就是说必须要等到当前 package 安装完成之后，才能继续后面的安装。而 yarn 是同步执行所有任务，提高了性能。
 >* **离线模式**：如果之前已经安装过一个软件包，用 yarn 再次安装时之间从缓存中获取，就不用像 npm 那样再从网络下载了。
