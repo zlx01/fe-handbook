@@ -110,6 +110,7 @@ function nav() {
         {text: 'Code Style', link: '/other/code-style/'},
         {text: 'Personal Website', link: '/other/personal-website/'},
         {text: 'i18n', link: '/other/i18n/'},
+        {text: 'Matrix', link: '/other/matrix/'},
         {text: 'Future', link: '/other/future/'},
       ]
     },
@@ -204,6 +205,19 @@ function sidebarFundamentals() {
             {text: 'WebSocket', link: '/fundamentals/js/request/websocket'},
             {text: 'axios', link: '/fundamentals/js/request/axios'},
           ]
+        },
+        {
+          text: 'DOM',
+          items: [
+            {text: '', link: '/fundamentals/js/dom/'}
+          ]
+        },
+        {
+          text: '实战方案',
+          items: [
+            {text: '判断元素是否在视窗内', link: '/fundamentals/js/practice/intersection-detection'},
+            {text: '动画实现方式', link: '/fundamentals/js/practice/perform-animation'},
+          ]
         }
       ]
     },
@@ -223,6 +237,8 @@ function sidebarFundamentals() {
       items: [
         {text: 'Network Notes', link: '/fundamentals/network/'},
         {text: '公网ip', link: '/fundamentals/network/host-ip'},
+        {text: 'CNAME', link: '/fundamentals/network/domain-cname'},
+        {text: 'NAT', link: '/fundamentals/network/nat'},
       ]
     },
     {

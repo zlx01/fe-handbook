@@ -57,6 +57,11 @@ live2d
 
 * [Google Analytics](https://marketingplatform.google.com/about/analytics/)
 
+## Code Image
+
+* https://www.codepng.app/
+* https://carbon.now.sh/
+
 ## Deployment
 
 ### 1.GitHub Pages
@@ -66,6 +71,13 @@ live2d
 ### 3.[vercel](https://vercel.com/)
 
 ### 4.[netlify](https://www.netlify.com/)
+
+## Cloud
+
+* https://www.aliyun.com/
+* https://cloud.tencent.com/
+* https://www.qiniu.com/
+* https://www.digitalocean.com/
 
 ## Domain
 

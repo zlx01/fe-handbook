@@ -13,7 +13,7 @@ node -v
 # 将npm更新至最新版本
 npm install -g npm
 # 查看npm版本
-npm –v
+npm version
 ```
 
 ## 常用命令
