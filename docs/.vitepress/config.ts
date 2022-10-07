@@ -45,6 +45,7 @@ function nav() {
         {text: 'HTML', link: '/fundamentals/html/'},
         {text: 'CSS', link: '/fundamentals/css/'},
         {text: 'JavaScript', link: '/fundamentals/js/'},
+        {text: 'TypeScript', link: '/fundamentals/ts/'},
         {text: 'Browser', link: '/fundamentals/browser/'},
         {text: 'HTTP', link: '/fundamentals/http/'},
         {text: 'Network', link: '/fundamentals/network/'},
@@ -219,6 +220,13 @@ function sidebarFundamentals() {
             {text: '动画实现方式', link: '/fundamentals/js/practice/perform-animation'},
           ]
         }
+      ]
+    },
+    {
+      text: 'TypeScript',
+      collapsible: true,
+      items: [
+        {text: 'TypeScript Notes', link: '/fundamentals/ts/'},
       ]
     },
     {

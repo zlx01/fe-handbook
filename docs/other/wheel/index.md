@@ -23,6 +23,8 @@
 
 [uniq](https://www.npmjs.com/package/uniq) 数组去重。去重后元素顺序可能会变化。
 
+[deep-equal](https://www.npmjs.com/package/deep-equal)
+
 ```js
 const uniq = require('uniq')
 

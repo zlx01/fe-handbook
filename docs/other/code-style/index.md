@@ -4,7 +4,7 @@
 
 了解即可
 
-## [TypeScript](https://jsdoc.app/)
+## [TypeScript](https://www.typescriptlang.org/)
 
 :+1:
 

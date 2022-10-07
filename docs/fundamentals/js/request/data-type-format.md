@@ -20,6 +20,8 @@ JavaScript Object Notation
 
 YAML Ain't Markup Language
 
+### [Toml](https://toml.io/en/)
+
 ## Reference
 
 * https://www.ruanyifeng.com/blog/2009/05/data_types_and_json.html
