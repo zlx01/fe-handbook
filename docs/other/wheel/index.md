@@ -185,11 +185,13 @@ https://dummyimage.com/  solid color
 
 [themify](https://themify.me/themify-icons)
 
-favicon
+## favicon
 
 * https://www.favicon-generator.org/
 * https://favicon.io/favicon-generator/
 * https://realfavicongenerator.net/
 * https://css-tricks.com/emojis-as-favicons/
 
-[gravatar](https://secure.gravatar.com/)
+## avatar
+
+* [gravatar](https://secure.gravatar.com/)

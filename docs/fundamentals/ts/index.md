@@ -30,3 +30,7 @@ Classes
 <img src="./assets/TypeScript-Classes.png" alt="">
 </a>
 
+## Type Search
+
+https://www.typescriptlang.org/dt/search?search=
+
