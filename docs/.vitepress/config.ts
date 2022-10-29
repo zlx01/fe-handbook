@@ -440,6 +440,7 @@ function sidebarBuildTools() {
             {text: 'pnpm Notes', link: '/build-tools/package-manager/pnpm/'},
           ]
         },
+        {text: 'verdaccio', link: 'https://github.com/zlx01/ok-verdaccio'},
       ]
     },
     {

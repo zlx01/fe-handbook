@@ -3,11 +3,13 @@
 
 * [nvm](https://github.com/creationix/nvm)
 * [n](https://github.com/tj/n)
+* [fnm](https://github.com/Schniz/fnm)
 
 ## Windows
 
 * [nvm-windows](https://github.com/coreybutler/nvm-windows)
 * [nodist](https://github.com/marcelklehr/nodist)
+* [fnm](https://github.com/Schniz/fnm)
 
 ## nvm-windows usages
 ```bash

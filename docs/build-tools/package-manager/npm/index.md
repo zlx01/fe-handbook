@@ -113,6 +113,12 @@ cnpm install [package]
 1. 修改 `package.json` 版本号，如 `1.1.0-beta.0`
 2. `npm publish --tag beta`
 
+### unpublish
+
+```bash
+npm unpublish 包名@1.0.5
+```
+
 ## 版本锁定
 
 * package-lock.json

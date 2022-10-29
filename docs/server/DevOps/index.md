@@ -18,7 +18,7 @@
 
 ### [Harbor](https://goharbor.io/)
 
-## CI Tool
+## Continuous Integration
 
 ### [GitLab CI](https://docs.gitlab.com/ee/ci/)
 
@@ -26,5 +26,7 @@
 
 ### [Jenkins](https://www.jenkins.io/)
 
-### [Travis CI](https://www.travis-ci.org/)
+### [Travis CI](https://www.travis-ci.com/)
+
+### [circleci](https://circleci.com/)
 

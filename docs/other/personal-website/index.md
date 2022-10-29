@@ -4,13 +4,14 @@
 
 ### 1.[hexo](https://hexo.io/zh-cn/)
 
-https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html
+* https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html
 
-https://www.jianshu.com/p/f054333ac9e6
+* https://www.jianshu.com/p/f054333ac9e6
 
-https://www.cnblogs.com/ECJTUACM-873284962/category/1198838.html
+* https://www.cnblogs.com/ECJTUACM-873284962/category/1198838.html
 
-live2d
+
+#### live2d
 
 * https://www.cnblogs.com/wangyuehan/p/9860371.html
 * https://www.jianshu.com/p/3a6342e16e57
@@ -32,7 +33,11 @@ live2d
 
 ### 3.[vitepress](https://vitepress.vuejs.org/)
 
+### 4.[docsify](https://docsify.js.org/)
 
+### 5.[docute](https://docute.egoist.dev/)
+
+### 6.[docusaurus](https://docusaurus.io/)
 
 ## Tools
 
@@ -48,6 +53,7 @@ live2d
 ### Search
 
 * [algolia](https://www.algolia.com/)
+* [typesense](https://typesense.org/)
 
 ### Badge
 
