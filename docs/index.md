@@ -12,24 +12,18 @@
 * https://cssreference.io/
 * https://caniuse.com/
 * https://css-tricks.com/
+* https://wangchujiang.com/reference/
+* https://quickref.me/
 
 ## Road Map
 
 * https://andreasbm.github.io/web-skills/
 * https://roadmap.sh/
 
-## Tutorial website
-
-* https://www.w3school.com.cn/
-* https://www.w3cschool.cn/
-* https://www.runoob.com/
-* https://how2j.cn/
-* https://hollischuang.github.io/toBeTopJavaer/#/
-
 ## IDE
 
-* VSCode  https://code.visualstudio.com/
-* WebStorm  https://www.jetbrains.com/zh-cn/webstorm/
+* [VSCode](https://code.visualstudio.com/)
+* [WebStorm](https://www.jetbrains.com/zh-cn/webstorm/)
 
 
 ## Online Coding
@@ -65,3 +59,10 @@ see [link](/other/wheel/)
 * https://awesomejs.dev/
 * https://awesome-vue.js.org/
 
+## Other
+
+* https://www.w3school.com.cn/
+* https://www.w3cschool.cn/
+* https://www.runoob.com/
+* https://how2j.cn/
+* https://hollischuang.github.io/toBeTopJavaer/#/

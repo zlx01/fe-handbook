@@ -10,6 +10,6 @@
 
 ## 过时的工具
 
-* gulp：https://www.npmjs.com/package/gulp
+* gulp：https://gulpjs.com/
 * grunt：https://gruntjs.com/
 

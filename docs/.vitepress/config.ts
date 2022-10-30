@@ -438,6 +438,7 @@ function sidebarBuildTools() {
           text: 'pnpm',
           items: [
             {text: 'pnpm Notes', link: '/build-tools/package-manager/pnpm/'},
+            {text: 'monorepo', link: 'https://github.com/zlx01/pnpm-monorepo'},
           ]
         },
         {text: 'verdaccio', link: 'https://github.com/zlx01/ok-verdaccio'},
@@ -460,16 +461,22 @@ function sidebarBuildTools() {
           ]
         },
         {
-          text: 'Rollup', link: '/build-tools/bundler/rollup/'
+          text: 'Rollup', link: '/build-tools/bundler/rollup'
         },
         {
-          text: 'esbuild', link: '/build-tools/bundler/esbuild/'
+          text: 'esbuild', link: '/build-tools/bundler/esbuild'
         },
         {
-          text: 'snowpack', link: '/build-tools/bundler/snowpack/'
+          text: 'snowpack', link: '/build-tools/bundler/snowpack'
         },
         {
-          text: 'parcel', link: '/build-tools/bundler/parcel/'
+          text: 'parcel', link: '/build-tools/bundler/parcel'
+        },
+        {
+          text: 'turbopack', link: '/build-tools/bundler/turbopack/'
+        },
+        {
+          text: 'turborepo', link: '/build-tools/bundler/turborepo/'
         },
       ]
     },
@@ -484,6 +491,9 @@ function sidebarBuildTools() {
             {text: 'Polyfill vs Shim', link: '/build-tools/compiler/polyfill-shim/'},
           ]
         },
+        {
+          text: 'Terser', link: 'https://terser.org/'
+        }
       ]
     },
   ]
