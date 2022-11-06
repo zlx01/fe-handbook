@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as r,d as a}from"./app.a77abd1d.js";const u=JSON.parse('{"title":"UI","description":"","frontmatter":{},"headers":[],"relativePath":"framework/react/ui.md","lastUpdated":1667757213000}'),n={name:"framework/react/ui.md"},i=a("",2),o=[i];function s(_,l,c,d,h,f){return r(),t("div",null,o)}const m=e(n,[["render",s]]);export{u as __pageData,m as default};
