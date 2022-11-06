@@ -6,29 +6,22 @@
 
 ## [cheatsheets](https://www.typescriptlang.org/cheatsheets)
 
-Control Flow Analysis
+### Control Flow Analysis
 
-<a href="./assets/TypeScript-Control-Flow-Analysis.png" target="_blank">
-<img src="./assets/TypeScript-Control-Flow-Analysis.png" alt="">
-</a>
+![TypeScript Control Flow Analysis](./assets/TypeScript-Control-Flow-Analysis.png)
 
-Interfaces
+### Interfaces
 
-<a href="./assets/TypeScript-Interfaces.png" target="_blank">
-<img src="./assets/TypeScript-Interfaces.png" alt="">
-</a>
+![TypeScript Interfaces](./assets/TypeScript-Interfaces.png)
 
-Types
+### Types
 
-<a href="./assets/TypeScript-Types.png" target="_blank">
-<img src="./assets/TypeScript-Types.png" alt="">
-</a>
+![TypeScript Types](./assets/TypeScript-Types.png)
 
-Classes
+### Classes
 
-<a href="./assets/TypeScript-Classes.png" target="_blank">
-<img src="./assets/TypeScript-Classes.png" alt="">
-</a>
+![TypeScript Classes](./assets/TypeScript-Classes.png)
+
 
 ## Type Search
 

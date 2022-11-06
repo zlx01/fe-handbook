@@ -10,7 +10,7 @@ import "babel-polyfill";
 ```
 
 `package.json` 增加对ios9的支持
-```package.json
+```json
 {
     "browserslist": [
         "ios_saf 9.0-9.2",
