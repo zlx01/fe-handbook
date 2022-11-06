@@ -12,15 +12,28 @@
 
 eXtensible Markup Language
 
+应用举例：
+* Maven pom.xml
+* Spring ApplicationContext.xml
+
 ### [JSON](https://www.json.org/json-en.html)
 
 JavaScript Object Notation
+
+应用举例：
+* npm package.json
 
 ### [YAML](https://yaml.org/)
 
 YAML Ain't Markup Language
 
+应用举例：
+* SpringBoot application.yaml
+
 ### [Toml](https://toml.io/en/)
+
+应用举例：
+* rust的包描述文件 Cargo.toml
 
 ## Reference
 
