@@ -3,7 +3,7 @@ import {defineConfig} from 'vitepress'
 export default defineConfig({
   lang: 'en-US',
   title: 'fe-handbook',
-  description: 'Front-end Developer HandBook',
+  description: 'Front-End Developer HandBook',
   base: '/fe-handbook/',
   lastUpdated: true,
   markdown: {
@@ -187,7 +187,6 @@ function sidebarFundamentals() {
         {text: '确定值的类型', link: '/fundamentals/js/determine-type'},
         {text: '类型转换', link: '/fundamentals/js/type-conversion'},
         {text: '对象属性遍历', link: '/fundamentals/js/traverse-object-keys'},
-        {text: '位运算符的应用', link: '/fundamentals/js/bit-op'},
         {
           text: '模块化',
           items: [
@@ -216,6 +215,7 @@ function sidebarFundamentals() {
         {
           text: '实战方案',
           items: [
+            {text: '位运算符的应用', link: '/fundamentals/js/bit-op'},
             {text: '判断元素是否在视窗内', link: '/fundamentals/js/practice/intersection-detection'},
             {text: '动画实现方式', link: '/fundamentals/js/practice/perform-animation'},
           ]

@@ -1,4 +1,4 @@
-# Front-end Developer HandBook
+# Front-End Developer HandBook
 
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/zlx01/fe-handbook/Deploy)
 

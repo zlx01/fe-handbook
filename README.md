@@ -1,4 +1,4 @@
-# Front-end Developer HandBook
+# Front-End Developer HandBook
 
 https://github.com/zlx01/fe-handbook
 

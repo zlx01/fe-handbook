@@ -9,3 +9,8 @@
 * [手机号输入时344分段](https://github.com/zlx01/phone-number-344)
 * [移动端iframe布局、tabbar切换](https://github.com/zlx01/iframe-tabbar-test)
 * [uniapp学习笔记](./uniapp)
+* [git学习笔记](https://github.com/zlx01/ok-git)
+* [区分原生APP页面和H5页面](./distinguish-app-h5)
+* [短链接](./short-url)
+* [学习UI组件库](./learn-ui-library)
+* [a标签referrerpolicy、rel属性](./a-referrerpolicy-rel)
