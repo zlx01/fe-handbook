@@ -17,6 +17,8 @@
 
 [uuidjs](https://www.npmjs.com/package/uuidjs) JavaScript的RFC兼容UUID生成器
 
+[uuid](https://www.npmjs.com/package/uuid) For the creation of RFC4122 UUIDs
+
 [nanoid](https://www.npmjs.com/package/nanoid) 字符串ID生成器。比 `uuidjs` 轻量，建议使用。
 
 [filesize](https://www.npmjs.com/package/filesize) 提供了一种简单的方法来从数字（浮点数或整数）或字符串中获取人类可读的文件大小字符串

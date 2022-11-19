@@ -52,6 +52,11 @@ trim_trailing_whitespace = false
 * A `.prettierrc.js`, `.prettierrc.cjs`, `prettier.config.js`, or `prettier.config.cjs` file that exports an object using `module.exports`.
 * A `.prettierrc.toml` file.
 
+```bash
+prettier --write '**/*.ts'
+prettier --check '**/*.ts'
+```
+
 ### .prettierrc
 
 ```text
@@ -64,6 +69,22 @@ arrowParens: 'avoid'
 
 * vscode 配置：https://github.com/prettier/prettier-vscode
 * webstorm 配置：https://prettier.io/docs/en/webstorm.html
+
+```json
+{
+  "printWidth": 80,
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": false,
+  "singleQuote": true,
+  "trailingComma": "none",
+  "bracketSpacing": false,
+  "arrowParens": "avoid",
+  "parser": "typescript"
+}
+```
+
+### .prettierignore
 
 ## [ESLint](https://eslint.org/)
 

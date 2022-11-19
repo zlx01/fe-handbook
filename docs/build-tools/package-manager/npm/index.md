@@ -63,7 +63,7 @@ npm config get registry
 当然也直接修改用户目录下的 `.npmrc`  文件
 
 ```text
-registry=https://registry.npmmirror.com
+registry=https://registry.npm.taobao.org
 ```
 
 ### 使用方式三：安装cnpm
