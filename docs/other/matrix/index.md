@@ -15,3 +15,6 @@
 * [学习UI组件库](./learn-ui-library)
 * [a标签referrerpolicy、rel属性](./a-referrerpolicy-rel)
 * [移动端H5长按事件](https://github.com/zlx01/h5-longpress)
+* [Windows个人常用软件](./windows-useful-software)
+* [Mac个人常用软件](./mac-useful-software)
+* [点击完成验证](./click-captcha)
