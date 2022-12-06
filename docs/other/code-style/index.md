@@ -44,6 +44,13 @@ trim_trailing_whitespace = false
 
 专注代码格式问题
 
+* vscode 配置：https://github.com/prettier/prettier-vscode
+* webstorm 配置：https://prettier.io/docs/en/webstorm.html
+
+```bash
+npm i -D prettier 
+```
+
 ### Configuration File
 
 * A `"prettier"` key in your `package.json` file.
@@ -57,7 +64,7 @@ prettier --write '**/*.ts'
 prettier --check '**/*.ts'
 ```
 
-### .prettierrc
+.prettierrc
 
 ```text
 semi: false
@@ -66,9 +73,6 @@ printWidth: 80
 trailingComma: 'none'
 arrowParens: 'avoid'
 ```
-
-* vscode 配置：https://github.com/prettier/prettier-vscode
-* webstorm 配置：https://prettier.io/docs/en/webstorm.html
 
 ```json
 {
@@ -85,6 +89,18 @@ arrowParens: 'avoid'
 ```
 
 ### .prettierignore
+
+```text
+pnpm-lock.yaml
+
+# prettier doesn't respect newlines between chained methods
+# https://github.com/prettier/prettier/issues/7884
+**/*.spec.js
+**/*.spec.ts
+**/dist
+# https://github.com/prettier/prettier/issues/5246
+**/*.html
+```
 
 ## [ESLint](https://eslint.org/)
 
@@ -122,6 +138,21 @@ module.exports = {
 
 * vue: https://github.com/zlx01/vue-husky-test
 * react: https://github.com/zlx01/react-husky-test
+
+package.json
+```json
+{
+  "scripts": {
+    "prepare": "husky install",
+    "format": "prettier --write ."
+  },
+  "lint-staged": {
+    "*.{js,ts,vue,json}": [
+      "prettier --write"
+    ]
+  }
+}
+```
 
 ## [TypeScript ESLint](https://typescript-eslint.io/)
 

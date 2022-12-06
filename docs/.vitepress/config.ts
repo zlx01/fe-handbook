@@ -1,4 +1,4 @@
-import {defineConfig} from 'vitepress'
+import {DefaultTheme, defineConfig} from 'vitepress'
 
 export default defineConfig({
   lang: 'en-US',
@@ -37,7 +37,7 @@ export default defineConfig({
   }
 })
 
-function nav() {
+function nav(): DefaultTheme.NavItem[] {
   return [
     {
       text: 'fundamentals',
@@ -128,7 +128,7 @@ function nav() {
   ]
 }
 
-function sidebarFundamentals() {
+function sidebarFundamentals(): DefaultTheme.SidebarGroup[] {
   return [
     {
       text: 'W3C',
@@ -151,6 +151,7 @@ function sidebarFundamentals() {
     {
       text: 'CSS',
       collapsible: true,
+      collapsed: true,
       items: [
         {text: 'CSS Notes', link: '/fundamentals/css/'},
         {text: 'CSS Preprocessor', link: '/fundamentals/css/preprocessor/'},
@@ -181,6 +182,7 @@ function sidebarFundamentals() {
     {
       text: 'JavaScript',
       collapsible: true,
+      collapsed: true,
       items: [
         {text: 'JS Notes', link: '/fundamentals/js/'},
         {text: 'script标签', link: '/fundamentals/js/script-tag'},
@@ -225,6 +227,7 @@ function sidebarFundamentals() {
     {
       text: 'TypeScript',
       collapsible: true,
+      collapsed: true,
       items: [
         {text: 'TypeScript Notes', link: '/fundamentals/ts/'},
       ]
@@ -232,6 +235,7 @@ function sidebarFundamentals() {
     {
       text: 'HTTP',
       collapsible: true,
+      collapsed: true,
       items: [
         {text: 'HTTP Notes', link: '/fundamentals/http/'},
         {text: 'HTTP Caching', link: '/fundamentals/http/caching'},
@@ -242,6 +246,7 @@ function sidebarFundamentals() {
     {
       text: 'Network',
       collapsible: true,
+      collapsed: true,
       items: [
         {text: 'Network Notes', link: '/fundamentals/network/'},
         {text: '公网ip', link: '/fundamentals/network/host-ip'},
@@ -252,6 +257,7 @@ function sidebarFundamentals() {
     {
       text: 'Browser',
       collapsible: true,
+      collapsed: true,
       items: [
         {text: 'Browser Notes', link: '/fundamentals/browser/'},
         {text: 'debug', link: '/fundamentals/browser/debug'},

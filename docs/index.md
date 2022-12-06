@@ -5,15 +5,13 @@
 ## Reference
 
 * MDN  https://developer.mozilla.org/en-US/
-* https://www.w3schools.com/html/default.asp
-* https://web.dev/
 * https://wangdoc.com/
+* https://www.w3schools.com/
 * https://javascript.info/
 * https://cssreference.io/
 * https://caniuse.com/
 * https://css-tricks.com/
-* https://wangchujiang.com/reference/
-* https://quickref.me/
+* https://web.dev/
 
 ## Road Map
 
@@ -61,6 +59,8 @@ see [link](/other/wheel/)
 
 ## Other
 
+* https://wangchujiang.com/reference/
+* https://quickref.me/
 * https://www.w3school.com.cn/
 * https://www.w3cschool.cn/
 * https://www.runoob.com/
