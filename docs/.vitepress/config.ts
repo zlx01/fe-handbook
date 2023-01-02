@@ -101,7 +101,9 @@ function nav(): DefaultTheme.NavItem[] {
         {text: 'Test', link: '/advance/test/'},
         {text: 'Event Tracking', link: '/advance/event-tracking/'},
         {text: 'Micro-frontends', link: '/advance/micro-frontends/'},
+        {text: 'PWA', link: '/advance/pwa/'},
         {text: 'WebGL', link: '/advance/webgl/'},
+        {text: 'i18n', link: '/advance/i18n/'},
       ]
     },
     {
@@ -110,7 +112,6 @@ function nav(): DefaultTheme.NavItem[] {
         {text: 'Useful Libraries', link: '/other/wheel/'},
         {text: 'Code Style', link: '/other/code-style/'},
         {text: 'Personal Website', link: '/other/personal-website/'},
-        {text: 'i18n', link: '/other/i18n/'},
         {text: 'Matrix', link: '/other/matrix/'},
         {text: 'Future', link: '/other/future/'},
       ]
@@ -122,7 +123,6 @@ function nav(): DefaultTheme.NavItem[] {
         {text: 'Mobile App', link: '/new-world/mobile-app/'},
         {text: 'MiniProgram', link: '/new-world/miniprogram/'},
         {text: 'WeChat', link: '/new-world/wechat/'},
-        {text: 'PWA', link: '/new-world/pwa/'},
       ]
     }
   ]

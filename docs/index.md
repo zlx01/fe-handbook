@@ -1,7 +1,5 @@
 # Front-End Developer HandBook
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/zlx01/fe-handbook/Deploy)
-
 ## Reference
 
 * MDN  https://developer.mozilla.org/en-US/
@@ -36,6 +34,7 @@
 
 ## Git
 
+* https://git-scm.com/
 * https://github.com/
 * https://about.gitlab.com/
 
@@ -59,6 +58,8 @@ see [link](/other/wheel/)
 
 ## Other
 
+* https://docschina.org/
+* https://docschina.org/weekly/react/docs/
 * https://wangchujiang.com/reference/
 * https://quickref.me/
 * https://www.w3school.com.cn/
