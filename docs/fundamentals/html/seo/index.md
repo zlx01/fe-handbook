@@ -42,4 +42,10 @@ Search Engine Optimization
 
 ### 优化措施
 
-* 使用语义化标签
+* 使用语义化标签。
+* 为页面添加元数据描述。
+* 为视觉内容附加文字形式的说明。
+* 构建并提交站点地图。
+* 对于实现客户端路由的单页应用，尽量使用 History API 而非 Hash。
+
+[SEO Audits](https://developer.chrome.com/docs/lighthouse/seo/)
