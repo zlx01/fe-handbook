@@ -21,3 +21,7 @@
 * [移动端H5长按事件](https://github.com/zlx01/h5-longpress)
 * [点击完成验证](./click-captcha)
 * [图片转base64](./image-to-base64)
+* [OS virtual machine](./os-virtual-machine)
+* [OS Package Manager](./os-package-manager)
+* [移动端H5混合原生开发问题记录]()
+* [Linux查看CPU、内存、磁盘运行情况](./linux-status)
