@@ -447,7 +447,12 @@ function sidebarBuildTools() {
             {text: 'monorepo', link: 'https://github.com/zlx01/pnpm-monorepo'},
           ]
         },
-        {text: 'verdaccio', link: 'https://github.com/zlx01/ok-verdaccio'},
+        {
+          text: 'package registry',
+          items: [
+            {text: 'verdaccio', link: 'https://github.com/zlx01/ok-verdaccio'},
+          ]
+        }
       ]
     },
     {
