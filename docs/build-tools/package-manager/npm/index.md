@@ -11,22 +11,34 @@
 # 查看node版本
 node -v
 # 将npm更新至最新版本
-npm install -g npm
+npm install npm@latest -g
 # 查看npm版本
+npm -v
+# 查看node、npm、v8等核心库的版本
 npm version
+
+# 查看帮助
+npm
+npm help
 ```
 
 ## 常用命令
 
 ```bash
 npm init
+npm init -y
 
 npm install [package]
+npm install -g [package]
 
 npm uninstall [package]
+npm uninstall -g [package]
 
 # 查看包版本
 npm view [package] versions
+
+# 安装最新版本
+npm install [package]@latest
 
 # 查看安装过哪些包(插件)
 npm list --dept 0		# 本地
@@ -35,9 +47,9 @@ npm list -g --dept 0	# 全局
 
 > **-g -S -D**
 >
-> * `-g`：全局安装。 将会安装在C：\ Users \ Administrator \ AppData \ Roaming \ npm，**并且写入系统环境变量**；非全局安装：将会安装在当前定位目录；全局安装可以通过命令行任何地方调用它，本地安装将安装在定位目录的node_modules文件夹下，需通过指定路径或`npx`调用;
-> * `-S`：即`npm install module_name --save`,写入`package.json`的`dependencies` ,`dependencies` 是需要发布到生产环境的，比如jq，vue全家桶，ele-ui等ui框架这些项目运行时必须使用到的插件就需要放到`dependencies`
-> * `-D`：即`npm install module_name --save-dev`,写入`package.json`的`devDependencies` ,`devDependencies` 里面的插件只用于开发环境，不用于生产环境。比如一些babel编译功能的插件、webpack打包插件就是开发时候的需要，真正程序打包跑起来并不需要的一些插件。
+> * `-g`：全局安装。 将会安装在C：\ Users \ Administrator \ AppData \ Roaming \ npm，**并且写入系统环境变量**，因此可以通过命令行在任何地方调用它
+> * `-S`：即`npm install [package] --save`,写入`package.json`的`dependencies` ,`dependencies` 生产依赖
+> * `-D`：即`npm install [package] --save-dev`,写入`package.json`的`devDependencies` ,`devDependencies` 开发依赖
 
 
 > **--save  --save-dev**
@@ -45,52 +57,62 @@ npm list -g --dept 0	# 全局
 > **在 npm 5 之后的版本**：npm install 安装包时，默认便会修改 package.json 文件，所以 --save 选项已经不再需要了。
 
 
-## 国内镜像（旧）
-* https://registry.npm.taobao.org
-* 淘宝做的镜像库，只负责从源库定期复制该仓库（只读，不支持publish）
+## 国内镜像
 
-### 使用方式一：临时指定
+* https://registry.npmmirror.com
+* 阿里做的镜像库，只负责从[源库](https://registry.npmjs.org/)定期复制到镜像库（只读，不支持publish）
+* 注意：旧的[淘宝镜像库](https://registry.npm.taobao.org)即将停止解析，详见[官网说明](https://npmmirror.com/)
+
+### 使用方式一：临时指定（不推荐）
 ```bash
-npm install [package] --registry=https://registry.npm.taobao.org
+npm install [package] --registry=https://registry.npmmirror.com
 ```
-### 使用方式二：全局指定
+### 使用方式二：全局指定（个人开发推荐）:+1:
 ```bash
 # 设置镜像仓库
-npm config set registry https://registry.npm.taobao.org
+npm config set registry https://registry.npmmirror.com
 npm config get registry
 ```
+### 使用方式三：`.npmrc`
 
-当然也直接修改用户目录下的 `.npmrc`  文件
+* 方式二的配置会写在用户目录下的 `.npmrc`  文件，所以也可以直接修改文件。
+* 项目目录也可以新建对应的 `.npmrc`  文件（团队开发推荐）:+1:
 
 ```text
-registry=https://registry.npm.taobao.org
+registry=https://registry.npmmirror.com
 ```
 
-### 使用方式三：安装cnpm
+### 使用方式四：安装cnpm（不推荐）
+
+cnpm 支持 npm 除了 publish 之外的所有命令
 
 ```bash
-npm install -g cnpm --registry=https://registry.npm.taobao.org
+npm install -g cnpm --registry=https://registry.npmmirror.com
 # 测试是否成功安装
 cnpm -v
 # 使用cnpm代替npm来安装包
 cnpm install [package]
 ```
 
-## 国内镜像（新）
 
-* https://registry.npmmirror.com
-* 旧的淘宝镜像库即将停止解析，详见[官网说明](https://npmmirror.com/)
+## Semantic Versioning 语义化版本 [SemVer](https://semver.org/)
 
-## Semantic Versioning 语义化版本
-
-* [semver](https://semver.org/)
-* 参考[博文](https://segmentfault.com/a/1190000039684460)
 * MAJOR MINOR PATCH
 > 指定版本：比如 1.2.2 ，遵循“大版本.次要版本.小版本”的格式规定，安装时只安装指定版本。
+> 
 > 波浪号（tilde）+指定版本：比如 ~1.2.2 ，表示安装 1.2.x 的最新版本（不低于1.2.2），但是不安装 1.3.x，也就是说安装时不改变大版本号和次要版本号。
+> 
 > 插入号（caret）+指定版本：比如 ˆ1.2.2，表示安装 1.x.x 的最新版本（不低于 1.2.2），但是不安装 2.x.x，也就是说安装时不改变大版本号。需要注意的是，如果大版本号为 0，则插入号的行为与波浪号相同，这是因为此时处于开发阶段，即使是次要版本号变动，也可能带来程序的不兼容。
-> latest：安装最新版本。
-> `npm install package`，版本是插入号形式。这样每次重新安装依赖包 npm install 时”次要版本“和“小版本”是会拉取最新的。
+> 
+> `npm install [package]`，第一次安装是最新版本，写到 `package.json` 中版本号是插入号形式。
+
+### Reference
+
+* https://segmentfault.com/a/1190000039684460
+
+## 版本锁定
+
+* package-lock.json
 
 ## 发布包到仓库
 
@@ -98,9 +120,11 @@ cnpm install [package]
 
 2. 在项目目录下用`npm init`命令创建模块，自动生成`package.json`文件，描述信息
 
-3. 登录npm，`npm adduser` or `npm login`
+3. 登录npm，`npm login`
 
    ```bash
+   # To test that you have successfully logged i
+   npm whoami
    npm login [--registry=https://registry.company-name.npme.io]
    ```
 
@@ -119,12 +143,22 @@ cnpm install [package]
 npm unpublish 包名@1.0.5
 ```
 
-## 版本锁定
+# CLI Commands
 
-* package-lock.json
+### npm adduser
 
+Create a new user in the specified registry, and save the credentials to the .npmrc file.
 
-## npm init
+### npm login
+```bash
+# log in, linking the scope to the custom registry
+npm login --scope=@mycorp --registry=https://registry.mycorp.com
+
+# log out, removing the link and the auth token
+npm logout --scope=@mycorp
+```
+
+### npm init
 
 aliases: create innit
 
@@ -133,5 +167,26 @@ aliases: create innit
 * `npm create vue@3` 会安装 create-vue@3.x.x 最新的版本，并执行
 
 
+### npm config
+
+```bash
+npm config set <key>=<value> [<key>=<value> ...]
+npm config get [<key> [<key> ...]]
+npm config delete <key> [<key> ...]
+npm config list [--json]
+```
 
 
+### npm cache
+
+```bash
+npm cache clean --force
+```
+
+### npm dist-tag
+
+一般有latest、beta
+
+```bash
+npm dist-tag ls [package]
+```
