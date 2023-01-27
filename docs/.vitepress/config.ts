@@ -1,10 +1,12 @@
 import {DefaultTheme, defineConfig} from 'vitepress'
 
+const base = process.env.DEPLOY_BASE
+
 export default defineConfig({
   lang: 'en-US',
   title: 'fe-handbook',
   description: 'Front-End Developer HandBook',
-  base: '/fe-handbook/',
+  base: base || '/fe-handbook/',
   lastUpdated: true,
   markdown: {
     // lineNumbers: true,
