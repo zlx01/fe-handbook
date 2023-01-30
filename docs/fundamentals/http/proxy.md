@@ -13,4 +13,4 @@
 
 ## Chrome 插件
 
-* SwitchyOmega
+* [SwitchyOmega](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif)
