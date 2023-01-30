@@ -25,3 +25,5 @@
 * [OS Package Manager](./os-package-manager)
 * [移动端H5混合原生开发问题记录]()
 * [Linux查看CPU、内存、磁盘运行情况](./linux-status)
+* [CTRL+F5 和 F5 两种刷新有什么区别](./refresh-page)
+* [URL后面加不加斜杆的区别](./trailing-slash)
