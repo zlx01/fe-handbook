@@ -113,7 +113,6 @@ function nav(): DefaultTheme.NavItem[] {
       items: [
         {text: 'Useful Libraries', link: '/other/wheel/'},
         {text: 'Code Style', link: '/other/code-style/'},
-        {text: 'Personal Website', link: '/other/personal-website/'},
         {text: 'Matrix', link: '/other/matrix/'},
         {text: 'Future', link: '/other/future/'},
       ]
@@ -130,18 +129,18 @@ function nav(): DefaultTheme.NavItem[] {
   ]
 }
 
-function sidebarFundamentals(): DefaultTheme.SidebarGroup[] {
+function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
   return [
     {
       text: 'W3C',
-      collapsible: true,
+      collapsed: false,
       items: [
         {text: 'W3C标准', link: '/fundamentals/w3c/'}
       ]
     },
     {
       text: 'HTML',
-      collapsible: true,
+      collapsed: true,
       items: [
         {text: 'HTML Notes', link: '/fundamentals/html/'},
         {text: 'Canvas', link: '/fundamentals/html/canvas'},
@@ -152,7 +151,6 @@ function sidebarFundamentals(): DefaultTheme.SidebarGroup[] {
     },
     {
       text: 'CSS',
-      collapsible: true,
       collapsed: true,
       items: [
         {text: 'CSS Notes', link: '/fundamentals/css/'},
@@ -183,7 +181,6 @@ function sidebarFundamentals(): DefaultTheme.SidebarGroup[] {
     },
     {
       text: 'JavaScript',
-      collapsible: true,
       collapsed: true,
       items: [
         {text: 'JS Notes', link: '/fundamentals/js/'},
@@ -228,7 +225,6 @@ function sidebarFundamentals(): DefaultTheme.SidebarGroup[] {
     },
     {
       text: 'TypeScript',
-      collapsible: true,
       collapsed: true,
       items: [
         {text: 'TypeScript Notes', link: '/fundamentals/ts/'},
@@ -236,7 +232,6 @@ function sidebarFundamentals(): DefaultTheme.SidebarGroup[] {
     },
     {
       text: 'HTTP',
-      collapsible: true,
       collapsed: true,
       items: [
         {text: 'HTTP Notes', link: '/fundamentals/http/'},
@@ -247,7 +242,6 @@ function sidebarFundamentals(): DefaultTheme.SidebarGroup[] {
     },
     {
       text: 'Network',
-      collapsible: true,
       collapsed: true,
       items: [
         {text: 'Network Notes', link: '/fundamentals/network/'},
@@ -258,7 +252,6 @@ function sidebarFundamentals(): DefaultTheme.SidebarGroup[] {
     },
     {
       text: 'Browser',
-      collapsible: true,
       collapsed: true,
       items: [
         {text: 'Browser Notes', link: '/fundamentals/browser/'},
@@ -272,14 +265,14 @@ function sidebarFramework() {
   return [
     {
       text: 'MVVM',
-      collapsible: true,
+      collapsed: false,
       items: [
         {text: 'MVC MVP MVVM', link: '/framework/mvvm/mvc-mvp-mvvm'}
       ]
     },
     {
       text: 'Vue',
-      collapsible: true,
+      collapsed: false,
       items: [
         {
           text: 'Introduction', link: '/framework/vue/'
@@ -307,7 +300,7 @@ function sidebarFramework() {
     },
     {
       text: 'React',
-      collapsible: true,
+      collapsed: false,
       items: [
         {
           text: 'React',
@@ -322,7 +315,7 @@ function sidebarFramework() {
     },
     {
       text: 'Other',
-      collapsible: true,
+      collapsed: false,
       items: [
         {text: 'Svelte', link: '/framework/other/svelte'},
         {text: 'Angular', link: '/framework/other/angular'},
@@ -337,7 +330,7 @@ function sidebarServer() {
   return [
     {
       text: 'Nodejs',
-      collapsible: true,
+      collapsed: false,
       items: [
         {
           text: 'Nodejs',
@@ -371,7 +364,7 @@ function sidebarServer() {
     },
     {
       text: 'SSR',
-      collapsible: true,
+      collapsed: false,
       items: [
         {
           text: 'Introduction', link: '/server/ssr/'
@@ -387,7 +380,7 @@ function sidebarServer() {
     },
     {
       text: 'Nginx',
-      collapsible: true,
+      collapsed: false,
       items: [
         {
           text: 'Nginx Notes', link: '/server/nginx/'
@@ -396,7 +389,7 @@ function sidebarServer() {
     },
     {
       text: 'CDN',
-      collapsible: true,
+      collapsed: false,
       items: [
         {
           text: 'Service Provider', link: '/server/cdn/'
@@ -405,7 +398,7 @@ function sidebarServer() {
     },
     {
       text: 'DevOps',
-      collapsible: true,
+      collapsed: false,
       items: [
         {
           text: 'Introduction', link: '/server/DevOps/'
@@ -425,7 +418,7 @@ function sidebarBuildTools() {
     },
     {
       text: 'Package Manager',
-      collapsible: true,
+      collapsed: false,
       items: [
         {
           text: 'npm',
@@ -459,7 +452,7 @@ function sidebarBuildTools() {
     },
     {
       text: 'Bundler',
-      collapsible: true,
+      collapsed: false,
       items: [
         {
           text: 'Vite',
@@ -495,7 +488,7 @@ function sidebarBuildTools() {
     },
     {
       text: 'Compiler',
-      collapsible: true,
+      collapsed: false,
       items: [
         {
           text: 'Babel',
@@ -516,7 +509,7 @@ function sidebarAdvance() {
   return [
     {
       text: 'Test',
-      collapsible: true,
+      collapsed: false,
       items: [
         {text: 'Introduction', link: '/advance/test/'},
         {
@@ -545,7 +538,7 @@ function sidebarAdvance() {
     },
     {
       text: 'Micro-frontends',
-      collapsible: true,
+      collapsed: false,
       items: [
         {text: 'Introduction', link: '/advance/micro-frontends/'},
         {text: 'qiankun', link: '/advance/micro-frontends/qiankun'},
@@ -554,7 +547,7 @@ function sidebarAdvance() {
     },
     {
       text: 'WebGL',
-      collapsible: true,
+      collapsed: false,
       items: [
         {text: 'Introduction', link: '/advance/webgl/'},
         {text: 'Three.js', link: '/advance/webgl/threejs/'},
