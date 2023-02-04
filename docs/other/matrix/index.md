@@ -1,11 +1,6 @@
 # 杂货柜
 
-* [Windows个人常用软件](./windows-useful-software)
-* [Mac个人常用软件](./mac-useful-software)
 * [WebStorm高效开发](./webstorm)
-* [git学习笔记](https://github.com/zlx01/ok-git)
-* [github](./github)
-* [gitlab](./gitlab)
 * [学习UI组件库](./learn-ui-library)
 * [uniapp学习笔记](./uniapp)
 * [【vant】toast之后跳转页面时，iPhone上显示不出icon](https://github.com/zlx01/vant2-toast-test)
@@ -21,9 +16,6 @@
 * [移动端H5长按事件](https://github.com/zlx01/h5-longpress)
 * [点击完成验证](./click-captcha)
 * [图片转base64](./image-to-base64)
-* [OS virtual machine](./os-virtual-machine)
-* [OS Package Manager](./os-package-manager)
 * [移动端H5混合原生开发问题记录]()
-* [Linux查看CPU、内存、磁盘运行情况](./linux-status)
 * [CTRL+F5 和 F5 两种刷新有什么区别](./refresh-page)
 * [URL后面加不加斜杆的区别](./trailing-slash)
