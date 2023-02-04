@@ -10,7 +10,8 @@
     "docs:serve": "vitepress serve docs"
   },
   "devDependencies": {
-    "vitepress": "^1.0.0-alpha.12",
+    "@types/node": "^18.11.18",
+    "vitepress": "^1.0.0-alpha.45",
     "vue": "^3.2.37"
   }
 }
