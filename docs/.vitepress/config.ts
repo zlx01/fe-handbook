@@ -403,6 +403,18 @@ function sidebarServer() {
         {
           text: 'Introduction', link: '/server/DevOps/'
         },
+        {
+          text: 'Docker',
+          link: '/server/DevOps/docker/',
+          items: [
+            {text: 'install', link: '/server/DevOps/docker/install'},
+            {text: 'cli', link: '/server/DevOps/docker/cli'},
+            {text: 'build', link: '/server/DevOps/docker/build'},
+            {text: 'image explore', link: '/server/DevOps/docker/image-explore'},
+            {text: 'network', link: '/server/DevOps/docker/network'},
+            {text: 'qa', link: '/server/DevOps/docker/qa'}
+          ]
+        }
       ]
     },
   ]
