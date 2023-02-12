@@ -16,7 +16,7 @@
 
 * https://github.com/docker-library/hello-world
 
-```bash
+```dockerfile
 FROM scratch
 COPY hello /
 CMD ["/hello"]
@@ -26,7 +26,7 @@ CMD ["/hello"]
 
 > A minimal Docker image based on Alpine Linux with a complete package index and only 5 MB in size!
 
-```bash
+```dockerfile
 FROM scratch
 ADD alpine-minirootfs-20221110-x86_64.tar.gz /
 CMD ["/bin/sh"]
@@ -36,7 +36,7 @@ CMD ["/bin/sh"]
 
 ## [ubuntu](https://hub.docker.com/_/ubuntu)
 
-```bash
+```dockerfile
 FROM scratch
 ADD ubuntu-bionic-oci-amd64-root.tar.gz /
 CMD ["bash"]
@@ -46,7 +46,7 @@ CMD ["bash"]
 
 ## [centos](https://hub.docker.com/_/centos)
 
-```bash
+```dockerfile
 FROM scratch
 ADD centos-7-x86_64-docker.tar.xz /
 
@@ -60,7 +60,7 @@ CMD ["/bin/bash"]
 
 ## [busybox](https://hub.docker.com/_/busybox)
 
-```bash
+```dockerfile
 FROM scratch
 ADD busybox.tar.xz /
 CMD ["sh"]

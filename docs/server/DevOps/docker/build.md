@@ -268,7 +268,7 @@ EXPOSE 6379/tcp 53/udp
 
 ### URL context
 
-git repository
+[git repository](https://github.com/zlx01/docker-build-url-context)
 
 ```bash
 docker build -t hello-flask:latest https://github.com/zlx01/docker-build-url-context.git

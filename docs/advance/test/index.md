@@ -4,6 +4,10 @@
 * component test
 * e2e test
 
+## Testing Library
+
+https://testing-library.com/
+
 ## 断言
 
 判断测试是否通过
