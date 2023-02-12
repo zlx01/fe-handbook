@@ -414,6 +414,25 @@ function sidebarServer() {
             {text: 'network', link: '/server/DevOps/docker/network'},
             {text: 'qa', link: '/server/DevOps/docker/qa'}
           ]
+        },
+        {
+          text: 'GitLab',
+          items: [
+            {text: 'deploy', link: '/server/DevOps/gitlab/deploy'},
+            {text: 'CI/CD', link: '/server/DevOps/gitlab/ci-cd'},
+          ]
+        },
+        {
+          text: 'GitHub',
+          items: [
+            {text: 'actions', link: '/server/DevOps/github/actions'},
+          ]
+        },
+        {
+          text: 'Harbor',
+          items: [
+            {text: 'deploy', link: '/server/DevOps/harbor/deploy'},
+          ]
         }
       ]
     },
@@ -544,6 +563,7 @@ function sidebarAdvance() {
             {text: 'Cypress', link: '/advance/test/e2e/cypress'},
             {text: 'Puppeteer', link: '/advance/test/e2e/puppeteer'},
             {text: 'TestCafe', link: '/advance/test/e2e/testcafe'},
+            {text: 'playwright', link: '/advance/test/e2e/playwright'},
           ]
         },
       ]
