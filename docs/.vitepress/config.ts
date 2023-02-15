@@ -476,7 +476,8 @@ function sidebarBuildTools() {
         {
           text: 'package registry',
           items: [
-            {text: 'verdaccio', link: 'https://github.com/zlx01/ok-verdaccio'},
+            {text: 'Verdaccio', link: '/build-tools/package-manager/verdaccio/'},
+            {text: 'Nexus', link: '/build-tools/package-manager/nexus/'},
           ]
         }
       ]
