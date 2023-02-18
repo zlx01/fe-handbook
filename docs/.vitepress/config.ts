@@ -470,7 +470,8 @@ function sidebarBuildTools() {
           text: 'pnpm',
           items: [
             {text: 'pnpm Notes', link: '/build-tools/package-manager/pnpm/'},
-            {text: 'monorepo', link: 'https://github.com/zlx01/pnpm-monorepo'},
+            // {text: 'monorepo', link: 'https://github.com/zlx01/pnpm-monorepo'},
+            {text: 'monorepo', link: '/build-tools/package-manager/pnpm/monorepo'},
           ]
         },
         {
