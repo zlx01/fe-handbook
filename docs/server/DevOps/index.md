@@ -1,10 +1,10 @@
 # DevOps
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210305230103843.png)
+![在这里插入图片描述](assets/20210305230103843-1680710310297.png)
 
 ![DevOps](./assets/DevOps.png)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210305230519136.png)
+![在这里插入图片描述](assets/20210305230519136-1680710314572.png)
 
 ## Cloud Native
 

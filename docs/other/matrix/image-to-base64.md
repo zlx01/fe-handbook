@@ -26,7 +26,8 @@ function drawImageToBase64(imgSrc: string): Promise<string> {
 }
 ```
 此方法亲测在iPhone6 Plus上会报错。参考[回答](https://stackoverflow.com/questions/25753754/canvas-todataurl-security-error-the-operation-is-insecure)，[讨论](https://gist.github.com/casamia918/a8daf164830bce1b6281e304ed1f91b0)，[博文](https://www.zhangxinxu.com/wordpress/2018/02/crossorigin-canvas-getimagedata-cors/comment-page-1/)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2ee2022c02f647caaf485c04bcf1bfe0.png#pic_center)
+![在这里插入图片描述](assets/2ee2022c02f647caaf485c04bcf1bfe0.png)
+
 ## 方法二（推荐）
 利用ajax加载图片获得其字节流，通过FileReader实例对象读取流并转换为 DataURL，再去掉协议即可。
 ```js
