@@ -188,6 +188,7 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
         {text: '确定值的类型', link: '/fundamentals/js/determine-type'},
         {text: '类型转换', link: '/fundamentals/js/type-conversion'},
         {text: '对象属性遍历', link: '/fundamentals/js/traverse-object-keys'},
+        {text: '正则表达式', link: '/fundamentals/js/regex-expression'},
         {
           text: '模块化',
           items: [

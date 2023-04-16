@@ -10,6 +10,8 @@
 * https://caniuse.com/
 * https://css-tricks.com/
 * https://web.dev/
+* https://wangchujiang.com/reference/
+* https://quickref.me/
 
 ## Road Map
 
@@ -44,24 +46,26 @@ see [link](/other/wheel/)
 
 ## Useful Tools
 
-* https://pdf-lib.org/Tools/MediaQueries
+* [Media Queries](https://arielsalminen.github.io/mqtest/)
 * https://flatuicolors.com/
-* https://jex.im/regulex/#!flags=&re=    JavaScript Regular Expression Visualizer.
+* [JavaScript Regular Expression Visualizer](https://jex.im/regulex/#!flags=&re=)
 * https://regex101.com/
 * https://tools.knowledgewalls.com/jsontoquerystring
 * http://www.json2ts.com/
+* https://cli.im/
+* [Lorem Ipsum](https://www.lipsum.com/)
+* https://picsum.photos/
+* https://matching.name/
 
 ## Awesome
 
 * https://awesomejs.dev/
 * https://awesome-vue.js.org/
 
-## Other
+## Other Resources
 
 * https://docschina.org/
 * https://docschina.org/weekly/react/docs/
-* https://wangchujiang.com/reference/
-* https://quickref.me/
 * https://www.w3school.com.cn/
 * https://www.w3cschool.cn/
 * https://www.runoob.com/
