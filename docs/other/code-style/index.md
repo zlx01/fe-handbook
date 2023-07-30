@@ -259,3 +259,9 @@ dist
 node_modules
 ```
 
+Linting 
+
+Formatting
+
+If your ESLint preset has formatting rules, they may conflict with Prettier. We recommend disabling all formatting rules in your ESLint preset using eslint-config-prettier so that ESLint is only used for catching logical mistakes. If you want to enforce that files are formatted before a pull request is merged, use prettier --check for your continuous integration.
+

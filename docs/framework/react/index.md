@@ -1,4 +1,4 @@
-# [React](https://reactjs.org/)
+# [React](https://react.dev/)
 
 * A JavaScript library for building user interfaces
 * 一个用于构建用户界面的渐进式 JavaScript 库
@@ -10,6 +10,11 @@
 * https://create-react-app.dev/
 * https://www.reactiflux.com/
 * https://snack.expo.dev/
+* https://ahooks.js.org/zh-CN/
+* https://react-typescript-cheatsheet.netlify.app/
+* https://piotrwitek.github.io/react-redux-typescript-guide/
+* https://transform.tools/html-to-jsx
+
 
 ## Why
 
@@ -59,7 +64,7 @@ npx create-react-app my-app --template typescript
 * Babel 会把 JSX 转译成一个名为 React.createElement() 函数调用。
 * 组件化使用 jsx 而不是模板
 * 规则：
-  * 只能有一个根元素
+  * 只能有一个根元素，可以用根标签 \<>...\</>
   * 标签必须闭合
   * 小写字母开头，则认为是元素，大写字母开头，则认为是组件
   * className={}  onClick={}  style={{}}
@@ -133,8 +138,8 @@ npx create-react-app my-app --template typescript
 ### 条件渲染
 
 * if
-* 与运算符
 * 三目运算符
+* 与运算符（不需要else的话）
 * 阻止组件渲染：让 render 方法直接返回 null，而不进行任何渲染。
 
 ### 列表和key
@@ -199,3 +204,8 @@ npx create-react-app my-app --template typescript
 
 * 部署在网站非根路径，修改 `package.json`， 增加一行 `"homepage": "/react-deploy-gh-pages",`
 
+
+You can only call Hooks at the top of your components (or other Hooks).
+Why do multiple JSX tags need to be wrapped?
+
+JSX looks like HTML, but under the hood it is transformed into plain JavaScript objects. You can’t return two objects from a function without wrapping them into an array. This explains why you also can’t return two JSX tags without wrapping them into another tag or a Fragment.

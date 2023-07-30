@@ -12,6 +12,8 @@
 
 [dayjs](https://dayjs.gitee.io/zh-CN/)  时间/日期处理。比 `momentjs` 轻量，建议使用。
 
+[date-fns](https://www.npmjs.com/package/date-fns) manipulating JavaScript dates in a browser & Node.js.
+
 [numeraljs](http://numeraljs.com/) 一个用于格式化和处理数字的javascript库
 
 [color](https://www.npmjs.com/package/color) 用于不可变的颜色转换和对CSS颜色字符串的支持
@@ -58,7 +60,7 @@ console.log(uniq(arr2)) // [ 1, 11, 12, 13, 2, 3 ]
 
 [crypto-js](https://www.npmjs.com/package/crypto-js) 加密
 
-
+[countup.js](https://www.npmjs.com/package/countup.js) 数字滚动
 
 ## Vue相关
 
@@ -79,6 +81,8 @@ console.log(uniq(arr2)) // [ 1, 11, 12, 13, 2, 3 ]
 [vue-virtual-scroller](https://www.npmjs.com/package/vue-virtual-scroller)  虚拟长列表
 
 [vue-virtual-scroll-grid](https://www.npmjs.com/package/vue-virtual-scroll-grid) 虚拟长列表，支持vue3
+
+[vuex-class](https://www.npmjs.com/package/vuex-class)  vuex辅助工具
 
 ### 实用指令
 [v-hotkey](https://www.npmjs.com/package/v-hotkey) 为组件绑定快捷键
@@ -187,6 +191,9 @@ https://dummyimage.com/  solid color
 [icomoon](https://icomoon.io/)
 
 [themify](https://themify.me/themify-icons)
+
+[iconbuddy](https://iconbuddy.app/)
+
 
 ## favicon
 
