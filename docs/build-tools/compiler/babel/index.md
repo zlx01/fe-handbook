@@ -4,22 +4,46 @@ Babel is a JavaScript compiler.
 
 ## use babel in browser
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>use babel in browser</title>
-  </head>
-  <body>
-    <div id="output"></div>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="text/babel">
-      const getMessage = () => "Hello World";
-      document.getElementById('output').innerHTML = getMessage();
-    </script>
-  </body>
-</html>
+<code>
+<iframe src="https://codesandbox.io/embed/jovial-currying-dd38wm?fontsize=14&hidenavigation=1&theme=dark&view=editor"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="jovial-currying-dd38wm"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+ ></iframe>
+</code>
+
+## use babel in cli
+
+1. install dependencies
+
+
+```bash
+npm install --save-dev @babel/preset-env 
+npm install --save-dev @babel/cli
+```
+
+2. babel.config.json
+
+```json
+{
+  "presets": ["@babel/preset-env"]
+}
+```
+
+3. compile index.js
+
+```js
+const foo = () => {
+  const element = document.createElement('div');
+  element.innerHTML = "Hello World";
+  document.body.appendChild(element);
+}
+foo();
+```
+
+```bash
+npx babel index.js --out-file compiled.js
 ```
 
 ## use babel in WebStorm
@@ -28,7 +52,7 @@ Babel is a JavaScript compiler.
 
 
 ```bash
-npm install @babel/preset-env --save-dev
+npm install --save-dev @babel/preset-env 
 npm install --save-dev @babel/cli
 ```
 
@@ -44,13 +68,11 @@ npm install --save-dev @babel/cli
 
 ![](./assets/webstorm-file-watchers.png)
 
-4. 新增文件自动编译
+4. auto compilation
 
 ![image-20220827170832518](./assets/image-20220827170832518.png)
 
 ## use babel in webpack
-
-代码：https://github.com/zlx01/ok-babel
 
 webpack.config.js
 
@@ -90,8 +112,9 @@ eval("const foo = () => {\r\n  const element = document.createElement('div');\r\
 1. install dependencies
 
 ```bash
-npm install @babel/preset-env --save-dev
-npm install --save-dev babel-loader @babel/core
+npm install --save-dev @babel/preset-env 
+npm install --save-dev @babel/core
+npm install --save-dev babel-loader
 ```
 
 2. webpack.config.js
