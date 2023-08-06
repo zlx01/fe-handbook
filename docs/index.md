@@ -2,7 +2,7 @@
 
 ## Reference
 
-* MDN  https://developer.mozilla.org/en-US/
+* https://developer.mozilla.org/en-US/
 * https://wangdoc.com/
 * https://www.w3schools.com/
 * https://javascript.info/
@@ -28,11 +28,8 @@
 
 * https://codesandbox.io/
 * https://codepen.io/
-* https://jsitor.com/
-* https://jsfiddle.net/
-* https://jsbin.com/?html,output
-* https://www.gitpod.io/
 * https://stackblitz.com/
+* https://jsfiddle.net/
 
 ## Git
 

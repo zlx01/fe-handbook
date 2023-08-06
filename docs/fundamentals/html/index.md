@@ -1,21 +1,49 @@
 # HTML
 
-HyperText Transfer Markup Language
+## What
 
-常用标签
+* Hypertext Markup Language
+* 超文本标记语言
 
-表单
+## Tutorial
+
+* https://wangdoc.com/html/index.html
+
+## History
+
+* 1993-6 first version
+* 2014-10 H5
+
+## Basic Tags
+
+![](./assets/basic-tags.png)
+
+## Notes
+
+### URL编码
 
 
 
-## 语义化
+### 字符编码
 
-### 标签
+* 数字表示法
+* 实体表示法 :+1:
 
-header main footer  aside article section
+### data-xxx
+
+* 存放额外数据
+
+### use in markdown（personal）
+
+* \<code>
+* \<kbd>
+
+### 用户禁用了script
+
+* \<noscript>
 
 
-### 好处
 
-1. 根据内容的结构（内容语义化），选择合适的标签，便于开发者阅读理解代码。
-2. 同时让浏览器的爬虫很好地解析，有利于SEO
+
+
+

@@ -7,9 +7,15 @@ export default defineConfig({
   title: 'fe-handbook',
   description: 'Front-End Developer HandBook',
   base: base || '/fe-handbook/',
+  head: [
+    ['meta', { name: 'author', content: 'zlx' }],
+    ['meta', { name: 'keywords', content: 'frontend, front-end, handbook, developer, web, html, css, javascript, typescript, vue, react'}],
+    ['meta', { name: 'generator', content: 'vitepress' }],
+  ],
   lastUpdated: true,
   markdown: {
     // lineNumbers: true,
+    externalLinks: { target: '_blank', rel: 'nofollow noopener noreferrer' },
   },
   themeConfig: {
     nav: nav(),
@@ -102,6 +108,7 @@ function nav(): DefaultTheme.NavItem[] {
         {text: 'Security', link: '/advance/security/'},
         {text: 'Test', link: '/advance/test/'},
         {text: 'Event Tracking', link: '/advance/event-tracking/'},
+        {text: 'Low Code', link: '/advance/low-code/'},
         {text: 'Micro-frontends', link: '/advance/micro-frontends/'},
         {text: 'PWA', link: '/advance/pwa/'},
         {text: 'WebGL', link: '/advance/webgl/'},
@@ -143,6 +150,11 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
       collapsed: true,
       items: [
         {text: 'HTML Notes', link: '/fundamentals/html/'},
+        {text: 'meta', link: '/fundamentals/html/meta'},
+        {text: 'link', link: '/fundamentals/html/link'},
+        {text: 'a', link: '/fundamentals/html/a'},
+        {text: 'img', link: '/fundamentals/html/img'},
+        {text: 'semantic', link: '/fundamentals/html/semantic'},
         {text: 'Canvas', link: '/fundamentals/html/canvas'},
         {text: 'SVG', link: '/fundamentals/html/svg/'},
         {text: 'SEO', link: '/fundamentals/html/seo/'},
@@ -257,6 +269,7 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
       items: [
         {text: 'Browser Notes', link: '/fundamentals/browser/'},
         {text: 'debug', link: '/fundamentals/browser/debug'},
+        {text: 'Same Origin Policy', link: '/fundamentals/browser/same-origin-policy'},
       ]
     },
   ]
@@ -284,6 +297,7 @@ function sidebarFramework() {
             {text: 'Vue2 Notes', link: '/framework/vue/v2/'},
             {text: 'Vue CLI', link: '/framework/vue/v2/vue-cli/'},
             {text: 'Vue Loader', link: '/framework/vue/v2/vue-loader/'},
+            {text: 'UI', link: '/framework/vue/v2/ui'},
           ]
         },
         {
@@ -294,9 +308,6 @@ function sidebarFramework() {
             {text: 'Pinia', link: '/framework/vue/v3/pinia/'},
           ]
         },
-        {
-          text: 'UI', link: '/framework/vue/ui'
-        },
       ]
     },
     {
@@ -304,10 +315,7 @@ function sidebarFramework() {
       collapsed: false,
       items: [
         {
-          text: 'React',
-          items: [
-            {text: 'React Notes', link: '/framework/react/'},
-          ]
+          text: 'React Notes', link: '/framework/react/'
         },
         {
           text: 'UI', link: '/framework/react/ui'
@@ -459,6 +467,8 @@ function sidebarBuildTools() {
             {text: 'npx Notes', link: '/build-tools/package-manager/npm/npx'},
             {text: 'nvm Notes', link: '/build-tools/package-manager/npm/nvm'},
             {text: 'nrm Notes', link: '/build-tools/package-manager/npm/nrm'},
+            {text: 'package.json', link: '/build-tools/package-manager/npm/package.json/'},
+            {text: 'npm cli', link: '/build-tools/package-manager/npm/cli/'},
           ]
         },
         {

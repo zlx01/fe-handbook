@@ -1,4 +1,4 @@
-# Content Security Policy
+# [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy)
 
 通过在html页面meta标签或者 `Content-Security-Policy` 响应头配置一些安全策略，来检测并削弱某些攻击，例如 XSS 和 数据注入攻击。
 
