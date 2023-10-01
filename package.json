@@ -1,9 +1,19 @@
 {
   "name": "fe-handbook",
   "version": "1.0.0",
+  "description": "A handbook for front-end developers",
+  "keywords": ["front-end", "handbook", "HTML", "CSS", "JavaScript", "Vue"],
   "main": "index.js",
-  "author": "lancekee",
+  "author": {
+    "name": "lancekee",
+    "url": "https://github.com/zlx01"
+  },
+
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zlx01/fe-handbook.git"
+  },
   "scripts": {
     "docs:dev": "vitepress dev docs --host",
     "docs:build": "node ModifyVPAlgoliaSearchBox.js && vitepress build docs",

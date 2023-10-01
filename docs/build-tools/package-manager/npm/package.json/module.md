@@ -31,7 +31,7 @@
 ```
 
 ## files
-列出要发布的 files
+列出要发布的 files。可以在 `.npmignore` 指定忽略的文件，如果没有 `.npmignore` 文件，会使用 `.gitignore` 文件
 
 ## main
 
@@ -40,6 +40,10 @@
 ## module
 
 定义 ESM 入口
+
+## browser
+
+> If your module is meant to be used client-side the browser field should be used instead of the main field. This is helpful to hint users that it might rely on primitives that aren't available in Node.js modules. (e.g. window)
 
 ## types
 
@@ -77,5 +81,87 @@
 {
   "unpkg": "./dist/index.umd.js",
   "jsdelivr": "./dist/index.umd.js"
+}
+```
+
+```json
+{
+  "name": "foo",                      // your package name
+  "type": "module",
+  "source": "src/foo.js",             // your source code
+  "exports": {
+    "require": "./dist/foo.cjs",      // used for require() in Node 12+
+    "default": "./dist/foo.modern.js" // where to generate the modern bundle (see below)
+    
+  },
+  "main": "./dist/foo.cjs",           // where to generate the CommonJS bundle
+  "module": "./dist/foo.module.js",   // where to generate the ESM bundle
+  "unpkg": "./dist/foo.umd.js",       // where to generate the UMD bundle (also aliased as "umd:main")
+  
+}
+```
+
+```json
+{
+	"name": "foo",
+	"exports": {
+		".": "./dist/foo.modern.mjs", // import "foo" (the default)
+		"./lite": "./dist/lite.modern.mjs", // import "foo/lite"
+		"./full": "./dist/full.modern.mjs" // import "foo/full"
+	},
+}
+```
+
+```json
+{
+  "source": "src/index.js",             // input
+  "main": "dist/foo.js",                // CommonJS output bundle
+  "umd:main": "dist/foo.umd.js",        // UMD output bundle
+  "module": "dist/foo.mjs",             // ES Modules output bundle
+  "exports": {
+    "types": "./dist/foo.d.ts",         // TypeScript typings for NodeNext modules
+    "require": "./dist/foo.js",         // CommonJS output bundle
+    "default": "./dist/foo.modern.mjs", // Modern ES Modules output bundle
+  },
+  "types": "dist/foo.d.ts"              // TypeScript typings
+}
+```
+
+```json
+{
+  "type": "module",
+  "module": "dist/foo.js",  // ES Module bundle
+  "main": "dist/foo.cjs",   // CommonJS bundle
+}
+```
+
+* `type: module`  notes that this package is an ES module
+* `main` points to the CommonJS bundle
+* `module` points to the ES module bundle
+* `exports.require` points to the CommonJS bundle
+* `exports.default` points to the ES module bundle
+* `unpkg` points to the UMD bundle
+* `jsdelivr` points to the UMD bundle
+* `umd:main` points to the UMD bundle
+* `files: ["dist"]` tells npm to only publish the dist folder
+* `types` points to the TypeScript typings
+
+
+```json
+{
+  "type": "module",
+  "source": "./index.js",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.module.js",
+  "umd:main": "./dist/ids.umd.js",
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
+  "types": "./index.d.ts"
 }
 ```
