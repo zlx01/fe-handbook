@@ -1,1 +1,0 @@
-import{_ as e,c as r,o as t,d as n}from"./app.ab3bd27a.js";const w=JSON.parse('{"title":"CDN","description":"","frontmatter":{},"headers":[],"relativePath":"server/cdn/index.md","lastUpdated":1691335172000}'),o={name:"server/cdn/index.md"},a=n("",3),l=[a];function s(c,p,d,i,_,h){return t(),r("div",null,l)}const m=e(o,[["render",s]]);export{w as __pageData,m as default};
