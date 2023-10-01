@@ -54,6 +54,13 @@ see [link](/other/wheel/)
 * https://picsum.photos/
 * https://matching.name/
 
+## CDN
+
+* https://cdnjs.com/
+* https://www.jsdelivr.com/
+* https://unpkg.com/
+* https://www.bootcdn.cn/
+
 ## Awesome
 
 * https://awesomejs.dev/

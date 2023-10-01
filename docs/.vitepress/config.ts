@@ -24,7 +24,6 @@ export default defineConfig({
       '/fundamentals/': sidebarFundamentals(),
       '/build-tools/': sidebarBuildTools(),
       '/framework/': sidebarFramework(),
-      '/server/': sidebarServer(),
       '/advance/': sidebarAdvance(),
     },
 
@@ -93,19 +92,10 @@ function nav(): DefaultTheme.NavItem[] {
       ]
     },
     {
-      text: 'server',
-      items: [
-        {text: 'Nodejs', link: '/server/nodejs/'},
-        {text: 'SSR', link: '/server/ssr/'},
-        {text: 'Nginx', link: '/server/nginx/'},
-        {text: 'CDN', link: '/server/cdn/'},
-        {text: 'DevOps', link: '/server/DevOps/'},
-      ]
-    },
-    {
       text: 'advance',
       items: [
-        {text: 'Security', link: '/advance/security/'},
+        {text: 'Nodejs', link: '/advance/nodejs/'},
+        {text: 'SSR', link: '/advance/ssr/'},
         {text: 'Test', link: '/advance/test/'},
         {text: 'Event Tracking', link: '/advance/event-tracking/'},
         {text: 'Low Code', link: '/advance/low-code/'},
@@ -121,18 +111,8 @@ function nav(): DefaultTheme.NavItem[] {
         {text: 'Useful Libraries', link: '/other/wheel/'},
         {text: 'Code Style', link: '/other/code-style/'},
         {text: 'Matrix', link: '/other/matrix/'},
-        {text: 'Future', link: '/other/future/'},
       ]
     },
-    {
-      text: 'new world',
-      items: [
-        {text: 'Desktop App', link: '/new-world/desktop-app/'},
-        {text: 'Mobile App', link: '/new-world/mobile-app/'},
-        {text: 'MiniProgram', link: '/new-world/miniprogram/'},
-        {text: 'WeChat', link: '/new-world/wechat/'},
-      ]
-    }
   ]
 }
 
@@ -335,119 +315,6 @@ function sidebarFramework() {
   ]
 }
 
-function sidebarServer() {
-  return [
-    {
-      text: 'Nodejs',
-      collapsed: false,
-      items: [
-        {
-          text: 'Nodejs',
-          items: [
-            {text: 'Nodejs Notes', link: '/server/nodejs/'},
-            {text: 'ESM vs CJS', link: '/server/nodejs/mjs-cjs'},
-            {text: 'V8', link: '/server/nodejs/v8/'},
-          ]
-        },
-        {
-          text: 'Web Framework',
-          items: [
-            {text: 'Express', link: '/server/nodejs/express/'},
-            {text: 'Koa', link: '/server/nodejs/koa/'},
-            {text: 'Egg', link: '/server/nodejs/egg/'},
-          ]
-        },
-        {
-          text: 'Templating Language',
-          items: [
-            {text: 'ejs', link: '/server/nodejs/ejs/'},
-          ]
-        },
-        {
-          text: 'Communication',
-          items: [
-            {text: 'socket.io', link: '/server/nodejs/socket-io/'},
-          ]
-        },
-      ]
-    },
-    {
-      text: 'SSR',
-      collapsed: false,
-      items: [
-        {
-          text: 'Introduction', link: '/server/ssr/'
-        },
-        {
-          text: 'Framework',
-          items: [
-            {text: 'Nuxt', link: '/server/ssr/nuxtjs/'},
-            {text: 'Next', link: '/server/ssr/nextjs/'},
-          ]
-        },
-      ]
-    },
-    {
-      text: 'Nginx',
-      collapsed: false,
-      items: [
-        {
-          text: 'Nginx Notes', link: '/server/nginx/'
-        },
-      ]
-    },
-    {
-      text: 'CDN',
-      collapsed: false,
-      items: [
-        {
-          text: 'Service Provider', link: '/server/cdn/'
-        },
-      ]
-    },
-    {
-      text: 'DevOps',
-      collapsed: false,
-      items: [
-        {
-          text: 'Introduction', link: '/server/DevOps/'
-        },
-        {
-          text: 'Docker',
-          link: '/server/DevOps/docker/',
-          items: [
-            {text: 'install', link: '/server/DevOps/docker/install'},
-            {text: 'cli', link: '/server/DevOps/docker/cli'},
-            {text: 'build', link: '/server/DevOps/docker/build'},
-            {text: 'image explore', link: '/server/DevOps/docker/image-explore'},
-            {text: 'network', link: '/server/DevOps/docker/network'},
-            {text: 'qa', link: '/server/DevOps/docker/qa'}
-          ]
-        },
-        {
-          text: 'GitLab',
-          items: [
-            {text: 'deploy', link: '/server/DevOps/gitlab/deploy'},
-            {text: 'CI/CD', link: '/server/DevOps/gitlab/ci-cd'},
-          ]
-        },
-        {
-          text: 'GitHub',
-          items: [
-            {text: 'actions', link: '/server/DevOps/github/actions'},
-          ]
-        },
-        {
-          text: 'Harbor',
-          items: [
-            {text: 'deploy', link: '/server/DevOps/harbor/deploy'},
-          ]
-        }
-      ]
-    },
-  ]
-}
-
 function sidebarBuildTools() {
   return [
     {
@@ -551,6 +418,56 @@ function sidebarBuildTools() {
 
 function sidebarAdvance() {
   return [
+    {
+      text: 'Nodejs',
+      collapsed: false,
+      items: [
+        {
+          text: 'Nodejs',
+          items: [
+            {text: 'Nodejs Notes', link: '/advance/nodejs/'},
+            {text: 'ESM vs CJS', link: '/advance/nodejs/mjs-cjs'},
+            {text: 'V8', link: '/advance/nodejs/v8/'},
+          ]
+        },
+        {
+          text: 'Web Framework',
+          items: [
+            {text: 'Express', link: '/advance/nodejs/express/'},
+            {text: 'Koa', link: '/advance/nodejs/koa/'},
+            {text: 'Egg', link: '/advance/nodejs/egg/'},
+          ]
+        },
+        {
+          text: 'Templating Language',
+          items: [
+            {text: 'ejs', link: '/advance/nodejs/ejs/'},
+          ]
+        },
+        {
+          text: 'Communication',
+          items: [
+            {text: 'socket.io', link: '/advance/nodejs/socket-io/'},
+          ]
+        },
+      ]
+    },
+    {
+      text: 'SSR',
+      collapsed: false,
+      items: [
+        {
+          text: 'Introduction', link: '/advance/ssr/'
+        },
+        {
+          text: 'Framework',
+          items: [
+            {text: 'Nuxt', link: '/advance/ssr/nuxtjs/'},
+            {text: 'Next', link: '/advance/ssr/nextjs/'},
+          ]
+        },
+      ]
+    },
     {
       text: 'Test',
       collapsed: false,

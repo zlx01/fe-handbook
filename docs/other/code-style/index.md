@@ -40,7 +40,7 @@ insert_final_newline = false
 trim_trailing_whitespace = false
 ```
 
-## [Prettier](https://prettier.io/)
+## Formatting: [Prettier](https://prettier.io/)
 
 专注代码格式问题
 
@@ -102,7 +102,7 @@ pnpm-lock.yaml
 **/*.html
 ```
 
-## [ESLint](https://eslint.org/)
+## Linting: [ESLint](https://eslint.org/)
 
 专注代码质量问题
 
@@ -114,7 +114,7 @@ pnpm-lock.yaml
 * **JSON** - use `.eslintrc.json` to define the configuration structure. ESLint’s JSON files also allow JavaScript-style comments.
 * **package.json** - create an `eslintConfig` property in your `package.json` file and define your configuration there.
 
-### .eslintrc.js
+### .eslintrc
 
 ### .eslintignore
 
@@ -131,8 +131,37 @@ module.exports = {
     'no-empty': 0
   }
 }
+
 ```
 
+```json
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "extends": ["eslint:recommended", "standard", "plugin:prettier/recommended"],
+  "globals": {
+    "msCrypto": true
+  },
+  "parser": "@babel/eslint-parser",
+  "rules": {
+    "no-var": ["error"]
+  }
+}
+```
+
+> If your ESLint preset has formatting rules, they may conflict with Prettier. We recommend disabling all formatting rules in your ESLint preset using eslint-config-prettier so that ESLint is only used for catching logical mistakes.
+
+react
+preset
+eslint-config-react-app
+rules
+eslint-plugin-react-hooks
 
 ## husky lint-staged prettier eslint
 
@@ -149,6 +178,9 @@ package.json
   "lint-staged": {
     "*.{js,ts,vue,json}": [
       "prettier --write"
+    ],
+    "*.{js,jsx}": [
+      "eslint --fix"
     ]
   }
 }
