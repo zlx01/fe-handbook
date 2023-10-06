@@ -138,7 +138,6 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
         {text: 'Canvas', link: '/fundamentals/html/canvas'},
         {text: 'SVG', link: '/fundamentals/html/svg/'},
         {text: 'SEO', link: '/fundamentals/html/seo/'},
-        {text: '移动端适配', link: '/fundamentals/html/mobile-device-adaptation'},
       ]
     },
     {
@@ -180,7 +179,7 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
         {text: '确定值的类型', link: '/fundamentals/js/determine-type'},
         {text: '类型转换', link: '/fundamentals/js/type-conversion'},
         {text: '对象属性遍历', link: '/fundamentals/js/traverse-object-keys'},
-        {text: '正则表达式', link: '/fundamentals/js/regex-expression'},
+        {text: '正则表达式', link: '/fundamentals/js/regular-expression'},
         {
           text: '模块化',
           items: [
@@ -277,7 +276,7 @@ function sidebarFramework() {
             {text: 'Vue2 Notes', link: '/framework/vue/v2/'},
             {text: 'Vue CLI', link: '/framework/vue/v2/vue-cli/'},
             {text: 'Vue Loader', link: '/framework/vue/v2/vue-loader/'},
-            {text: 'UI', link: '/framework/vue/v2/ui'},
+            {text: 'Vuex', link: '/framework/vue/v2/vuex/'},
           ]
         },
         {
@@ -296,9 +295,6 @@ function sidebarFramework() {
       items: [
         {
           text: 'React Notes', link: '/framework/react/'
-        },
-        {
-          text: 'UI', link: '/framework/react/ui'
         },
       ]
     },

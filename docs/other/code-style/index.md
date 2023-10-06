@@ -51,6 +51,11 @@ trim_trailing_whitespace = false
 npm i -D prettier 
 ```
 
+```bash
+prettier --write '**/*.ts'
+prettier --check '**/*.ts'
+```
+
 ### Configuration File
 
 * A `"prettier"` key in your `package.json` file.
@@ -59,12 +64,7 @@ npm i -D prettier
 * A `.prettierrc.js`, `.prettierrc.cjs`, `prettier.config.js`, or `prettier.config.cjs` file that exports an object using `module.exports`.
 * A `.prettierrc.toml` file.
 
-```bash
-prettier --write '**/*.ts'
-prettier --check '**/*.ts'
-```
-
-.prettierrc
+### .prettierrc
 
 ```text
 semi: false
@@ -73,6 +73,8 @@ printWidth: 80
 trailingComma: 'none'
 arrowParens: 'avoid'
 ```
+
+### .prettierrc.json
 
 ```json
 {
@@ -131,7 +133,6 @@ module.exports = {
     'no-empty': 0
   }
 }
-
 ```
 
 ```json
@@ -156,12 +157,6 @@ module.exports = {
 ```
 
 > If your ESLint preset has formatting rules, they may conflict with Prettier. We recommend disabling all formatting rules in your ESLint preset using eslint-config-prettier so that ESLint is only used for catching logical mistakes.
-
-react
-preset
-eslint-config-react-app
-rules
-eslint-plugin-react-hooks
 
 ## husky lint-staged prettier eslint
 
@@ -291,9 +286,4 @@ dist
 node_modules
 ```
 
-Linting 
-
-Formatting
-
-If your ESLint preset has formatting rules, they may conflict with Prettier. We recommend disabling all formatting rules in your ESLint preset using eslint-config-prettier so that ESLint is only used for catching logical mistakes. If you want to enforce that files are formatted before a pull request is merged, use prettier --check for your continuous integration.
 

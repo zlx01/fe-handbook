@@ -21,3 +21,4 @@
 * [URL后面加不加斜杆的区别](./trailing-slash)
 * [图片压缩](./image-compression)
 * [网页性能优化](./page-performance)
+* [移动端适配](./mobile-device-adaptation)

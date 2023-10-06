@@ -30,7 +30,6 @@ new Vue({  el: '#app',  store,})
 ```
 
 
-
 ## 数据持久化
 
 [vuex-persist](https://www.npmjs.com/package/vuex-persist)
@@ -53,4 +52,3 @@ const store = {
   plugins: [vuexLocal.plugin]
 }
 ```
-
