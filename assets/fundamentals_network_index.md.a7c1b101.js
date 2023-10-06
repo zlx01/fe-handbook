@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./app.880f4aae.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"fundamentals/network/index.md","lastUpdated":1696580746000}'),n={name:"fundamentals/network/index.md"};function r(o,s,d,c,i,p){return a(),t("div")}const f=e(n,[["render",r]]);export{m as __pageData,f as default};
