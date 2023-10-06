@@ -11,36 +11,74 @@
 
 ## History
 
-* 1993-6 first version
+* 1993-06 first version
 * 2014-10 H5
 
-## Basic Tags
+## Glossary
 
-![](./assets/basic-tags.png)
+* 标签：Tag
+* 元素：Element
+* 属性：Attribute
 
-## Notes
+## 标签分类
 
-### URL编码
+* 行内标签：span
+* 块标签：div, p
+
+## 常用标签分类
+
+* Text: div, span, p, br, hr
+* List: ol, ul, li
+* Image: img
+* Link: link, script, noscript, a
+* Media: video, audio
+* Table: table, thead, tbody, tfoot, th, tr, td
+* Form: form, lable, input, button, textarea
+* Iframe: iframe
+
+## URL编码
+
+url合法字符：
+
+* 26个英语字母（包括大写和小写）
+* 10个阿拉伯数字
+* 连词号（`-`）
+* 句点（`.`）
+* 下划线（`_`）
+
+其他字符转义方法：使用这些字符的十六进制 UTF-8 编码，每两位算作一组，然后每组头部添加百分号（`%`）。
+
+## 字符编码
+
+* 数字表示法，`&#字符的码点`
+* 实体表示法 :+1:  `&amp;`  `&nbsp;`  `&lt;`  `&gt;`
+
+## data-xxx 属性
+
+存放额外数据
+
+```html
+<div class="test" data-content="This is the div content" data-tip="tip...">内容：</div>
+```
+
+```css
+.test[data-role="mobile"] {
+  display: inline-block;
+}
+.test:after {
+  content: attr(data-content);
+}
+```
+
+```js
+const test = document.querySelector('.test');
+console.log(test.dataset)
+console.log(test.dataset.content)
+console.log(test.dataset.tip)
+console.log(Object.prototype.toString.call(test.dataset).slice(8, -1)); // DOMStringMap
+```
 
 
-
-### 字符编码
-
-* 数字表示法
-* 实体表示法 :+1:
-
-### data-xxx
-
-* 存放额外数据
-
-### use in markdown（personal）
-
-* \<code>
-* \<kbd>
-
-### 用户禁用了script
-
-* \<noscript>
 
 
 
