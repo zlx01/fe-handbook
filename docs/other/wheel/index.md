@@ -62,6 +62,11 @@ console.log(uniq(arr2)) // [ 1, 11, 12, 13, 2, 3 ]
 
 [countup.js](https://www.npmjs.com/package/countup.js) 数字滚动
 
+## UI
+
+* [uiverse](https://uiverse.io/) 
+* [Bootstrap](https://getbootstrap.com/)
+
 ## Vue相关
 
 [vuex-persist](https://www.npmjs.com/package/vuex-persist) vuex数据持久化
@@ -98,6 +103,8 @@ console.log(uniq(arr2)) // [ 1, 11, 12, 13, 2, 3 ]
 ## React相关
 
 [classnames](https://www.npmjs.com/package/classnames)  A simple JavaScript utility for conditionally joining classNames together. vue已经有类似的语法支持，可用于react中。
+[clsx](https://www.npmjs.com/package/clsx)  A tiny utility for constructing `className` strings conditionally.
+
 
 ## 中国省市区地址
 [province-city-china](https://www.npmjs.com/package/province-city-china)  中华人民共和国行政区划代码

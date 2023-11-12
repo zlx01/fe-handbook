@@ -17,3 +17,5 @@ View 传送指令到 Controller。Controller 完成业务逻辑后，要求 Mode
 * 模型（Model）
 * 视图（View）
 * 视图模型（Model-View）
+
+![MVVM](./assets/MVVM.png)
