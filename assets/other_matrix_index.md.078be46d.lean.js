@@ -1,0 +1,1 @@
+import{_ as e,c as r,o as a,d as l}from"./app.cd2cc87c.js";const b=JSON.parse('{"title":"杂货柜","description":"","frontmatter":{},"headers":[],"relativePath":"other/matrix/index.md","lastUpdated":1699801325000}'),t={name:"other/matrix/index.md"},o=l("",2),i=[o];function n(h,s,f,p,c,m){return a(),r("div",null,i)}const u=e(t,[["render",n]]);export{b as __pageData,u as default};
