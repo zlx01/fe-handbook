@@ -12,17 +12,11 @@ npm install -g @vue/cli
 yarn global add @vue/cli
 ```
 
-Create a project:
-
-```sh
-vue create my-project
-# OR
-vue ui
-```
-
 Check version:
 
 ```sh
+vue -V
+# OR
 vue --version
 ```
 
@@ -34,6 +28,14 @@ npm update -g @vue/cli
 yarn global upgrade --latest @vue/cli
 ```
 
+Create a project:
+
+```sh
+vue create my-project
+# OR
+vue ui
+```
+
 Installing Plugins in an Existing Project
 
 ```sh
@@ -42,6 +44,18 @@ vue add vuex
 vue add eslint
 ```
 
+## WebStorm创建Vue项目
+
+- npx --package @vue/cli vue 是局部安装vue-cli
+- 可以取消勾选使用默认项目配置babel、eslint，在命令行窗口自定义项目配置
+
+![WebStorm创建Vue项目](./assets/WebStorm创建Vue项目.png)
+
+## vue项目工程目录
+
+![](./assets/vue项目工程目录.jpg)
+
+
 ## HTML 和静态资源
 
 * 模板插值：除了被 html-webpack-plugin 暴露的默认值之外，所有客户端环境变量也可以直接使用。
@@ -49,6 +63,19 @@ vue add eslint
 * 放置在 public 目录下或通过绝对路径被引用。这类资源将会直接被拷贝，而不会经过 webpack 的处理。需要通过绝对路径来引用它们。如果应用没有部署在根路径，引用时需要加上前缀：
   * html  `<%= BASE_URL %>`
   * template  `process.env.BASE_URL`
+
+## CSS预处理器
+
+```bash
+# Sass
+npm install -D sass-loader node-sass
+
+# Less
+npm install -D less-loader less
+
+# Stylus
+npm install -D stylus-loader stylus
+```
 
 ## 调整 webpack 配置
 
@@ -147,3 +174,12 @@ module.exports = {
       }
     }
   ```
+
+
+## Migrate from Vue CLI to Vite
+
+* https://github.com/zlx01/vue-cli-2-vite
+
+## vue-cli@2.9.6项目结构
+
+![vue-cli@2.9.6](./assets/vue-cli@2.9.6项目结构.png)

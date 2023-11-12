@@ -80,6 +80,7 @@ function nav(): DefaultTheme.NavItem[] {
           text: 'Compiler',
           items: [
             {text: 'Babel', link: '/build-tools/compiler/babel/'},
+            {text: 'swc', link: '/build-tools/bundler/swc'},
           ]
         }
       ]
@@ -257,13 +258,6 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
 function sidebarFramework() {
   return [
     {
-      text: 'MVVM',
-      collapsed: false,
-      items: [
-        {text: 'MVC MVP MVVM', link: '/framework/mvvm/mvc-mvp-mvvm'}
-      ]
-    },
-    {
       text: 'Vue',
       collapsed: false,
       items: [
@@ -276,6 +270,7 @@ function sidebarFramework() {
             {text: 'Vue2 Notes', link: '/framework/vue/v2/'},
             {text: 'Vue CLI', link: '/framework/vue/v2/vue-cli/'},
             {text: 'Vue Loader', link: '/framework/vue/v2/vue-loader/'},
+            {text: 'Vue Router', link: '/framework/vue/v2/vue-router/'},
             {text: 'Vuex', link: '/framework/vue/v2/vuex/'},
           ]
         },
@@ -284,7 +279,9 @@ function sidebarFramework() {
           items: [
             {text: 'Vue3 Notes', link: '/framework/vue/v3/'},
             {text: 'create-vue', link: '/framework/vue/v3/create-vue/'},
+            {text: 'Vue Router', link: '/framework/vue/v3/vue-router/'},
             {text: 'Pinia', link: '/framework/vue/v3/pinia/'},
+            {text: 'ui', link: '/framework/vue/v3/ui'},
           ]
         },
       ]
@@ -294,18 +291,26 @@ function sidebarFramework() {
       collapsed: false,
       items: [
         {
-          text: 'React Notes', link: '/framework/react/'
+          text: 'React Notes', link: '/framework/react/',
         },
+        {
+          text: 'ui', link: '/framework/react/ui',
+        }
+      ]
+    },
+    {
+      text: 'Next.js',
+      collapsed: true,
+      items: [
+        {text: 'Introduction', link: '/framework/nextjs/'},
       ]
     },
     {
       text: 'Other',
-      collapsed: false,
+      collapsed: true,
       items: [
         {text: 'Svelte', link: '/framework/other/svelte'},
         {text: 'Angular', link: '/framework/other/angular'},
-        {text: 'Bootstrap', link: '/framework/other/bootstrap'},
-        {text: 'uiverse', link: '/framework/other/uiverse'},
       ]
     }
   ]
@@ -386,10 +391,13 @@ function sidebarBuildTools() {
           text: 'parcel', link: '/build-tools/bundler/parcel'
         },
         {
-          text: 'turbopack', link: '/build-tools/bundler/turbopack/'
+          text: 'turbopack', link: '/build-tools/bundler/turbopack'
         },
         {
-          text: 'turborepo', link: '/build-tools/bundler/turborepo/'
+          text: 'turborepo', link: '/build-tools/bundler/turborepo'
+        },
+        {
+          text: 'swc', link: '/build-tools/bundler/swc'
         },
       ]
     },
@@ -401,11 +409,11 @@ function sidebarBuildTools() {
           text: 'Babel',
           items: [
             {text: 'Babel Notes', link: '/build-tools/compiler/babel/'},
-            {text: 'Polyfill vs Shim', link: '/build-tools/compiler/polyfill-shim/'},
+            {text: 'Polyfill vs Shim', link: '/build-tools/compiler/polyfill-shim'},
           ]
         },
         {
-          text: 'Terser', link: 'https://terser.org/'
+          text: 'swc', link: '/build-tools/bundler/swc'
         }
       ]
     },

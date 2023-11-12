@@ -13,13 +13,18 @@
 
 ## css预处理器
 
-> npm install -D sass-loader node-sass
->
-> npm install -D less less-loader
->
-> npm install -D stylus stylus-loader
->
-> npm install -D postcss-loader
+```bash
+# Sass
+npm install -D sass-loader node-sass
+
+# Less
+npm install -D less-loader less
+
+# Stylus
+npm install -D stylus-loader stylus
+
+npm install -D postcss-loader
+```
 
 ## Scoped CSS
 
