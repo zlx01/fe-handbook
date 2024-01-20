@@ -5,7 +5,7 @@ const base = process.env.DEPLOY_BASE
 export default defineConfig({
   lang: 'en-US',
   title: 'fe-handbook',
-  description: 'Front-End Developer HandBook',
+  description: 'Front-End Web Developer HandBook',
   base: base || '/fe-handbook/',
   head: [
     ['meta', { name: 'author', content: 'zlx' }],
@@ -32,8 +32,8 @@ export default defineConfig({
     ],
 
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2022-present lancekee'
+      message: 'Powered by VitePress',
+      copyright: 'MIT Licensed | Copyright © 2022-present lancekee'
     },
 
     algolia: {
