@@ -1,4 +1,4 @@
-const fs = require('fs');
+import fs from 'fs';
 
 const testDeployBase = '';
 const DEPLOY_BASE = process.env.DEPLOY_BASE || testDeployBase;
