@@ -281,7 +281,6 @@ function sidebarFramework() {
             {text: 'create-vue', link: '/framework/vue/v3/create-vue/'},
             {text: 'Vue Router', link: '/framework/vue/v3/vue-router/'},
             {text: 'Pinia', link: '/framework/vue/v3/pinia/'},
-            {text: 'ui', link: '/framework/vue/v3/ui'},
           ]
         },
       ]
@@ -293,9 +292,13 @@ function sidebarFramework() {
         {
           text: 'React Notes', link: '/framework/react/',
         },
-        {
-          text: 'ui', link: '/framework/react/ui',
-        }
+      ]
+    },
+    {
+      text: 'Nuxt',
+      collapsed: true,
+      items: [
+        {text: 'Introduction', link: '/framework/nuxt/'},
       ]
     },
     {
@@ -359,7 +362,10 @@ function sidebarBuildTools() {
             {text: 'Verdaccio', link: '/build-tools/package-manager/verdaccio/'},
             {text: 'Nexus', link: '/build-tools/package-manager/nexus/'},
           ]
-        }
+        },
+        {
+          text: 'lerna', link: '/build-tools/package-manager/yarn/',
+        },
       ]
     },
     {
