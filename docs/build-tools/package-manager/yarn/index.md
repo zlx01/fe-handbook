@@ -40,3 +40,6 @@ yarn run <scriptName>
 >* **离线模式**：如果之前已经安装过一个软件包，用 yarn 再次安装时之间从缓存中获取，就不用像 npm 那样再从网络下载了。
 >* 安装版本统一：为了防止拉取到不同的版本，yarn 有一个锁定文件 (lock file) 记录了被确切安装上的模块的版本号。每次只要新增了一个模块，yarn 就会创建（或更新）yarn.lock 这个文件。这么做就保证了，每一次拉取同一个项目依赖时，使用的都是一样的模块版本。
 >* 更好的语义化： yarn 改变了一些 npm 命令的名称，比如 yarn add/remove，比 npm 原本的 install/uninstall 要更清晰。
+
+
+yarn dlx

@@ -61,5 +61,5 @@ npm install -D postcss-loader
 
 * 默认匹配：`/\.css$/`。
 * 一个 `.vue` 文件可以包含多个 `<style>` 标签。
-* `<style>` 标签可以有 scoped 或者 module 属性。
+* `<style>` 标签可以有 scoped 或者 module 属性。
 * 任何匹配 `.css` 文件 (或通过它的 `lang` 特性指定的扩展名) 的 webpack 规则都将会运用到这个 `<style>` 块的内容中。

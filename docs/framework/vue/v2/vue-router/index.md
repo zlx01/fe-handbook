@@ -141,7 +141,7 @@ const app = new Vue({router}).$mount('#app');
   * redirect: { name: 'foo' }
   * redirect: to => {  // 方法接收 目标路由 作为参数  // return 重定向的 字符串路径/路径对象}}
 * alias
-  * { path: '/a', component: A, alias: '/b' }
+  * `{ path: '/a', component: A, alias: '/b' }`
   * /a 的别名是 /b，意味着，当用户访问 /b 时，URL 会保持为 /b，但是路由匹配则为 /a，就像用户访问 /a 一样。
 * meta 路由元信息
   * title

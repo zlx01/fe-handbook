@@ -77,6 +77,8 @@ npm install -D less-loader less
 npm install -D stylus-loader stylus
 ```
 
+> PostCSS, Autoprefixer and CSS Modules are supported by default
+
 ## 调整 webpack 配置
 
 ```js

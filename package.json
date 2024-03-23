@@ -21,7 +21,6 @@
   },
   "devDependencies": {
     "@types/node": "^18.11.18",
-    "vitepress": "^1.0.0-rc.39",
-    "vue": "^3.2.37"
+    "vitepress": "^1.0.0"
   }
 }
