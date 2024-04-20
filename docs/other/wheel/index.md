@@ -62,6 +62,10 @@ console.log(uniq(arr2)) // [ 1, 11, 12, 13, 2, 3 ]
 
 [countup.js](https://www.npmjs.com/package/countup.js) 数字滚动
 
+[commander](https://www.npmjs.com/package/commander)  nodejs命令行工具
+
+[inquirer](https://www.npmjs.com/package/inquirer) 交互式命令行工具
+
 ## UI
 
 * [uiverse](https://uiverse.io/) 

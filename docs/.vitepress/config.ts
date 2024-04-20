@@ -305,7 +305,7 @@ function sidebarFramework() {
       text: 'Next.js',
       collapsed: true,
       items: [
-        {text: 'Introduction', link: '/framework/nextjs/'},
+        {text: 'Nextjs Notes', link: '/framework/nextjs/'},
       ]
     },
     {
@@ -313,7 +313,6 @@ function sidebarFramework() {
       collapsed: true,
       items: [
         {text: 'Svelte', link: '/framework/other/svelte'},
-        {text: 'Angular', link: '/framework/other/angular'},
       ]
     }
   ]
@@ -357,7 +356,7 @@ function sidebarBuildTools() {
           ]
         },
         {
-          text: 'package registry',
+          text: 'registry',
           items: [
             {text: 'Verdaccio', link: '/build-tools/package-manager/verdaccio/'},
             {text: 'Nexus', link: '/build-tools/package-manager/nexus/'},
@@ -386,6 +385,9 @@ function sidebarBuildTools() {
         },
         {
           text: 'Rollup', link: '/build-tools/bundler/rollup'
+        },
+        {
+          text: 'Rolldown', link: '/build-tools/bundler/rolldown'
         },
         {
           text: 'esbuild', link: '/build-tools/bundler/esbuild'
