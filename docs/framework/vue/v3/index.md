@@ -7,8 +7,6 @@
 * [Vue Devtools](https://devtools.vuejs.org/)
 * https://vueuse.org/
 
-## [UI](./ui)
-
 ## Install
 
 ```bash
@@ -29,9 +27,20 @@ const app = createApp(App)
 app.mount('#app')
 ```
 
+## [Composition API](./composition-api)
+
+![option-composition](./assets/option-composition.jpg)
+
+## [Reactivity](./reactivity)
+
+State Management
+
+![ref-reactive](./assets/ref-reactive.jpg)
+
+![reactive](./assets/reactive.jpg)
+
+
 ## 部分语法
-
-
 
 ### DOM 更新时机
 
@@ -77,6 +86,8 @@ const myRef = {
 }
 ```
 
+### jsx
 
+![jsx](./assets/jsx.jpg)
 
-
+## [UI](./ui)
