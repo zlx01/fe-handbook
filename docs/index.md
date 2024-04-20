@@ -12,6 +12,7 @@
 * https://web.dev/
 * https://wangchujiang.com/reference/
 * https://quickref.me/
+* https://learnxinyminutes.com/
 
 ## Road Map
 

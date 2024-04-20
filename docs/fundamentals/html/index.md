@@ -25,7 +25,7 @@
 * 行内标签：span
 * 块标签：div, p
 
-## 常用标签分类
+## 常用标签
 
 * Text: div, span, p, br, hr
 * List: ol, ul, li
@@ -33,7 +33,7 @@
 * Link: link, script, noscript, a
 * Media: video, audio
 * Table: table, thead, tbody, tfoot, th, tr, td
-* Form: form, lable, input, button, textarea
+* Form: form, label, input, button, textarea
 * Iframe: iframe
 
 ## URL编码
