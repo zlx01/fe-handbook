@@ -27,11 +27,11 @@ const app = createApp(App)
 app.mount('#app')
 ```
 
-## [Composition API](./composition-api)
+## Composition API
 
 ![option-composition](./assets/option-composition.jpg)
 
-## [Reactivity](./reactivity)
+## Reactivity
 
 State Management
 
