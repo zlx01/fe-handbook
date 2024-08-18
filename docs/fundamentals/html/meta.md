@@ -30,6 +30,9 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name
 
 
 
+[使用viewport-fit=cover来解决关于ios在Safari浏览器内容被地址栏、菜单栏或工具栏遮挡导致的兼容问题](https://blog.csdn.net/weixin_44784401/article/details/130721270)
+
+
 ## SEO相关
 
 ```html

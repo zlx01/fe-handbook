@@ -16,6 +16,9 @@ export default defineConfig({
   markdown: {
     // lineNumbers: true,
     externalLinks: { target: '_blank', rel: 'nofollow noopener noreferrer' },
+    // image: {
+    //   lazyLoading: true,
+    // }
   },
   themeConfig: {
     nav: nav(),
@@ -121,7 +124,7 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
   return [
     {
       text: 'W3C',
-      collapsed: false,
+      collapsed: true,
       items: [
         {text: 'W3C标准', link: '/fundamentals/w3c/'}
       ]
@@ -135,10 +138,12 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
         {text: 'link', link: '/fundamentals/html/link'},
         {text: 'a', link: '/fundamentals/html/a'},
         {text: 'img', link: '/fundamentals/html/img'},
+        {text: 'form', link: '/fundamentals/html/form'},
         {text: 'semantic', link: '/fundamentals/html/semantic'},
         {text: 'Canvas', link: '/fundamentals/html/canvas'},
         {text: 'SVG', link: '/fundamentals/html/svg/'},
         {text: 'SEO', link: '/fundamentals/html/seo/'},
+        {text: 'web components', link: '/fundamentals/html/web-components/'},
       ]
     },
     {
@@ -186,6 +191,7 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
           items: [
             {text: 'CommonJS', link: '/fundamentals/js/modular/commonjs'},
             {text: 'ESM', link: '/fundamentals/js/modular/esm'},
+            {text: 'ESM vs CJS', link: '/fundamentals/js/modular/mjs-cjs'},
             {text: 'AMD', link: '/fundamentals/js/modular/amd'},
             {text: 'UMD', link: '/fundamentals/js/modular/umd'},
           ]
@@ -268,10 +274,12 @@ function sidebarFramework() {
           text: 'Vue2.x',
           items: [
             {text: 'Vue2 Notes', link: '/framework/vue/v2/'},
+            {text: 'TypeScript', link: '/framework/vue/v2/ts'},
             {text: 'Vue CLI', link: '/framework/vue/v2/vue-cli/'},
             {text: 'Vue Loader', link: '/framework/vue/v2/vue-loader/'},
             {text: 'Vue Router', link: '/framework/vue/v2/vue-router/'},
             {text: 'Vuex', link: '/framework/vue/v2/vuex/'},
+            // {text: 'Source Code', link: '/framework/vue/v2/source-code/'},
           ]
         },
         {
@@ -407,6 +415,9 @@ function sidebarBuildTools() {
         {
           text: 'swc', link: '/build-tools/bundler/swc'
         },
+        {
+          text: 'out-of-date', link: '/build-tools/bundler/out-of-date'
+        },
       ]
     },
     {
@@ -438,7 +449,6 @@ function sidebarAdvance() {
           text: 'Nodejs',
           items: [
             {text: 'Nodejs Notes', link: '/advance/nodejs/'},
-            {text: 'ESM vs CJS', link: '/advance/nodejs/mjs-cjs'},
             {text: 'V8', link: '/advance/nodejs/v8/'},
           ]
         },

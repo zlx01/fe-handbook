@@ -16,6 +16,7 @@
 ### Reference
 
 * https://segmentfault.com/a/1190000039684460
+* https://semver.org/lang/zh-CN/
 
 ## 版本锁定
 

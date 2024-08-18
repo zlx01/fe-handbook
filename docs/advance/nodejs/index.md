@@ -36,10 +36,35 @@ CommonJS
 
 * development
 * production
+* testing
+* staging
 
 指定运行环境
 
 ```bash
 NODE_ENV=production node  app.js
 ```
+
+
+
+## ts-node
+
+```bash
+npm i -D ts-node
+
+npx ts-node example.ts
+```
+
+## tsx
+
+```bash
+npm i -D tsx
+npx tsx example.ts
+
+node --import=tsx example.ts
+```
+
+
+
+
 
