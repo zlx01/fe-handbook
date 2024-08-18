@@ -14,18 +14,28 @@
 * 1993-06 first version
 * 2014-10 H5
 
+## Hello World
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+  </head>
+  <body>
+    Hello world!
+  </body>
+</html>
+```
+
 ## Glossary
 
 * 标签：Tag
 * 元素：Element
 * 属性：Attribute
 
-## 标签分类
-
-* 行内标签：span
-* 块标签：div, p
-
-## 常用标签
+## Common tags
 
 * Text: div, span, p, br, hr
 * List: ol, ul, li
@@ -36,7 +46,12 @@
 * Form: form, label, input, button, textarea
 * Iframe: iframe
 
-## URL编码
+## Tag classification
+
+* 行内标签：span, img, a
+* 块标签：div, p
+
+## URL encoding
 
 url合法字符：
 
@@ -48,7 +63,7 @@ url合法字符：
 
 其他字符转义方法：使用这些字符的十六进制 UTF-8 编码，每两位算作一组，然后每组头部添加百分号（`%`）。
 
-## 字符编码
+## Character encoding
 
 * 数字表示法，`&#字符的码点`
 * 实体表示法 :+1:  `&amp;`  `&nbsp;`  `&lt;`  `&gt;`

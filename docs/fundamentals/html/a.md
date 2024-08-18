@@ -1,5 +1,30 @@
 # \<a>
 
+## href属性
+
+值不仅可以是http协议，还可以是 javascript协议
+
+```html
+<a href="javascript:alert('回到过去')">past</a>
+<a href="javascript:">无事</a>
+```
+
+因此在当前页面渲染不可信内容，一定要过滤处理，避免注入问题。
+
+还可以是 tel:协议、mailto协议
+
+```html
+<a href="mailto:contact@example.com">联系我们</a>
+```
+
+href还可以实现锚点功能
+
+```html
+<!--点击下面的链接会定位到id为C4的链接处-->
+<p><a href="#C4">查看 Chapter 4</a></p>
+```
+
+
 ## rel属性
 
 ### nofollow

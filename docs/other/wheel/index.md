@@ -68,8 +68,11 @@ console.log(uniq(arr2)) // [ 1, 11, 12, 13, 2, 3 ]
 
 ## UI
 
-* [uiverse](https://uiverse.io/) 
 * [Bootstrap](https://getbootstrap.com/)
+* [uiverse](https://uiverse.io/)
+* [AntDesign](https://ant.design/) 阿里
+* [TDesign](https://tdesign.tencent.com/) 腾讯
+* [ArcoDesign](https://arco.design/) 字节
 
 ## Vue相关
 
@@ -205,6 +208,10 @@ https://dummyimage.com/  solid color
 
 [iconbuddy](https://iconbuddy.app/)
 
+[heroicons](https://heroicons.com/)
+
+[Element UI 扩展图标库](https://icons.xiangsu.fun/)
+
 
 ## favicon
 
@@ -216,3 +223,20 @@ https://dummyimage.com/  solid color
 ## avatar
 
 * [gravatar](https://secure.gravatar.com/)
+
+# Image Compression
+
+* https://tinypng.com/
+* https://tinify.cn/
+
+
+## Media
+
+* [mp3](https://filesamples.com/formats/mp3)
+
+
+## Other
+
+* [A simple site to test permission-related UI for web APIs.](https://permission.site/)
+
+
