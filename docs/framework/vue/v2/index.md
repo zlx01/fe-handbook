@@ -1,6 +1,8 @@
 # [Vue2](https://v2.vuejs.org/)
 
+:::warning
 Vue.js supports all browsers that are ES5-compliant (IE8 and below are not supported).
+:::
 
 
 ## [MVVM](./mvc-mvp-mvvm)
@@ -8,6 +10,8 @@ Vue.js supports all browsers that are ES5-compliant (IE8 and below are not suppo
 ## [Lifecycle](./lifecycle)
 
 ## [UI](./ui)
+
+## [jsx](./jsx)
 
 ## TODO
 

@@ -20,3 +20,31 @@
 ## 前端构建工具进化历程
 
 https://mp.weixin.qq.com/s/o8B8HAczZtIZM8V_HHwNqg
+
+
+
+
+
+| Bundler        | Build Tool       |      |
+| -------------- | ---------------- | ---- |
+| Rspack         | Rsbuild          |      |
+| Webpack        | Vue CLI          |      |
+| Webpack        | Create React App |      |
+| Esbuild+Rollup | Vite             |      |
+
+
+
+|              | Rsbuild                                     | Vue CLI/CRA   | Vite                                              |
+| ------------ | ------------------------------------------- | ------------- | ------------------------------------------------- |
+| 底层框架     | Rspack                                      | Webpack       | Esbuild/Rollup                                    |
+| 前端 UI 框架 | 解耦，通过插件支持Vue、React、Svelte、Solid | Vue/React专属 | 主要支持Vue，也可通过插件支持React、Svelte、Solid |
+| 扩展性       | 配置、插件API、JavaScript API               |               |                                                   |
+| 生态兼容性   | 兼容大部分webpack插件和所有rspack插件       |               | 兼容rollup插件                                    |
+| 生产一致性   | 开发阶段和生产构建都使用rspack              |               | 开发阶段使用esbuild，生产构建使用rollup           |
+
+
+
+
+
+
+

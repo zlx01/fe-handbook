@@ -140,10 +140,6 @@ https://picsum.photos/
 
 https://unsplash.com/
 
-https://placekitten.com/
-
-https://placeholder.com/  solid color
-
 https://dummyimage.com/  solid color
 
 ## DevServer

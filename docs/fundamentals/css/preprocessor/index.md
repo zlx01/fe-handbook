@@ -1,6 +1,6 @@
 # CSS Preprocessor
 
-## [sass/scss](https://sass-lang.com/)
+## [sass/scss](./scss)
 
 ## [less](http://lesscss.org/)
 

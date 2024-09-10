@@ -1,5 +1,9 @@
 # \<a>
 
+* 常用属性：href、target、rel、title、download
+* href除了支持https协议，还支持 **javascript**、**mailto**、**tel**等协议，移动端网页开发可能会用到。
+* download属性只在链接与网址同源时，才会生效，可以设置下载文件名（通常是服务器的 HTTP 响应头Content-Disposition字段设置文件名）
+
 ## href属性
 
 值不仅可以是http协议，还可以是 javascript协议

@@ -27,3 +27,4 @@
 
 https://www.typescriptlang.org/dt/search?search=
 
+## [declare](./declare)

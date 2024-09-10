@@ -1,14 +1,22 @@
 # [\<meta>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta)
 
-## 文档编码
+* 应用1：最基本的功能是设置网页编码，本质是**设置http响应头**。通过meta设置其他响应头用得不多。
 
-文档响应头：`content-type: text/html; charset=utf-8`
+* 应用2：viewport设置**视口**大小，限制用户缩放页面；**适配iPhoneX底部安全区**就需要用到这个属性，具体可以参考vant ui官方文档进阶用法。
 
-文档中的meta标签：`<meta charset="utf-8">`
+* 应用3：设置**SEO**相关的关键词，可以看下vue官网的案例。
+
+* 应用4：配置**Content Security Policy**，如果公司比较注重安全的话，可以通过meta配置安全策略来检测并削弱某些攻击，例如 **XSS 和 数据注入攻击**。
 
 ## Standard metadata names
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name
+
+## charset
+
+文档响应头：`content-type: text/html; charset=utf-8`
+
+文档中的meta标签：`<meta charset="utf-8">`
 
 ## viewport
 
@@ -33,7 +41,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name
 [使用viewport-fit=cover来解决关于ios在Safari浏览器内容被地址栏、菜单栏或工具栏遮挡导致的兼容问题](https://blog.csdn.net/weixin_44784401/article/details/130721270)
 
 
-## SEO相关
+## SEO
 
 ```html
 <meta name="description" content="HTML 语言入门">
@@ -90,6 +98,14 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name
 <meta http-equiv="refresh" content="0; url='https://www.baidu.com/'">
 ```
 
+## Content Security Policy
 
+```html
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src *; media-src example.org example.net; script-src userscripts.example.com">
+```
 
+```html
+<meta http-equiv="Content-Security-Policy" content="default-src https:;worker-src *.test.com 'self' blob:;script-src *.test.com 'unsafe-inline' 'unsafe-eval';object-src 'none'">
+```
 
+查看[详细介绍](../http/csp)
