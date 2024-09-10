@@ -2,7 +2,7 @@
 
 ## 实战应用
 
-将方形图片处理为圆形图片
+### 将方形图片处理为圆形图片
 
 ```html
 <template>
@@ -29,3 +29,8 @@ const onImgLoaded = () => {
 }
 </script>
 ```
+
+### canvas读取图片跨域问题
+
+https://developer.mozilla.org/zh-CN/docs/Web/HTML/CORS_enabled_image
+

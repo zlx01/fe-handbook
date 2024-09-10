@@ -136,9 +136,11 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
         {text: 'HTML Notes', link: '/fundamentals/html/'},
         {text: 'meta', link: '/fundamentals/html/meta'},
         {text: 'link', link: '/fundamentals/html/link'},
+        {text: 'script', link: '/fundamentals/html/script'},
         {text: 'a', link: '/fundamentals/html/a'},
         {text: 'img', link: '/fundamentals/html/img'},
         {text: 'form', link: '/fundamentals/html/form'},
+        {text: 'iframe', link: '/fundamentals/html/iframe'},
         {text: 'semantic', link: '/fundamentals/html/semantic'},
         {text: 'Canvas', link: '/fundamentals/html/canvas'},
         {text: 'SVG', link: '/fundamentals/html/svg/'},
@@ -181,7 +183,6 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
       collapsed: true,
       items: [
         {text: 'JS Notes', link: '/fundamentals/js/'},
-        {text: 'script标签', link: '/fundamentals/js/script-tag'},
         {text: '确定值的类型', link: '/fundamentals/js/determine-type'},
         {text: '类型转换', link: '/fundamentals/js/type-conversion'},
         {text: '对象属性遍历', link: '/fundamentals/js/traverse-object-keys'},
@@ -386,6 +387,18 @@ function sidebarBuildTools() {
           ]
         },
         {
+          text: 'Rsbuild',
+          items: [
+            {text: 'Rsbuild Notes', link: '/build-tools/bundler/Rsbuild/'},
+          ]
+        },
+        {
+          text: 'Rspack',
+          items: [
+            {text: 'Rspack Notes', link: '/build-tools/bundler/rspack/'},
+          ]
+        },
+        {
           text: 'Webpack',
           items: [
             {text: 'Webpack Notes', link: '/build-tools/bundler/webpack/'},
@@ -413,9 +426,6 @@ function sidebarBuildTools() {
           text: 'turborepo', link: '/build-tools/bundler/turborepo'
         },
         {
-          text: 'swc', link: '/build-tools/bundler/swc'
-        },
-        {
           text: 'out-of-date', link: '/build-tools/bundler/out-of-date'
         },
       ]
@@ -432,7 +442,7 @@ function sidebarBuildTools() {
           ]
         },
         {
-          text: 'swc', link: '/build-tools/bundler/swc'
+          text: 'swc', link: '/build-tools/compiler/swc'
         }
       ]
     },

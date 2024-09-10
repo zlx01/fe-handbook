@@ -154,6 +154,8 @@ eval("var foo = function foo() {\n  var element = document.createElement('div');
   * `.babelrc` file, with no extension.
   * `package.json` files, with a `"babel"` key.
 
+> babel.config.js 和 .babelrc 或 package.json 中的 babel 字段不同，这个配置文件不会使用基于文件位置的方案，而是会一致地运用到项目根目录以下的所有文件，包括 node_modules 内部的依赖。
+
 ## presets
 
 * 预定义的babel配置

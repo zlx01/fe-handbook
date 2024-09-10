@@ -1,5 +1,11 @@
 # \<form>
 
+* 表单相关比较重要的标签：label，input，button，select，textarea。
+* input标签的type属性有很多值，常用的有：text、password、radio、checkbox、file、submit、reset、button
+* 重要事件：input、change、submit、reset
+* 把**vue的表单输入绑定**、**React的受控组件/非受控组件**看完并熟悉就差不多了。
+* 虽然说大多时候都用组件库，但是了解原生表单标签的属性和事件还是有必要的，有些简单的场景用原生表单标签就可以了，不需要引入组件库，杀鸡焉用牛刀。
+
 ## 手机号输入时344分段
 
 https://github.com/zlx01/phone-number-344

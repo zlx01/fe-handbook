@@ -1,10 +1,6 @@
 # npm cli
 
-## npm init
-
-* `npm init foo@latest` # fetches and runs the latest create-foo from the registry
-* `npm init foo@1.2.3` # runs create-foo@1.2.3 specifically
-* `npm create vue@3` 会安装 create-vue@3.x.x 最新的版本，并执行
+## [npm init](./init)
 
 ## npm config
 

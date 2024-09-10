@@ -23,3 +23,12 @@
 ![](../assets/unsupported-engine.png)
 
 ## [module相关](./module)
+
+
+## sideEffects
+
+```json
+{
+    "sideEffects": false
+}
+```
