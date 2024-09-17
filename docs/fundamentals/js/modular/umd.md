@@ -8,5 +8,5 @@ Universal Module Definition 统一模块定义
 2. AMD
 3. 全局（window或global）
 
-UMD 版本可以通过 <script> 标签直接用在浏览器中。
+UMD 版本可以通过 \<script> 标签直接用在浏览器中。
 
