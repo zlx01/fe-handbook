@@ -336,6 +336,8 @@ package.json
 
 ## Migrate from v4 to v5
 
+最新版：**v4.5.19** --> **v5.0.8**
+
 ```bash
 npm install -g @vue/cli
 # OR
@@ -350,8 +352,8 @@ vue upgrade
 
 ### `@vue/cli-service`
 
-* webpack: v4 --> v5
-* webpack-dev-server: v3 --> v4
+* **webpack: v4 --> v5**
+* **webpack-dev-server: v3 --> v4**
 * node-sass --> sass
 * url-loader/file-loader --> Asset Modules
 
