@@ -143,8 +143,8 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
         {text: 'iframe', link: '/fundamentals/html/iframe'},
         {text: 'semantic', link: '/fundamentals/html/semantic'},
         {text: 'Canvas', link: '/fundamentals/html/canvas'},
-        {text: 'SVG', link: '/fundamentals/html/svg/'},
-        {text: 'SEO', link: '/fundamentals/html/seo/'},
+        {text: 'SVG', link: '/fundamentals/html/svg'},
+        {text: 'SEO', link: '/fundamentals/html/seo'},
         {text: 'web components', link: '/fundamentals/html/web-components/'},
       ]
     },
@@ -154,28 +154,8 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
       items: [
         {text: 'CSS Notes', link: '/fundamentals/css/'},
         {text: 'CSS Preprocessor', link: '/fundamentals/css/preprocessor/'},
+        {text: 'CSS Framework', link: '/fundamentals/css/framework/'},
         {text: 'Animations Library', link: '/fundamentals/css/animations-lib'},
-        {
-          text: 'CSS Framework',
-          items: [
-            {
-              text: 'tailwindcss',
-              link: '/fundamentals/css/framework/tailwindcss'
-            },
-            {
-              text: 'styled-components',
-              link: '/fundamentals/css/framework/styled-components'
-            },
-            {
-              text: 'styled-jsx',
-              link: '/fundamentals/css/framework/styled-jsx'
-            },
-            {
-              text: 'css-modules',
-              link: '/fundamentals/css/framework/css-modules'
-            },
-          ]
-        },
       ]
     },
     {

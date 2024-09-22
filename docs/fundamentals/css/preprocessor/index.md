@@ -2,9 +2,9 @@
 
 ## [sass/scss](./scss)
 
-## [less](http://lesscss.org/)
+## [less](./less)
 
-## [stylus](https://stylus-lang.com/)
+## [stylus](./stylus)
 
 ## [postcss](https://postcss.org/)
 

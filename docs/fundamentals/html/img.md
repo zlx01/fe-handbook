@@ -45,3 +45,18 @@ musicImg.onerror = function () {
   console.log('error');
 }
 ```
+
+## 响应式图像
+
+* srcset、sizes属性，参考[文章](https://wangdoc.com/html/image#%E5%93%8D%E5%BA%94%E5%BC%8F%E5%9B%BE%E5%83%8F)
+
+```html
+<img srcset="foo-160.jpg 160w,
+            foo-320.jpg 320w,
+            foo-640.jpg 640w,
+            foo-1280.jpg 1280w"
+     sizes="(max-width: 440px) 100vw,
+            (max-width: 900px) 33vw,
+            254px"
+     src="foo-1280.jpg" alt="foo">
+```

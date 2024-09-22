@@ -28,6 +28,12 @@ https://zhuanlan.zhihu.com/p/260775688
 <input type="password" autocomplete="new-password"/>
 ```
 
+<iframe src="https://codesandbox.io/embed/n4dd8h?view=editor"
+style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden;"
+title="form"
+allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 
 ## v-model 无法检测 Chrome 自动填充问题
