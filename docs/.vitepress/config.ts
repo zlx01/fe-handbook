@@ -302,6 +302,7 @@ function sidebarFramework() {
       collapsed: true,
       items: [
         {text: 'Svelte', link: '/framework/other/svelte'},
+        {text: 'Storybook', link: '/framework/other/storybook'},
       ]
     }
   ]
@@ -322,19 +323,16 @@ function sidebarBuildTools() {
         {
           text: 'npm',
           items: [
-            {text: 'npm Notes', link: '/build-tools/package-manager/npm/'},
-            {text: 'npx Notes', link: '/build-tools/package-manager/npm/npx'},
-            {text: 'nvm Notes', link: '/build-tools/package-manager/npm/nvm'},
-            {text: 'nrm Notes', link: '/build-tools/package-manager/npm/nrm'},
+            {text: 'npm', link: '/build-tools/package-manager/npm/'},
+            {text: 'npx', link: '/build-tools/package-manager/npm/npx'},
+            {text: 'nvm', link: '/build-tools/package-manager/npm/nvm'},
+            {text: 'nrm', link: '/build-tools/package-manager/npm/nrm'},
             {text: 'package.json', link: '/build-tools/package-manager/npm/package.json/'},
             {text: 'npm cli', link: '/build-tools/package-manager/npm/cli/'},
           ]
         },
         {
-          text: 'yarn',
-          items: [
-            {text: 'yarn Notes', link: '/build-tools/package-manager/yarn/'},
-          ]
+          text: 'yarn', link: '/build-tools/package-manager/yarn/',
         },
         {
           text: 'pnpm',
@@ -361,28 +359,16 @@ function sidebarBuildTools() {
       collapsed: false,
       items: [
         {
-          text: 'Vite',
-          items: [
-            {text: 'Vite Notes', link: '/build-tools/bundler/vite/'},
-          ]
+          text: 'Webpack', link: '/build-tools/bundler/webpack/',
         },
         {
-          text: 'Rsbuild',
-          items: [
-            {text: 'Rsbuild Notes', link: '/build-tools/bundler/Rsbuild/'},
-          ]
+          text: 'Vite', link: '/build-tools/bundler/vite/',
         },
         {
-          text: 'Rspack',
-          items: [
-            {text: 'Rspack Notes', link: '/build-tools/bundler/rspack/'},
-          ]
+          text: 'Rspack', link: '/build-tools/bundler/rspack/',
         },
         {
-          text: 'Webpack',
-          items: [
-            {text: 'Webpack Notes', link: '/build-tools/bundler/webpack/'},
-          ]
+          text: 'Rsbuild', link: '/build-tools/bundler/Rsbuild/',
         },
         {
           text: 'Rollup', link: '/build-tools/bundler/rollup'

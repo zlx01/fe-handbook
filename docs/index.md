@@ -12,7 +12,8 @@
 * https://web.dev/
 * https://wangchujiang.com/reference/
 * https://quickref.me/
-* https://learnxinyminutes.com/
+* Learn X in Y minutes: https://learnxinyminutes.com/
+* DevDocs API: https://devdocs.io/
 
 ## Road Map
 

@@ -32,7 +32,6 @@
 
 * 默认情况下，在PC端，1物理像素=1CSS像素，放大浏览器时就不成立了
 * window.innerHeight和window.innerWidth属性，返回网页在当前窗口中可见部分的高度和宽度，即“视口”（viewport）的大小（单位像素）。这两个属性只读。用户放大网页的时候（比如将网页从100%的大小放大为200%），这两个属性会变小。因为这时网页的像素大小不变（比如宽度还是960像素），只是每个像素占据的屏幕空间变大了，因此可见部分（视口）就变小了。
-* 查看设备视口参数：https://viewportsizer.com/devices/
 
 ## 移动端适配
 
@@ -86,7 +85,10 @@ module.exports = {
 import "amfe-flexible/index";
 ```
 
+## 查看各个设备的屏幕尺寸
 
+* https://blisk.io/devices
+* https://www.webmobilefirst.com/en/devices/
 
 
 

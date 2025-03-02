@@ -19,3 +19,4 @@
 * [pinia](https://pinia.vuejs.org/)
 * [VuePress](https://vuepress.vuejs.org/)
 * [VitePress](https://vitepress.dev/)
+* [petite-vue](https://github.com/vuejs/petite-vue)

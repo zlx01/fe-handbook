@@ -45,7 +45,7 @@ CommonJS
 NODE_ENV=production node  app.js
 ```
 
-
+也可以用通过 [cross-env](https://www.npmjs.com/package/cross-env) 设置
 
 ## ts-node
 
