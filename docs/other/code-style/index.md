@@ -102,19 +102,27 @@ pnpm-lock.yaml
 **/dist
 # https://github.com/prettier/prettier/issues/5246
 **/*.html
+
+
+# Lock files
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
 ```
 
 ## Linting: [ESLint](https://eslint.org/)
 
 专注代码质量问题
 
-### Configuration File
+### Configuration File (v8)
 
 * **JavaScript** - use `.eslintrc.js` and export an object containing your configuration.
 * **JavaScript (ESM)** - use `.eslintrc.cjs` when running ESLint in JavaScript packages that specify `"type":"module"` in their `package.json`. Note that ESLint does not support ESM configuration at this time.
 * **YAML** - use `.eslintrc.yaml` or `.eslintrc.yml` to define the configuration structure.
 * **JSON** - use `.eslintrc.json` to define the configuration structure. ESLint’s JSON files also allow JavaScript-style comments.
 * **package.json** - create an `eslintConfig` property in your `package.json` file and define your configuration there.
+
+新版本的配置文件只支持js和ts，参考文档
 
 ### .eslintrc
 
@@ -158,6 +166,19 @@ module.exports = {
 
 > If your ESLint preset has formatting rules, they may conflict with Prettier. We recommend disabling all formatting rules in your ESLint preset using eslint-config-prettier so that ESLint is only used for catching logical mistakes.
 
+
+
+```json
+{
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "eslint ."
+  }
+}
+```
+
+
+
 ## husky lint-staged prettier eslint
 
 * vue: https://github.com/zlx01/vue-husky-test
@@ -180,8 +201,16 @@ package.json
   }
 }
 ```
+相关的库
 
-## [TypeScript ESLint](https://typescript-eslint.io/)
+* eslint
+* @eslint/compat
+* @eslint/js
+* eslint-plugin-vue
+* eslint-plugin-react
+* eslint-plugin-react-hooks
+* typescript-eslint
+
 
 ## [Stylelint](https://stylelint.io/)
 
@@ -275,6 +304,26 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 ```
+
+from rspack
+
+```.gitignore
+# Local
+.DS_Store
+*.local
+*.log*
+
+# Dist
+node_modules
+dist/
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea
+```
+
+
 simple configuration
 
 ```text

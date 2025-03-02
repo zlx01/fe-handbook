@@ -43,7 +43,12 @@ https://mp.weixin.qq.com/s/o8B8HAczZtIZM8V_HHwNqg
 | 生产一致性   | 开发阶段和生产构建都使用rspack              |               | 开发阶段使用esbuild，生产构建使用rollup           |
 
 
+## 构建方式
 
+* rspack
+* vite + swc
+* webpack + swc
+* webpack + babel
 
 
 

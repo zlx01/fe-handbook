@@ -30,6 +30,9 @@
 
 [deep-equal](https://www.npmjs.com/package/deep-equal)
 
+[cross-env](https://www.npmjs.com/package/cross-env): Run scripts that set and use environment variables across platforms.
+
+
 ```js
 const uniq = require('uniq')
 
@@ -220,7 +223,7 @@ https://dummyimage.com/  solid color
 
 * [gravatar](https://secure.gravatar.com/)
 
-# Image Compression
+## Image Compression
 
 * https://tinypng.com/
 * https://tinify.cn/
@@ -231,8 +234,16 @@ https://dummyimage.com/  solid color
 * [mp3](https://filesamples.com/formats/mp3)
 
 
+## Commonly Used in Tool Chains
+
+* [browserslist](https://www.npmjs.com/package/browserslist): Share target browsers between different front-end tools, like Autoprefixer, Stylelint and babel-preset-env.
+* [globals](https://www.npmjs.com/package/globals): Global identifiers from different JavaScript environments
+
+
 ## Other
 
 * [A simple site to test permission-related UI for web APIs.](https://permission.site/)
+* Build 3D with Vue: https://tresjs.org/
+* Cookie Consent: https://www.cookieconsent.com/
 
 
