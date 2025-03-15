@@ -5,7 +5,7 @@
 | **animation-name**            |                                                              | 要对当前元素生效的关键帧的名字                               |
 | **animation-duration**        |                                                              | 动画的执行时间                                               |
 | **animation-delay**           |                                                              | 动画的延时                                                   |
-| **animation-timing-function** | ease-in-out                                                  | 过渡时序                                                     |
+| **animation-timing-function** | ease-in-out<br />linear<br />setps(4, end)<br />             | 过渡时序                                                     |
 | animation-iteration-count     | infinite                                                     |                                                              |
 | animation-direction           | normal 默认值  从 from 向 to运行 每次都是这样 <br/>reverse 从 to 向 from 运行 每次都是这样 <br/>alternate 从 from 向 to运行 重复执行动画时反向执行<br/>alternate-reverse 从 to 向 from运行 重复执行动画时反向执行 | 指定动画运行的方向                                           |
 | animation-play-state          | running 默认值 动画执行<br/>paused 动画停止播放并回到第一帧  | 设置动画的执行状态                                           |

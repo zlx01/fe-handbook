@@ -115,6 +115,7 @@ function nav(): DefaultTheme.NavItem[] {
         {text: 'Useful Libraries', link: '/other/wheel/'},
         {text: 'Code Style', link: '/other/code-style/'},
         {text: 'Matrix', link: '/other/matrix/'},
+        {text: 'Awesome', link: '/other/awesome/'},
       ]
     },
   ]
@@ -486,13 +487,7 @@ function sidebarAdvance() {
           ]
         },
         {
-          text: 'e2e test',
-          items: [
-            {text: 'Cypress', link: '/advance/test/e2e/cypress'},
-            {text: 'Puppeteer', link: '/advance/test/e2e/puppeteer'},
-            {text: 'TestCafe', link: '/advance/test/e2e/testcafe'},
-            {text: 'playwright', link: '/advance/test/e2e/playwright'},
-          ]
+          text: 'e2e test', link: '/advance/test/e2e/',
         },
       ]
     },

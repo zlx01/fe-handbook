@@ -6,6 +6,8 @@
 Vue CLI is in Maintenance Mode!
 :::
 
+思维导图：https://www.processon.com/view/link/67cd59ab8e76b629773737cf?cid=66d30df82a28ba0777bf6ea8
+
 ## Installation
 
 ```sh
@@ -22,7 +24,7 @@ vue -V
 vue --version
 ```
 
-### Update
+### Upgrading
 
 ```sh
 npm update -g @vue/cli
@@ -66,18 +68,18 @@ vue add eslint
 
 ![](assets/Vue2项目文件.png)
 
+https://www.processon.com/view/link/66f04ee2d587e65a53d81de8?cid=66dc1b3081a15819c9014521
+
 ## vue-cli-service
 
 入口文件默认是 `src/main.js` 或者 `src/main.ts`，可以指定别的入口文件
 
 ```bash
-vue-cli-service serve ./src/dev.js
+vue-cli-service serve ./src/dev.js
 vue-cli-service build ./src/main.js
 ```
 
-
-
-## HTML 和静态资源
+## HTML and Static Assets
 
 * 模板插值：除了被 html-webpack-plugin 暴露的默认值之外，所有客户端环境变量也可以直接使用。
 * resource hint: preload  prefetch
@@ -89,7 +91,7 @@ vue-cli-service build ./src/main.js
 * 小于 8KiB 的静态资源会被内联在 JavaScript 中
 * public 中的静态资源会被复制到输出目录中
 
-## CSS预处理器
+## CSS Pre-Processors
 
 ```bash
 # Sass
@@ -104,7 +106,7 @@ npm install -D stylus-loader stylus
 
 > PostCSS, Autoprefixer and CSS Modules are supported by default
 
-## 调整 webpack 配置
+## Working with Webpack
 
 ```js
 // vue.config.js
@@ -135,9 +137,9 @@ module.exports = {
 }
 ```
 
-## 模式和环境变量
+## Modes and Environment Variables
 
-### 模式
+### Mode
 
 * `development` 模式用于 `vue-cli-service serve`
 * `test` 模式用于 `vue-cli-service test:unit`
@@ -145,19 +147,19 @@ module.exports = {
 
 当运行 `vue-cli-service` 命令时，所有的环境变量都从对应的[环境文件](https://cli.vuejs.org/zh/guide/mode-and-env.html#环境变量)中载入。如果文件内部不包含 `NODE_ENV` 变量，它的值将取决于模式。
 
-### 配置文件
+### Configuration File
 
 > .env                # 在所有的环境中被载入
 > .env.[mode]         # 只在指定的模式中被载入
 
-### 使用环境变量
+### Use Environment Variables
 
 只有 `NODE_ENV`，`BASE_URL` 和以 `VUE_APP_` 开头的变量将通过 `webpack.DefinePlugin` 静态地嵌入到客户端侧的代码中。这是为了避免意外公开机器上可能具有相同名称的私钥。
 
 * `NODE_ENV` - 会是 `"development"`、`"production"` 或 `"test"` 中的一个。取决于应用运行的模式。
 * `BASE_URL` - 会和 `vue.config.js` 中的 `publicPath` 选项相符，即你的应用会部署到的基础路径。
 
-## 浏览器兼容性
+## Browser Compatibility
 
 ### @vue/babel-preset-app
 
@@ -193,7 +195,7 @@ module.exports = {
   * 这会根据 browserslist 目标导入所有 polyfill
   * 因为包含了一些没有用到的 polyfill 所以最终的包大小可能会增加
 
-### 现代模式
+### Modern Mode
 
 * vue-cli-service build --modern
 * 一个现代版的包，面向支持 ES modules 的现代浏览器，另一个旧版的包，面向不支持的旧浏览器。
@@ -201,7 +203,16 @@ module.exports = {
 * 旧版的包会通过 \<script nomodule> 加载，并会被支持 ES modules 的浏览器忽略。
 * \<script type="module"> 需要配合始终开启的 CORS 进行加载。这意味着你的服务器必须返回诸如 Access-Control-Allow-Origin: * 的有效的 CORS 头。
 
-## 库
+## Build Targets
+
+### App
+
+* `index.html` with asset and resource hints injection
+* vendor libraries split into a separate chunk for better caching
+* static assets under 8KiB are inlined into JavaScript
+* static assets in `public` are copied into output directory
+
+### Library
 
 * `vue-cli-service build --target lib --name myLib [entry]`
 * `dist/myLib.common.js`
@@ -212,7 +223,7 @@ module.exports = {
 * 给 @vue/babel-preset-app 传入 useBuiltIns: false 选项。打包 polyfills 应当是最终使用你的库的应用的责任。 
 
 
-## 部署
+## Deployment
 
 * Nginx
 * GitHub Pages
@@ -360,12 +371,3 @@ vue upgrade
 ## Migrate from Vue CLI to Vite
 
 * https://github.com/zlx01/vue-cli-2-vite
-
-
-## vue-cli@2.9.6项目结构
-
-![vue-cli@2.9.6](./assets/vue-cli@2.9.6项目结构.png)
-
-
-
-
