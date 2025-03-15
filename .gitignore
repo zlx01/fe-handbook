@@ -4,3 +4,4 @@ node_modules
 dist
 docs/.vitepress/cache
 tmp
+yarn-error.log
