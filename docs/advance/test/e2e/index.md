@@ -3,6 +3,6 @@
 * [cypress](./cypress)
 * [nightwatch](https://nightwatchjs.org/)
 * [webdriverio](https://webdriver.io/)
-* [Puppeteer](./Puppeteer)
-* [TestCafe](./TestCafe)
+* [Puppeteer](./puppeteer)
+* [TestCafe](./testcafe)
 * [playwright](./playwright)
