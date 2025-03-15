@@ -16,6 +16,8 @@ npm create vue@legacy
 
 ![image-20240907202704665](assets/image-20240907202704665.png)
 
-## Vue3项目文件
+## Vue项目文件
 
-![](assets/Vue3项目文件.png)
+![Vue3项目文件](assets/Vue3项目文件.png)
+
+https://www.processon.com/view/link/67cd5e526610e05cfc3696f4

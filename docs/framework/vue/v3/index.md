@@ -2,12 +2,8 @@
 
 ## Resources
 
-* [Vue Router](https://router.vuejs.org/)
-* [vitejs.dev](https://vitejs.dev/)
-* [Vue Devtools](https://devtools.vuejs.org/)
 * https://vueuse.org/
 * https://play.vueuse.org/
-* Vue Apollo GraphQL: https://apollo.vuejs.org/
 
 ## Install
 
