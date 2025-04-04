@@ -76,4 +76,3 @@ see [link](/other/wheel/)
 * https://www.w3cschool.cn/
 * https://www.runoob.com/
 * https://how2j.cn/
-* https://hollischuang.github.io/toBeTopJavaer/#/
