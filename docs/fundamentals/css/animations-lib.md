@@ -2,7 +2,7 @@
 
 https://animate.style/
 
-https://www.animejs.cn/
+https://animejs.com/
 
 ## Loading Animations
 

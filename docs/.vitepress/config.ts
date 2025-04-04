@@ -36,7 +36,7 @@ export default defineConfig({
 
     footer: {
       message: 'Powered by VitePress',
-      copyright: 'MIT Licensed | Copyright © 2022-present lancekee'
+      copyright: 'MIT Licensed | Copyright © 2022-present zlx'
     },
 
     algolia: {
