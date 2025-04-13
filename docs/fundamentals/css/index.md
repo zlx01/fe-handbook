@@ -111,7 +111,15 @@
 * px
 * % 相对于父元素
 * em 相对于父元素 1em=100%
-* rem 相对于html	
+* rem 相对于html。默认 `1rem = 16px`	
+
+```js
+const htmlElement = document.documentElement;
+const computedStyle = window.getComputedStyle(htmlElement);
+const fontSize = computedStyle.fontSize;
+const remValue = parseFloat(fontSize);
+console.log(`当前浏览器中 1rem 等于 ${remValue} 像素`);
+```
 
 ### 颜色
 
@@ -119,6 +127,18 @@
 * 十六进制（#RRGGBB，#RRGGBBAA 注意兼容性问题）
 * rgb(r, g, b)
 * rgba(r, g, b, a)
+* 用除法表示透明度
+
+```css
+@media (min-width: 768px) {
+  .md\\:text-primary {
+        --tw-text-opacity: 0.5;
+        color: rgb(var(--color-primary-DEFAULT) / var(--tw-text-opacity, 1))
+    }
+}
+```
+
+
 
 ## 基本样式
 
@@ -141,10 +161,12 @@
 * 同时指定两个背景，**写在后面的背景先绘制**
 
 ```css
-background: url('@/assets/images/bg-white.png'),
-linear-gradient(152.93deg, #fff6ef 13.09%, #ffffff 35.24%, #ffffff 79.67%);
-background-size: 100% 147px, 100% 100%;
-background-repeat: no-repeat;
+.box {
+  background: url('@/assets/images/bg-white.png'),
+    linear-gradient(152.93deg, #fff6ef 13.09%, #ffffff 35.24%, #ffffff 79.67%);
+  background-size: 100% 147px, 100% 100%;
+  background-repeat: no-repeat;
+}
 ```
 
 ### 阴影
@@ -207,16 +229,9 @@ outline，用法和border一模一样，但不会影响到可见框的大小
 * 溢出行为
 * 盒子尺寸，默认content-box，设置border-box可以减少计算
 
-### Flex布局
+### [Flex布局](./flex)
 
-* 强烈推荐阮一峰老师的[博文1](https://ruanyifeng.com/blog/2015/07/flex-grammar.html)，[博文2](https://www.ruanyifeng.com/blog/2015/07/flex-examples.html)
-* [flex](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex)
-* [flex:1](https://zhuanlan.zhihu.com/p/136223806)
-
-### Grid布局
-
-* 强烈推荐阮一峰老师的[博文](https://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html)
-* [grid](https://developer.mozilla.org/zh-CN/docs/Web/CSS/grid)
+### [Grid布局](./grid)
 
 ### [居中布局](./center)
 

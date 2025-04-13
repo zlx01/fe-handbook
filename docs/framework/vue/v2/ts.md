@@ -811,7 +811,7 @@ export default class CustomCheckbox3 extends Vue {
 </script>
 ```
 
-## vuex-class
+## [vuex-class](https://github.com/ktsn/vuex-class)
 
 ```ts
 import Vue from "vue";

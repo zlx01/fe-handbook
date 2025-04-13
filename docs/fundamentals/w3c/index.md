@@ -1,6 +1,4 @@
-# W3C标准
-
-https://www.w3.org/
+# [W3C](https://www.w3.org/)
 
 ## HTML/HTML5
 

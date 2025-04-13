@@ -16,4 +16,3 @@ Vue.js supports all browsers that are ES5-compliant (IE8 and below are not suppo
 ## TODO
 
 * [Vue Test Utils](https://vue-test-utils.vuejs.org/)
-* [Vue Server Renderer](https://ssr.vuejs.org/)
