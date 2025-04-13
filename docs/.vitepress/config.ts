@@ -20,6 +20,10 @@ export default defineConfig({
     //   lazyLoading: true,
     // }
   },
+  ignoreDeadLinks: [
+    // ignore all localhost links
+    /^https?:\/\/localhost/,
+  ],
   themeConfig: {
     nav: nav(),
 
