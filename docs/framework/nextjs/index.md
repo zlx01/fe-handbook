@@ -59,7 +59,7 @@ Run the Development Server
 npm run dev
 ```
 
-visit: http://localhost:3000
+visit: [http://localhost:3000](http://localhost:3000)
 
 ## Project Structure
 
