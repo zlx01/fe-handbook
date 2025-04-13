@@ -137,6 +137,8 @@ https://www.lipsum.com/
 
 [apiopen](https://api.apiopen.top/swagger/index.html)
 
+[dummyjson](https://dummyjson.com/)
+
 ## Mocking Image
 
 https://picsum.photos/
@@ -210,6 +212,8 @@ https://dummyimage.com/  solid color
 [heroicons](https://heroicons.com/)
 
 [Element UI 扩展图标库](https://icons.xiangsu.fun/)
+
+[iconify](https://icon-sets.iconify.design/simple-icons/)
 
 
 ## favicon

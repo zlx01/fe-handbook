@@ -125,10 +125,7 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
   return [
     {
       text: 'W3C',
-      collapsed: true,
-      items: [
-        {text: 'W3C标准', link: '/fundamentals/w3c/'}
-      ]
+      link: '/fundamentals/w3c/',
     },
     {
       text: 'HTML',
@@ -168,6 +165,7 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
         {text: '类型转换', link: '/fundamentals/js/type-conversion'},
         {text: '对象属性遍历', link: '/fundamentals/js/traverse-object-keys'},
         {text: '正则表达式', link: '/fundamentals/js/regular-expression'},
+        {text: 'JSON', link: '/fundamentals/js/JSON'},
         {
           text: '模块化',
           items: [
@@ -261,6 +259,7 @@ function sidebarFramework() {
             {text: 'Vue Loader', link: '/framework/vue/v2/vue-loader/'},
             {text: 'Vue Router', link: '/framework/vue/v2/vue-router/'},
             {text: 'Vuex', link: '/framework/vue/v2/vuex/'},
+            {text: 'Vue Test Utils', link: '/framework/vue/v2/vuex/'},
             // {text: 'Source Code', link: '/framework/vue/v2/source-code/'},
           ]
         },
@@ -271,6 +270,7 @@ function sidebarFramework() {
             {text: 'create-vue', link: '/framework/vue/v3/create-vue/'},
             {text: 'Vue Router', link: '/framework/vue/v3/vue-router/'},
             {text: 'Pinia', link: '/framework/vue/v3/pinia/'},
+            {text: 'Vue Test Utils', link: '/framework/vue/v2/vuex/'},
           ]
         },
       ]
@@ -299,11 +299,16 @@ function sidebarFramework() {
       ]
     },
     {
+      text: 'miniprogram',
+      link: '/framework/miniprogram/',
+    },
+    {
       text: 'Other',
       collapsed: true,
       items: [
         {text: 'Svelte', link: '/framework/other/svelte'},
         {text: 'Storybook', link: '/framework/other/storybook'},
+        {text: 'officialaccount', link: '/framework/other/officialaccount/'},
       ]
     }
   ]
@@ -342,6 +347,9 @@ function sidebarBuildTools() {
             // {text: 'monorepo', link: 'https://github.com/zlx01/pnpm-monorepo'},
             {text: 'monorepo', link: '/build-tools/package-manager/pnpm/monorepo'},
           ]
+        },
+        {
+          text: 'corepack', link: '/build-tools/package-manager/corepack/',
         },
         {
           text: 'registry',

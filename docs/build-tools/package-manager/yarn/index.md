@@ -1,7 +1,6 @@
 # [yarn](https://yarnpkg.com/)
 
-* 官网：https://yarnpkg.com/
-* 文档：https://yarnpkg.com/getting-started
+* yarn classic: https://classic.yarnpkg.com/en/docs
 
 ## 安装
 ```bash
