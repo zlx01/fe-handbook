@@ -32,17 +32,6 @@
 
 [cross-env](https://www.npmjs.com/package/cross-env): Run scripts that set and use environment variables across platforms.
 
-
-```js
-const uniq = require('uniq')
-
-let arr1 = [12,12,25,14,18,68,25,25]
-console.log(uniq(arr1)) // [ 12, 14, 18, 25, 68 ]
-
-let arr2 = [1,11,2,3,3,12,11,12,13,13];
-console.log(uniq(arr2)) // [ 1, 11, 12, 13, 2, 3 ]
-```
-
 [vconsole](https://www.npmjs.com/package/vconsole) 腾讯出品，一个轻量、可拓展、针对手机网页的前端开发者调试面板。
 
 [pdf](https://github.com/mozilla/pdf.js) 在线预览pdf
@@ -52,6 +41,8 @@ console.log(uniq(arr2)) // [ 1, 11, 12, 13, 2, 3 ]
 [highlight.js](https://highlightjs.org/) 代码高亮
 
 [moveable](https://github.com/daybrush/moveable) 可拖动、伸缩组件
+
+[nprogess](https://github.com/rstacruz/nprogress) 进度条
 
 [pubsub-js](https://www.npmjs.com/package/pubsub-js)    a topic-based publish/subscribe library written in JavaScript.
 
@@ -68,6 +59,28 @@ console.log(uniq(arr2)) // [ 1, 11, 12, 13, 2, 3 ]
 [commander](https://www.npmjs.com/package/commander)  nodejs命令行工具
 
 [inquirer](https://www.npmjs.com/package/inquirer) 交互式命令行工具
+
+[klinecharts](https://github.com/klinecharts/KLineChart)  K线图组件
+
+[microbundle](https://github.com/developit/microbundle)  Zero-config bundler for tiny modules.
+
+[mathjs](https://github.com/josdejong/mathjs) 数学工具
+
+[better-scroll](https://github.com/ustbhuangyi/better-scroll)
+
+[file-type](https://github.com/sindresorhus/file-type)
+
+[Aplayer](https://github.com/DIYgod/APlayer)
+
+[vue-aplayer](https://github.com/SevenOutman/vue-aplayer)
+
+[fingerprintjs](https://github.com/fingerprintjs/fingerprintjs)
+
+[svg-sprite-loader](https://github.com/JetBrains/svg-sprite-loader)
+
+[masonry](https://github.com/desandro/masonry)  瀑布流
+
+[ChinaMobilePhoneNumberRegex](https://github.com/VincentSit/ChinaMobilePhoneNumberRegex)
 
 ## UI
 
@@ -87,6 +100,8 @@ console.log(uniq(arr2)) // [ 1, 11, 12, 13, 2, 3 ]
 
 [vue-drag-resize](https://www.npmjs.com/package/vue-drag-resize) Vue Component for draggable and resizable elements.
 
+[vue-draggable-plus](https://github.com/Alfred-Skyblue/vue-draggable-plus)
+
 [vue-count-to](https://www.npmjs.com/package/vue-count-to) 数字滚动插件
 
 [vue-lazyload](https://www.npmjs.com/package/vue-lazyload) 图片懒加载
@@ -99,7 +114,12 @@ console.log(uniq(arr2)) // [ 1, 11, 12, 13, 2, 3 ]
 
 [vuex-class](https://www.npmjs.com/package/vuex-class)  vuex辅助工具
 
-### 实用指令
+[vue-cropper](https://github.com/xyxiao001/vue-cropper) 图片裁剪组件
+
+[vue-json-pretty](https://github.com/leezng/vue-json-pretty) json格式化
+
+
+
 [v-hotkey](https://www.npmjs.com/package/v-hotkey) 为组件绑定快捷键
 
 [v-click-outside](https://www.npmjs.com/package/v-click-outside) 点击外部区域关闭某个组件
@@ -114,6 +134,8 @@ console.log(uniq(arr2)) // [ 1, 11, 12, 13, 2, 3 ]
 
 [classnames](https://www.npmjs.com/package/classnames)  A simple JavaScript utility for conditionally joining classNames together. vue已经有类似的语法支持，可用于react中。
 [clsx](https://www.npmjs.com/package/clsx)  A tiny utility for constructing `className` strings conditionally.
+
+[svgr](https://github.com/gregberge/svgr)  svg to react component
 
 
 ## 中国省市区地址
@@ -175,7 +197,7 @@ https://dummyimage.com/  solid color
 
 [wangeditor](https://www.wangeditor.com/)  中国人维护的，也不错
 
-[ckeditor](https://ckeditor.com/)  :+1: ​
+[ckeditor](https://ckeditor.com/)  :+1: 
 
 [simditor](https://simditor.tower.im/)
 
@@ -184,6 +206,19 @@ https://dummyimage.com/  solid color
 [kindeditor](http://kindeditor.net/demo.php)  out-of-date
 
 [ueditor](http://fex.baidu.com/ueditor/)  out-of-date
+
+
+## Markdown Editor
+
+[markdown-it](https://github.com/markdown-it/markdown-it)
+
+[mavonEditor](https://github.com/hinesboy/mavonEditor)
+
+[marked](https://github.com/markedjs/marked)
+
+[mdx](https://github.com/mdx-js/mdx)
+
+[codemirror](https://github.com/codemirror/codemirror5)
 
 ## Font
 

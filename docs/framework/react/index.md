@@ -3,7 +3,6 @@
 ## Resources
 
 * https://legacy.reactjs.org/
-* https://17.reactjs.org/
 * [create-react-app](https://create-react-app.dev/)
 * https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 * https://ahooks.js.org/zh-CN/
@@ -11,6 +10,18 @@
 * https://piotrwitek.github.io/react-redux-typescript-guide/
 * https://transform.tools/html-to-jsx
 * https://www.reactiflux.com/
+
+## Versions
+
+| version | Documentation         | redirect to                       |
+| ------- | --------------------- |-----------------------------------|
+| react19 | https://react.dev/    | /                                 |
+| react18 | https://18.react.dev/ | /                                 |
+| react17 | https://17.react.dev/ | https://17.reactjs.org/           |
+| react16 | https://16.react.dev/ | https://react-legacy.netlify.app/ |
+| react15 | https://15.react.dev/ | https://react-legacy.netlify.app/ |
+
+
 
 ## [Thinking in React](./thinking-in-react)
 

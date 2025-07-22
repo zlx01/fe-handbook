@@ -290,6 +290,9 @@ function sidebarFramework() {
         {
           text: 'React Notes', link: '/framework/react/',
         },
+        {
+          text: 'Create React App', link: '/framework/react/create-react-app',
+        },
       ]
     },
     {
@@ -362,6 +365,9 @@ function sidebarBuildTools() {
             {text: 'Verdaccio', link: '/build-tools/package-manager/verdaccio/'},
             {text: 'Nexus', link: '/build-tools/package-manager/nexus/'},
           ]
+        },
+        {
+          text: 'lerna', link: '/build-tools/package-manager/lerna/',
         },
       ]
     },

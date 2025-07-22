@@ -25,3 +25,6 @@ https://github.com/libpag/pag-web
 
 https://github.com/libpag/pag-web/blob/main/pages/simple.html
 
+## Other
+
+* [typed.js](https://github.com/mattboldt/typed.js)
