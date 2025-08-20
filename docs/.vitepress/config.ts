@@ -87,7 +87,7 @@ function nav(): DefaultTheme.NavItem[] {
           text: 'Compiler',
           items: [
             {text: 'Babel', link: '/build-tools/compiler/babel/'},
-            {text: 'swc', link: '/build-tools/bundler/swc'},
+            {text: 'swc', link: '/build-tools/compiler/swc'},
           ]
         }
       ]
@@ -333,25 +333,22 @@ function sidebarBuildTools() {
         {
           text: 'npm',
           items: [
-            {text: 'npm', link: '/build-tools/package-manager/npm/'},
-            {text: 'npx', link: '/build-tools/package-manager/npm/npx'},
-            {text: 'nvm', link: '/build-tools/package-manager/npm/nvm'},
-            {text: 'nrm', link: '/build-tools/package-manager/npm/nrm'},
+            {text: 'npm Notes', link: '/build-tools/package-manager/npm/'},
+            {text: 'npm cli', link: '/build-tools/package-manager/npm/cli'},
             {text: 'package.json', link: '/build-tools/package-manager/npm/package.json/'},
-            {text: 'npm cli', link: '/build-tools/package-manager/npm/cli/'},
           ]
         },
         {
           text: 'yarn', link: '/build-tools/package-manager/yarn/',
         },
         {
-          text: 'pnpm',
-          items: [
-            {text: 'pnpm Notes', link: '/build-tools/package-manager/pnpm/'},
-            // {text: 'monorepo', link: 'https://github.com/zlx01/pnpm-monorepo'},
-            {text: 'monorepo', link: '/build-tools/package-manager/pnpm/monorepo'},
-          ]
+          text: 'pnpm', link: '/build-tools/package-manager/pnpm/',
         },
+        {
+          text: 'lerna', link: '/build-tools/package-manager/lerna/',
+        },
+        {text: 'nvm', link: '/build-tools/package-manager/nvm'},
+        {text: 'nrm', link: '/build-tools/package-manager/nrm'},
         {
           text: 'corepack', link: '/build-tools/package-manager/corepack/',
         },
@@ -361,9 +358,6 @@ function sidebarBuildTools() {
             {text: 'Verdaccio', link: '/build-tools/package-manager/verdaccio/'},
             {text: 'Nexus', link: '/build-tools/package-manager/nexus/'},
           ]
-        },
-        {
-          text: 'lerna', link: '/build-tools/package-manager/yarn/',
         },
       ]
     },
@@ -378,10 +372,7 @@ function sidebarBuildTools() {
           text: 'Vite', link: '/build-tools/bundler/vite/',
         },
         {
-          text: 'Rspack', link: '/build-tools/bundler/rspack/',
-        },
-        {
-          text: 'Rsbuild', link: '/build-tools/bundler/Rsbuild/',
+          text: 'esbuild', link: '/build-tools/bundler/esbuild'
         },
         {
           text: 'Rollup', link: '/build-tools/bundler/rollup'
@@ -390,7 +381,10 @@ function sidebarBuildTools() {
           text: 'Rolldown', link: '/build-tools/bundler/rolldown'
         },
         {
-          text: 'esbuild', link: '/build-tools/bundler/esbuild'
+          text: 'Rspack', link: '/build-tools/bundler/rspack/',
+        },
+        {
+          text: 'Rsbuild', link: '/build-tools/bundler/Rsbuild/',
         },
         {
           text: 'snowpack', link: '/build-tools/bundler/snowpack'
@@ -414,11 +408,7 @@ function sidebarBuildTools() {
       collapsed: false,
       items: [
         {
-          text: 'Babel',
-          items: [
-            {text: 'Babel Notes', link: '/build-tools/compiler/babel/'},
-            {text: 'Polyfill vs Shim', link: '/build-tools/compiler/polyfill-shim'},
-          ]
+          text: 'Babel', link: '/build-tools/compiler/babel/',
         },
         {
           text: 'swc', link: '/build-tools/compiler/swc'
