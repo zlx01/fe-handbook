@@ -16,7 +16,6 @@ npm install npm@latest -g
 npm -v
 # 查看node、npm、v8等核心库的版本
 npm version
-
 # 查看帮助
 npm
 npm help
@@ -30,19 +29,10 @@ npm init -y
 
 npm install [package]
 npm install -g [package]
+npm install [package]@latest
 
 npm uninstall [package]
 npm uninstall -g [package]
-
-# 查看包版本
-npm view [package] versions
-
-# 安装最新版本
-npm install [package]@latest
-
-# 查看安装过哪些包(插件)
-npm list --dept 0		# 本地
-npm list -g --dept 0	# 全局
 ```
 
 > **-g -S -D**
@@ -56,23 +46,26 @@ npm list -g --dept 0	# 全局
 > **在 npm 5 之前的版本**：使用 npm install 默认选项安装包时，仅仅会把包下载到 node_modules/ 中，并不会同时修改 package.json。而使用 --save 选项就可以在安装包的同时，修改 package.json 文件。
 > **在 npm 5 之后的版本**：npm install 安装包时，默认便会修改 package.json 文件，所以 --save 选项已经不再需要了。
 
+> **--save-exact**
+> 使用 npm install --save-exact \<package> 时，会在 package.json 中记录精确的版本号（如 1.2.3），而不是默认的带插入号 ^ 或波浪号 ~ 的版本范围（如 ^1.2.3 或 ~1.2.3）。
 
 ## 国内镜像
 
 * https://registry.npmmirror.com
 * 阿里做的镜像库，只负责从[源库](https://registry.npmjs.org/)定期复制到镜像库（只读，不支持publish）
-* 注意：旧的[淘宝镜像库](https://registry.npm.taobao.org)即将停止解析，详见[官网说明](https://npmmirror.com/)
+* 注意：旧的[淘宝镜像库](https://registry.npm.taobao.org)已经停止解析
 
-### 使用方式一：临时指定（不推荐）
+### 使用方式一：临时指定
 ```bash
 npm install [package] --registry=https://registry.npmmirror.com
 ```
-### 使用方式二：全局指定（个人开发推荐）:+1:
+
+### 使用方式二：全局指定
 ```bash
-# 设置镜像仓库
 npm config set registry https://registry.npmmirror.com
 npm config get registry
 ```
+
 ### 使用方式三：`.npmrc`
 
 * 方式二的配置会写在用户目录下的 `.npmrc`  文件，所以也可以直接修改文件。
@@ -84,7 +77,7 @@ registry=https://registry.npmmirror.com
 
 ### 使用方式四：安装cnpm（不推荐）
 
-cnpm 支持 npm 除了 publish 之外的所有命令
+cnpm 支持除了写相关操作外的所有命令
 
 ```bash
 npm install -g cnpm --registry=https://registry.npmmirror.com
@@ -93,3 +86,14 @@ cnpm -v
 # 使用cnpm代替npm来安装包
 cnpm install [package]
 ```
+
+## dot files
+
+### .npmrc
+
+全局/本地配置文件
+
+### .npmignore
+
+打包上传时，忽略文件
+
