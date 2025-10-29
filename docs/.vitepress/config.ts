@@ -178,6 +178,7 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
             {text: 'ESM vs CJS', link: '/fundamentals/js/modular/mjs-cjs'},
             {text: 'AMD', link: '/fundamentals/js/modular/amd'},
             {text: 'UMD', link: '/fundamentals/js/modular/umd'},
+            {text: 'circular dependency', link: '/fundamentals/js/modular/circular-dependency'},
           ]
         },
         {
@@ -192,8 +193,11 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
         },
         {
           text: 'DOM',
+          collapsed: true,
           items: [
-            {text: '', link: '/fundamentals/js/dom/'}
+            {text: 'Dom notes', link: '/fundamentals/js/dom/'},
+            {text: 'Event Flow', link: '/fundamentals/js/dom/event-flow'},
+            {text: 'properties and attributes', link: '/fundamentals/js/dom/difference-between-properties-and-attributes'},
           ]
         },
         {
