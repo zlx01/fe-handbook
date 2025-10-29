@@ -63,6 +63,20 @@ console.log(null == undefined)  // true
 console.log(null === undefined)  // false
 ```
 
+Number极值
+
+| 常量                       | 含义               | 值                              |
+| -------------------------- | ------------------ | ------------------------------- |
+| `Number.MAX_VALUE`         | 最大有限值         | `≈ 1.797693e+308`               |
+| `Number.MIN_VALUE`         | 最小正数（大于 0） | `≈ 5e-324`                      |
+| `Number.POSITIVE_INFINITY` | 正无穷             | `Infinity`                      |
+| `Number.NEGATIVE_INFINITY` | 负无穷             | `-Infinity`                     |
+| `Number.MAX_SAFE_INTEGER`  | 最大安全整数       | `9007199254740991` (`2^53 - 1`) |
+
+[toFixed四舍五入的不准确性](https://juejin.cn/post/6927215610552123406)
+
+[JavaScript 浮点数陷阱及解法](https://github.com/camsong/blog/issues/9)
+
 ### string
 
 * `btoa()`：任意值转为 Base64 编码

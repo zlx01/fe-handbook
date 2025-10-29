@@ -1,9 +1,5 @@
 # [TypeScript](https://www.typescriptlang.org/)
 
-思维导图来自[博文](https://juejin.cn/post/7088304364078497800)
-
-![ts-tree](assets/ts-tree.webp)
-
 ## [cheatsheets](https://www.typescriptlang.org/cheatsheets)
 
 ### Control Flow Analysis
