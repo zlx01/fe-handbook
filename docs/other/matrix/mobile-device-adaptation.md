@@ -39,3 +39,13 @@ body {
 }
 ```
 
+
+
+## 移动端webview上传图片
+
+* 上传会导致页面刷新：https://github.com/youzan/vant/issues/9287
+
+* h5页面上传图片安卓手机无法调用摄像头：https://blog.csdn.net/smile_life_/article/details/139658542   https://github.com/youzan/vant-weapp/issues/4868
+
+
+
