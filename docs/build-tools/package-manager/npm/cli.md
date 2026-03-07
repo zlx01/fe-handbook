@@ -9,9 +9,9 @@ npm init <@scope> (same as `npx <@scope>/create`)
 aliases: create, innit
 ```
 
-* `npm init foo` -> `npm exec create-foo`
-* `npm init @usr` -> `npm exec @usr/create`
-* `npm init @usr/foo` -> `npm exec @usr/create-foo`
+- `npm init foo` -> `npm exec create-foo`
+- `npm init @usr` -> `npm exec @usr/create`
+- `npm init @usr/foo` -> `npm exec @usr/create-foo`
 
 ```bash
 npm init react-app my-app
@@ -32,6 +32,16 @@ npm config set <key>=<value> [<key>=<value> ...]
 npm config get [<key> [<key> ...]]
 npm config delete <key> [<key> ...]
 npm config list [--json]
+
+
+# 设置 npm 脚本默认使用 zsh
+npm config set script-shell $(which zsh)
+
+# 验证 npm Shell 配置是否成功
+npm config get script-shell
+
+# 删除 npm 脚本 Shell 配置
+npm config delete script-shell
 ```
 
 ## npm adduser
@@ -97,21 +107,20 @@ cd ~/projects/node-bloggy   # go into some other package directory.
 npm link redis              # link-install the package
 ```
 
-
 ## npm cache
 
 ```bash
 npm cache clean --force
 ```
 
-
 ## npx
 
 Run a command from a local or remote npm package
 
-* 参考博文：https://www.ruanyifeng.com/blog/2019/02/npx.html
+- 参考博文：https://www.ruanyifeng.com/blog/2019/02/npx.html
 
 ### 调用项目安装的模板
+
 ```bash
 npm i -D webpack webpack-cli
 npx webpack
