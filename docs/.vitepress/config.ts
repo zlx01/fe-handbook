@@ -119,7 +119,6 @@ function nav(): DefaultTheme.NavItem[] {
         {text: 'Useful Libraries', link: '/other/wheel/'},
         {text: 'Code Style', link: '/other/code-style/'},
         {text: 'Matrix', link: '/other/matrix/'},
-        {text: 'Awesome', link: '/other/awesome/'},
       ]
     },
   ]

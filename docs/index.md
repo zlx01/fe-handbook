@@ -73,8 +73,6 @@ see [link](/other/wheel/)
 ## Other Resources
 
 * https://docschina.org/
-* https://docschina.org/weekly/react/docs/
 * https://www.w3school.com.cn/
-* https://www.w3cschool.cn/
 * https://www.runoob.com/
 * https://how2j.cn/
