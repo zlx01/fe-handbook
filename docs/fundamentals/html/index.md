@@ -71,11 +71,11 @@
 
 分别是**块级元素**和**行内元素**的扛把子，div应该使用的最多的元素了，一做**布局**、二做**容器**。
 
-有些开发者喜欢div一把梭，知乎有把div当button的讨论，推荐围观。原因有很多，一个需求**UI复杂**，用原生button难以实现；还有更重要的一点是button有**浏览器实现的差异**，需要更多代码去抹平。现在用框架基本是**组件化**开发，组件名“代替”了“**语义化**”，不过在某些场景下，语义化还是有必要的，后面的笔记讨论。
+有些开发者喜欢div一把梭，知乎有把div当button的讨论，推荐围观。原因有很多，一个需求**UI复杂**，用原生button难以实现；还有更重要的一点是button有**浏览器实现的差异**，需要更多代码去抹平。现在用框架基本是**组件化**开发，组件名“代替”了“**语义化**”，不过在某些场景下，语义化还是有必要的，例如做SEO。
 
 ### \<ol>、\<ul>、\<li>
 
-浏览器自带样式，语义化场景下建议使用，需要**清空默认样式（指示符，内外边距）**
+浏览器自带样式，语义化场景下建议使用，通常需要**清空默认样式（指示符，内外边距）**
 
 ### [\<img>](./img)
 
@@ -112,12 +112,29 @@ url合法字符：
 
 其他字符转义方法：使用这些字符的十六进制 UTF-8 编码，每两位算作一组，然后每组头部添加百分号（`%`）。
 
+### differences between `encodeURI()` and `encodeURIComponent()`
+
+```js
+// 场景1：编码完整URL
+const url = "https://example.com/path?name=张三&age=20";
+const encodedUrl = encodeURI(url);
+console.log(encodedUrl); 
+// 输出: https://example.com/path?name=%E5%BC%A0%E4%B8%E8%83%E4%B8%89&age=20
+
+// 场景2：编码URL参数
+const paramValue = "https://example.com/path?name=张三&age=20";
+const encodedParam = encodeURIComponent(paramValue);
+const fullUrl = `https://api.example.com?redirect=${encodedParam}`;
+console.log(fullUrl);
+// 输出: https://api.example.com?redirect=https%3A%2F%2Fexample.com%2Fpath%3Fname%3D%E5%BC%A0%E4%B8%E8%83%E4%B8%89%26age%3D20
+```
+
 ## Character encoding
 
 * 数字表示法，`&#字符的码点`
 * 实体表示法 :+1:  `&amp;`  `&nbsp;`  `&lt;`  `&gt;`
 
-## data-xxx 属性
+## data-xxx attribute
 
 存放额外数据
 
@@ -135,6 +152,7 @@ url合法字符：
 ```
 
 ```js
+// 存在 dataset 对象上
 const test = document.querySelector('.test');
 console.log(test.dataset)
 console.log(test.dataset.content)

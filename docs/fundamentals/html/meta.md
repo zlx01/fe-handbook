@@ -44,13 +44,15 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name
 ## SEO
 
 ```html
-<meta name="description" content="HTML 语言入门">
-<meta name="keywords" content="HTML,教程">
+<meta name="description" content="HTML">
+<meta name="keywords" content="HTML,Lessons">
 <meta name="author" content="Lee">
 <meta name="application-name" content="Application Name">
 <meta name="generator" content="program">
 <meta name="subject" content="your document's subject">
 ```
+
+![vue官网head](assets/vue官网head.png)
 
 ```html
 <meta name="referrer" content="no-referrer">
@@ -100,9 +102,13 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name
 
 ## Content Security Policy
 
+`default-src 'self'; img-src *; media-src example.org example.net; script-src userscripts.example.com`
+
 ```html
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src *; media-src example.org example.net; script-src userscripts.example.com">
 ```
+
+`default-src https:;worker-src *.test.com 'self' blob:;script-src *.test.com 'unsafe-inline' 'unsafe-eval';object-src 'none'`
 
 ```html
 <meta http-equiv="Content-Security-Policy" content="default-src https:;worker-src *.test.com 'self' blob:;script-src *.test.com 'unsafe-inline' 'unsafe-eval';object-src 'none'">
