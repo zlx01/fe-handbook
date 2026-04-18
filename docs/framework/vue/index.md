@@ -19,3 +19,8 @@
 * [VuePress](https://vuepress.vuejs.org/)
 * [VitePress](https://vitepress.dev/)
 * [VueUse](https://vueuse.org/)
+
+---
+
+* [petite-vue](https://github.com/vuejs/petite-vue)
+* [Vue Apollo GraphQL](https://apollo.vuejs.org/)

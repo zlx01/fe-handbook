@@ -4,7 +4,6 @@
 
 > Browsers don't have the required method defined, but Node.js does. With Browserify you can write code that uses require in the same way that you would use it in Node.
 
-## [webpack 1](https://webpack.github.io/)
+## [Gulp](https://gulpjs.com/)
 
-supports AMD and CommonJs module styles
-
+## [Grunt](https://gruntjs.com/)
