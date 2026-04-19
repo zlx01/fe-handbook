@@ -216,6 +216,8 @@ package.json
 
 ## git-hooks
 
+https://pre-commit.com/
+
 commit msg from vue
 
 ```bash
