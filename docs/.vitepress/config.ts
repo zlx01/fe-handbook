@@ -8,14 +8,17 @@ export default defineConfig({
   description: 'Front-End Web Developer HandBook',
   base: base || '/fe-handbook/',
   head: [
-    ['meta', { name: 'author', content: 'zlx' }],
-    ['meta', { name: 'keywords', content: 'frontend, front-end, handbook, developer, web, html, css, javascript, typescript, vue, react'}],
-    ['meta', { name: 'generator', content: 'vitepress' }],
+    ['meta', {name: 'author', content: 'zlx'}],
+    ['meta', {
+      name: 'keywords',
+      content: 'frontend, front-end, handbook, developer, web, html, css, javascript, typescript, vue, react'
+    }],
+    ['meta', {name: 'generator', content: 'vitepress'}],
   ],
   lastUpdated: true,
   markdown: {
     // lineNumbers: true,
-    externalLinks: { target: '_blank', rel: 'nofollow noopener noreferrer' },
+    externalLinks: {target: '_blank', rel: 'nofollow noopener noreferrer'},
     // image: {
     //   lazyLoading: true,
     // }
@@ -104,13 +107,16 @@ function nav(): DefaultTheme.NavItem[] {
       items: [
         {text: 'Nodejs', link: '/advance/nodejs/'},
         {text: 'SSR', link: '/advance/ssr/'},
+        {text: 'SSG', link: '/advance/ssg/'},
         {text: 'Test', link: '/advance/test/'},
-        {text: 'Event Tracking', link: '/advance/event-tracking/'},
+        {text: 'APM', link: '/advance/apm/'},
+        {text: 'RUM', link: '/advance/rum/'},
         {text: 'Low Code', link: '/advance/low-code/'},
         {text: 'Micro-frontends', link: '/advance/micro-frontends/'},
         {text: 'PWA', link: '/advance/pwa/'},
         {text: 'WebGL', link: '/advance/webgl/'},
         {text: 'i18n', link: '/advance/i18n/'},
+        {text: 'APP', link: '/advance/app/'},
       ]
     },
     {
@@ -196,7 +202,10 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
           items: [
             {text: 'Dom notes', link: '/fundamentals/js/dom/'},
             {text: 'Event Flow', link: '/fundamentals/js/dom/event-flow'},
-            {text: 'properties and attributes', link: '/fundamentals/js/dom/difference-between-properties-and-attributes'},
+            {
+              text: 'properties and attributes',
+              link: '/fundamentals/js/dom/difference-between-properties-and-attributes'
+            },
           ]
         },
         {
@@ -309,15 +318,12 @@ function sidebarFramework() {
       ]
     },
     {
-      text: 'miniprogram',
-      link: '/framework/miniprogram/',
-    },
-    {
       text: 'Other',
       collapsed: true,
       items: [
         {text: 'Svelte', link: '/framework/other/svelte'},
         {text: 'Storybook', link: '/framework/other/storybook'},
+        {text: 'miniprogram', link: '/framework/other/miniprogram/'},
         {text: 'officialaccount', link: '/framework/other/officialaccount/'},
       ]
     }
@@ -478,6 +484,7 @@ function sidebarAdvance() {
         },
       ]
     },
+    {text: 'SSG', link: '/advance/ssg/'},
     {
       text: 'Test',
       collapsed: false,

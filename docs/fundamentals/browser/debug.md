@@ -26,3 +26,8 @@
 [Whistle](https://wproxy.org/)
 
 [nohost](https://nohost.pro/)
+
+
+## MCP
+
+[Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp)

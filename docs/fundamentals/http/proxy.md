@@ -2,8 +2,9 @@
 
 ## 开发调试
 
-* https://wproxy.org/whistle/ 基于Node实现的跨平台web调试代理工具
+* https://wproxy.org/ 基于Node实现的跨平台web调试代理工具
 * whistle手机抓包配置参考[文章](https://zhuanlan.zhihu.com/p/205089931)
+* [whistle-mcp](https://github.com/7gugu/whistle-mcp)
 
 ## 测试环境
 
