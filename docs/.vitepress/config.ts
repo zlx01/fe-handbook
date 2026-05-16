@@ -46,11 +46,14 @@ export default defineConfig({
       copyright: 'MIT Licensed | Copyright © 2022-present zlx'
     },
 
-    algolia: {
-      appId: 'D5I8QWQRGT',
-      apiKey: '47979d23dd02b788a31a96a9894e6bdb',
-      indexName: 'fe-handbook'
-    },
+    search:{
+      provider: 'algolia',
+      options: {
+        appId: 'D5I8QWQRGT',
+        apiKey: '47979d23dd02b788a31a96a9894e6bdb',
+        indexName: 'fe-handbook'
+      },
+    }
   }
 })
 
@@ -241,6 +244,7 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
       items: [
         {text: 'Network Notes', link: '/fundamentals/network/'},
         {text: '公网ip', link: '/fundamentals/network/host-ip'},
+        {text: 'SSL证书部署', link: '/fundamentals/network/ssl-cert-nginx'},
         {text: 'CNAME', link: '/fundamentals/network/domain-cname'},
         {text: 'NAT', link: '/fundamentals/network/nat'},
       ]
