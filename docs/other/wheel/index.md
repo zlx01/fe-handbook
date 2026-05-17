@@ -1,6 +1,7 @@
 # 前端实用轮子
 
-* [lodash](https://lodash.com/)
+* [lodash](./lodash)
+* [rxjs](./rxjs)
 * [axios](https://www.npmjs.com/package/axios) Promise based HTTP client for the browser and node.js
 * [qs](https://www.npmjs.com/package/qs) url query参数解析
 * [js-cookie](https://www.npmjs.com/package/js-cookie)  操作cookie
