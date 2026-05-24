@@ -120,6 +120,8 @@ function nav(): DefaultTheme.NavItem[] {
         {text: 'WebGL', link: '/advance/webgl/'},
         {text: 'i18n', link: '/advance/i18n/'},
         {text: 'APP', link: '/advance/app/'},
+        {text: 'DevOps', link: '/advance/devops/'},
+        {text: 'Database', link: '/advance/database/'},
       ]
     },
     {
@@ -244,9 +246,11 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
       items: [
         {text: 'Network Notes', link: '/fundamentals/network/'},
         {text: '公网ip', link: '/fundamentals/network/host-ip'},
-        {text: 'SSL证书部署', link: '/fundamentals/network/ssl-cert-nginx'},
-        {text: 'CNAME', link: '/fundamentals/network/domain-cname'},
         {text: 'NAT', link: '/fundamentals/network/nat'},
+        {text: 'Domain', link: '/fundamentals/network/domain'},
+        {text: 'DNS', link: '/fundamentals/network/DNS'},
+        {text: 'CNAME', link: '/fundamentals/network/cname'},
+        {text: 'SSL证书部署', link: '/fundamentals/network/ssl-cert-nginx'},
       ]
     },
     {
