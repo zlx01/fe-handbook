@@ -128,6 +128,7 @@ console.log(`当前浏览器中 1rem 等于 ${remValue} 像素`);
 * rgb(r, g, b)
 * rgba(r, g, b, a)
 * 用除法表示透明度
+* [颜色空间模型](./color)
 
 ```css
 @media (min-width: 768px) {

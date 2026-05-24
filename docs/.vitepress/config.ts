@@ -35,6 +35,7 @@ export default defineConfig({
       '/build-tools/': sidebarBuildTools(),
       '/framework/': sidebarFramework(),
       '/advance/': sidebarAdvance(),
+      '/advance/devops/': sidebarDevOps(),
     },
 
     socialLinks: [
@@ -143,9 +144,9 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
     },
     {
       text: 'HTML',
+      link: '/fundamentals/html/',
       collapsed: true,
       items: [
-        {text: 'HTML Notes', link: '/fundamentals/html/'},
         {text: 'meta', link: '/fundamentals/html/meta'},
         {text: 'link', link: '/fundamentals/html/link'},
         {text: 'script', link: '/fundamentals/html/script'},
@@ -162,9 +163,9 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
     },
     {
       text: 'CSS',
+      link: '/fundamentals/css/',
       collapsed: true,
       items: [
-        {text: 'CSS Notes', link: '/fundamentals/css/'},
         {text: 'CSS Preprocessor', link: '/fundamentals/css/preprocessor/'},
         {text: 'CSS Framework', link: '/fundamentals/css/framework/'},
         {text: 'Animations Library', link: '/fundamentals/css/animations-lib'},
@@ -172,9 +173,9 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
     },
     {
       text: 'JavaScript',
+      link: '/fundamentals/js/',
       collapsed: true,
       items: [
-        {text: 'JS Notes', link: '/fundamentals/js/'},
         {text: '确定值的类型', link: '/fundamentals/js/determine-type'},
         {text: '类型转换', link: '/fundamentals/js/type-conversion'},
         {text: '对象属性遍历', link: '/fundamentals/js/traverse-object-keys'},
@@ -225,16 +226,13 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
     },
     {
       text: 'TypeScript',
-      collapsed: true,
-      items: [
-        {text: 'TypeScript Notes', link: '/fundamentals/ts/'},
-      ]
+      link: '/fundamentals/ts/',
     },
     {
       text: 'HTTP',
+      link: '/fundamentals/http/',
       collapsed: true,
       items: [
-        {text: 'HTTP Notes', link: '/fundamentals/http/'},
         {text: 'HTTP Caching', link: '/fundamentals/http/caching'},
         {text: 'Content Security Policy', link: '/fundamentals/http/csp'},
         {text: 'Proxy', link: '/fundamentals/http/proxy'},
@@ -242,9 +240,9 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
     },
     {
       text: 'Network',
+      link: '/fundamentals/network/',
       collapsed: true,
       items: [
-        {text: 'Network Notes', link: '/fundamentals/network/'},
         {text: '公网ip', link: '/fundamentals/network/host-ip'},
         {text: 'NAT', link: '/fundamentals/network/nat'},
         {text: 'Domain', link: '/fundamentals/network/domain'},
@@ -255,9 +253,9 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
     },
     {
       text: 'Browser',
+      link: '/fundamentals/browser/',
       collapsed: true,
       items: [
-        {text: 'Browser Notes', link: '/fundamentals/browser/'},
         {text: 'debug', link: '/fundamentals/browser/debug'},
         {text: 'Same Origin Policy', link: '/fundamentals/browser/same-origin-policy'},
       ]
@@ -269,15 +267,13 @@ function sidebarFramework() {
   return [
     {
       text: 'Vue',
+      link: '/framework/vue/',
       collapsed: false,
       items: [
         {
-          text: 'Introduction', link: '/framework/vue/'
-        },
-        {
           text: 'Vue2.x',
+          link: '/framework/vue/v2/',
           items: [
-            {text: 'Vue2 Notes', link: '/framework/vue/v2/'},
             {text: 'TypeScript', link: '/framework/vue/v2/ts'},
             {text: 'Vue CLI', link: '/framework/vue/v2/vue-cli/'},
             {text: 'Vue Loader', link: '/framework/vue/v2/vue-loader/'},
@@ -289,13 +285,16 @@ function sidebarFramework() {
         },
         {
           text: 'Vue3.x',
+          link: '/framework/vue/v3/',
           items: [
-            {text: 'Vue3 Notes', link: '/framework/vue/v3/'},
             {text: 'create-vue', link: '/framework/vue/v3/create-vue/'},
             {text: 'Vue Router', link: '/framework/vue/v3/vue-router/'},
             {text: 'Pinia', link: '/framework/vue/v3/pinia/'},
             {text: 'Vue Test Utils', link: '/framework/vue/v2/vuex/'},
           ]
+        },
+        {
+          text: 'interview', link: '/framework/vue/interview'
         },
       ]
     },
@@ -533,6 +532,51 @@ function sidebarAdvance() {
         {text: 'Introduction', link: '/advance/webgl/'},
         {text: 'Three.js', link: '/advance/webgl/threejs/'},
       ]
+    },
+    {
+      text: 'Web Application Security',
+      link: '/advance/security/',
     }
   ]
 }
+
+function sidebarDevOps(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      text: 'DevOps',
+      link: '/advance/devops/',
+      collapsed: false,
+      items: [
+        {
+          text: 'Docker',
+          link: '/advance/devops/docker/',
+          items: [
+            {text: 'Install Docker', link: '/advance/devops/docker/install-docker'},
+            {text: 'Docker Architecture', link: '/advance/devops/docker/architecture'},
+            {text: 'Docker Command', link: '/advance/devops/docker/command'},
+            {text: 'Docker Build', link: '/advance/devops/docker/build'},
+            {text: 'Docker Compose', link: '/advance/devops/docker/compose'},
+            {text: 'Docker Network', link: '/advance/devops/docker/network'},
+            {text: 'Docker Desktop', link: '/advance/devops/docker/desktop'},
+            {text: 'Docker Hub', link: '/advance/devops/docker/hub'},
+            {text: 'Docker Images Explore', link: '/advance/devops/docker/image-explore'},
+          ]
+        },
+        {
+          text: 'Kubernetes',
+          link: '/advance/devops/kubernetes/',
+          items: [
+            {text: 'Kubernetes Architecture', link: '/advance/devops/kubernetes/architecture'},
+            {text: 'kubectl', link: '/advance/devops/kubernetes/kubectl'},
+            {text: 'Minikube', link: '/advance/devops/kubernetes/minikube'},
+            {text: 'Namespace', link: '/advance/devops/kubernetes/namespace'},
+            {text: 'Configuration File', link: '/advance/devops/kubernetes/configuration-file'},
+            {text: 'Examples', link: '/advance/devops/kubernetes/examples'},
+            {text: 'Rancher', link: '/advance/devops/kubernetes/rancher'},
+          ]
+        }
+      ]
+    }
+  ]
+}
+
