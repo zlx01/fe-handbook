@@ -36,6 +36,7 @@ export default defineConfig({
       '/framework/': sidebarFramework(),
       '/advance/': sidebarAdvance(),
       '/advance/devops/': sidebarDevOps(),
+      '/other/git/': sidebarGit(),
     },
 
     socialLinks: [
@@ -123,6 +124,7 @@ function nav(): DefaultTheme.NavItem[] {
         {text: 'APP', link: '/advance/app/'},
         {text: 'DevOps', link: '/advance/devops/'},
         {text: 'Database', link: '/advance/database/'},
+        {text: 'Web Application Security', link: '/advance/security/'},
       ]
     },
     {
@@ -131,6 +133,7 @@ function nav(): DefaultTheme.NavItem[] {
         {text: 'Useful Libraries', link: '/other/wheel/'},
         {text: 'Code Style', link: '/other/code-style/'},
         {text: 'Matrix', link: '/other/matrix/'},
+        {text: 'Git', link: '/other/git/'},
       ]
     },
   ]
@@ -563,6 +566,10 @@ function sidebarDevOps(): DefaultTheme.SidebarItem[] {
           ]
         },
         {
+          text: 'Podman',
+          link: '/advance/devops/podman/',
+        },
+        {
           text: 'Kubernetes',
           link: '/advance/devops/kubernetes/',
           items: [
@@ -580,3 +587,39 @@ function sidebarDevOps(): DefaultTheme.SidebarItem[] {
   ]
 }
 
+function sidebarGit(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      text: 'Git',
+      link: '/other/git/',
+      collapsed: false,
+      items: [
+        {text: 'Installing Git', link: '/other/git/installing-git/'},
+        {text: 'Operating Mechanism', link: '/other/git/operating-mechanism'},
+        {text: 'Workflow', link: '/other/git/workflow'},
+        {text: '.gitattributes', link: '/other/git/gitattributes'},
+        {
+          text: 'GitHub',
+          link: '/other/git/github/',
+          items: [
+            {text: 'Actions', link: '/other/git/github/actions'},
+            {text: 'Pages', link: '/other/git/github/pages'},
+            {text: 'Copilot Prompts', link: '/other/git/github/copilot-prompts'},
+            {text: 'github.dev', link: '/other/git/github/github-dev'},
+            {text: 'Codespaces', link: '/other/git/github/codespaces'},
+            {text: 'Packages', link: '/other/git/github/packages'},
+            {text: 'CLI', link: '/other/git/github/cli'},
+            {text: 'MCP', link: '/other/git/github/mcp'},
+          ]
+        },
+        {
+          text: 'GitLab',
+          link: '/other/git/gitlab/',
+          items: [
+            {text: 'CI/CD', link: '/other/git/gitlab/ci-cd'},
+          ]
+        },
+      ]
+    }
+  ]
+}
