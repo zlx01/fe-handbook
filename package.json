@@ -2,7 +2,14 @@
   "name": "fe-handbook",
   "version": "1.0.0",
   "description": "A handbook for front-end developers",
-  "keywords": ["front-end", "handbook", "HTML", "CSS", "JavaScript", "Vue"],
+  "keywords": [
+    "front-end",
+    "handbook",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Vue"
+  ],
   "main": "index.js",
   "author": {
     "name": "zlx01",
@@ -21,6 +28,8 @@
   },
   "devDependencies": {
     "@types/node": "^22.19.19",
-    "vitepress": "^1.6.4"
+    "markdown-it-container": "^4.0.0",
+    "vitepress": "^1.6.4",
+    "vitepress-plugin-sandpack": "^1.1.4"
   }
 }
