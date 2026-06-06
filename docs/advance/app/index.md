@@ -4,26 +4,13 @@
 
 ### [**Android**](https://www.android.com/)
 
-* Java
-* Kotlin
-* https://developer.android.com/
-
 ### **iOS**
-
-* Objective-C
-* Swift
-* https://developer.apple.com/
 
 ## Multiplatform
 
 ### [**React Native**](https://reactnative.dev/)
 
-* [React](https://reactjs.org/)
-* https://snack.expo.dev/
-
 ### [**Flutter**](https://flutter.dev/)
-
-* [Dart](https://dart.dev/)
 
 ### [**Quasar**](https://quasar.dev/)
 

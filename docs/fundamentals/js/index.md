@@ -107,7 +107,7 @@ Number极值
 
 ## [确定值的类型](./determine-type)
 
-## [类型转换](./type-conversio)
+## [类型转换](./type-conversion)
 
 ## [对象属性遍历](./traverse-object-keys)
 

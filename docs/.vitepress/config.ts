@@ -44,6 +44,7 @@ export default defineConfig({
       '/build-tools/': sidebarBuildTools(),
       '/framework/': sidebarFramework(),
       '/advance/': sidebarAdvance(),
+      '/advance/app/': sidebarApp(),
       '/advance/devops/': sidebarDevOps(),
       '/other/git/': sidebarGit(),
     },
@@ -576,6 +577,33 @@ function sidebarAdvance() {
       text: 'Web Application Security',
       link: '/advance/security/',
     }
+  ]
+}
+
+function sidebarApp(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      text: 'APP',
+      link: '/advance/app/',
+      items: [
+        {
+          text: 'Android',
+          link: '/advance/app/android/',
+        },
+        {
+          text: 'iOS',
+          link: '/advance/app/ios/',
+        },
+        {
+          text: 'Cross-platform',
+          items: [
+            {text: 'React Native', link: '/advance/app/react-native/'},
+            {text: 'Flutter', link: '/advance/app/flutter/'},
+            {text: 'Electron', link: '/advance/app/electron/'},
+          ]
+        },
+      ]
+    },
   ]
 }
 
