@@ -114,11 +114,16 @@ function nav(): DefaultTheme.NavItem[] {
       items: [
         {text: 'Vue', link: '/framework/vue/'},
         {text: 'React', link: '/framework/react/'},
+        {text: 'Nuxt', link: '/framework/nuxt/'},
+        {text: 'Nextjs', link: '/framework/nextjs/'},
       ]
     },
     {
       text: 'advance',
       items: [
+        {text: 'Nodejs', link: '/advance/nodejs/'},
+        {text: 'Deno', link: '/advance/deno/'},
+        {text: 'Bun', link: '/advance/Bun/'},
         {text: 'Nodejs', link: '/advance/nodejs/'},
         {text: 'SSR', link: '/advance/ssr/'},
         {text: 'SSG', link: '/advance/ssg/'},
@@ -171,6 +176,7 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
         {text: 'SVG', link: '/fundamentals/html/svg'},
         {text: 'SEO', link: '/fundamentals/html/seo'},
         {text: 'web components', link: '/fundamentals/html/web-components/'},
+        {text: 'crossorigin', link: '/fundamentals/html/html-attribute-crossorigin'},
       ]
     },
     {
@@ -178,8 +184,28 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
       link: '/fundamentals/css/',
       collapsed: true,
       items: [
-        {text: 'CSS Preprocessor', link: '/fundamentals/css/preprocessor/'},
-        {text: 'CSS Framework', link: '/fundamentals/css/framework/'},
+        {
+          text: 'CSS Preprocessor',
+          link: '/fundamentals/css/preprocessor/',
+          collapsed: true,
+          items: [
+            {text: 'sass/scss', link: '/fundamentals/css/preprocessor/scss'},
+            {text: 'less', link: '/fundamentals/css/preprocessor/less'},
+            {text: 'stylus', link: '/fundamentals/css/preprocessor/stylus'},
+            {text: 'postcss', link: '/fundamentals/css/preprocessor/postcss'},
+          ]
+        },
+        {
+          text: 'CSS Framework',
+          // link: '/fundamentals/css/framework/',
+          collapsed: true,
+          items: [
+            {text: 'tailwindcss', link: '/fundamentals/css/framework/tailwindcss'},
+            {text: 'unocss', link: '/fundamentals/css/framework/unocss'},
+            {text: 'styled-jsx', link: '/fundamentals/css/framework/styled-jsx'},
+            {text: 'styled-components', link: '/fundamentals/css/framework/styled-components'},
+          ],
+        },
         {text: 'Animations Library', link: '/fundamentals/css/animations-lib'},
       ]
     },
@@ -188,24 +214,19 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
       link: '/fundamentals/js/',
       collapsed: true,
       items: [
-        {text: '确定值的类型', link: '/fundamentals/js/determine-type'},
-        {text: '类型转换', link: '/fundamentals/js/type-conversion'},
-        {text: '对象属性遍历', link: '/fundamentals/js/traverse-object-keys'},
         {text: '正则表达式', link: '/fundamentals/js/regular-expression'},
-        {text: 'JSON', link: '/fundamentals/js/JSON'},
         {
           text: '模块化',
+          link: '/fundamentals/js/modular/',
+          collapsed: true,
           items: [
-            {text: 'CommonJS', link: '/fundamentals/js/modular/commonjs'},
-            {text: 'ESM', link: '/fundamentals/js/modular/esm'},
             {text: 'ESM vs CJS', link: '/fundamentals/js/modular/mjs-cjs'},
-            {text: 'AMD', link: '/fundamentals/js/modular/amd'},
-            {text: 'UMD', link: '/fundamentals/js/modular/umd'},
             {text: 'circular dependency', link: '/fundamentals/js/modular/circular-dependency'},
           ]
         },
         {
           text: '请求通信',
+          collapsed: true,
           items: [
             {text: '数据交换格式', link: '/fundamentals/js/request/data-type-format'},
             {text: 'XMLHttpRequest', link: '/fundamentals/js/request/xhr'},
@@ -216,9 +237,9 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
         },
         {
           text: 'DOM',
+          link: '/fundamentals/js/dom/',
           collapsed: true,
           items: [
-            {text: 'Dom notes', link: '/fundamentals/js/dom/'},
             {text: 'Event Flow', link: '/fundamentals/js/dom/event-flow'},
             {
               text: 'properties and attributes',
@@ -228,8 +249,8 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
         },
         {
           text: '实战方案',
+          collapsed: true,
           items: [
-            {text: '位运算符的应用', link: '/fundamentals/js/bit-op'},
             {text: '判断元素是否在视窗内', link: '/fundamentals/js/practice/intersection-detection'},
             {text: '动画实现方式', link: '/fundamentals/js/practice/perform-animation'},
           ]
@@ -245,6 +266,8 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
       link: '/fundamentals/http/',
       collapsed: true,
       items: [
+        {text: 'HTTPS', link: '/fundamentals/http/https'},
+        {text: 'SSL证书部署', link: '/fundamentals/http/ssl-cert-nginx'},
         {text: 'HTTP Caching', link: '/fundamentals/http/caching'},
         {text: 'Content Security Policy', link: '/fundamentals/http/csp'},
         {text: 'Proxy', link: '/fundamentals/http/proxy'},
@@ -260,7 +283,7 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
         {text: 'Domain', link: '/fundamentals/network/domain'},
         {text: 'DNS', link: '/fundamentals/network/DNS'},
         {text: 'CNAME', link: '/fundamentals/network/cname'},
-        {text: 'SSL证书部署', link: '/fundamentals/network/ssl-cert-nginx'},
+        {text: 'Proxy', link: '/fundamentals/network/proxy'},
       ]
     },
     {
@@ -270,6 +293,7 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
       items: [
         {text: 'debug', link: '/fundamentals/browser/debug'},
         {text: 'Same Origin Policy', link: '/fundamentals/browser/same-origin-policy'},
+        {text: 'Event Loop', link: '/fundamentals/browser/event-loop'},
       ]
     },
   ]
@@ -280,7 +304,7 @@ function sidebarFramework() {
     {
       text: 'Vue',
       link: '/framework/vue/',
-      collapsed: false,
+      collapsed: true,
       items: [
         {
           text: 'Vue2.x',
@@ -305,18 +329,13 @@ function sidebarFramework() {
             {text: 'Vue Test Utils', link: '/framework/vue/v2/vuex/'},
           ]
         },
-        {
-          text: 'interview', link: '/framework/vue/interview'
-        },
       ]
     },
     {
       text: 'React',
-      collapsed: false,
+      link: '/framework/react/',
+      collapsed: true,
       items: [
-        {
-          text: 'React Notes', link: '/framework/react/',
-        },
         {
           text: 'Create React App', link: '/framework/react/create-react-app',
         },
@@ -324,23 +343,26 @@ function sidebarFramework() {
     },
     {
       text: 'Nuxt',
+      link: '/framework/nuxt/',
       collapsed: true,
-      items: [
-        {text: 'Introduction', link: '/framework/nuxt/'},
-      ]
+      items: []
     },
     {
       text: 'Next.js',
+      link: '/framework/nextjs/',
       collapsed: true,
       items: [
-        {text: 'Nextjs Notes', link: '/framework/nextjs/'},
       ]
+    },
+    {
+      text: 'Svelte',
+      link: '/framework/svelte/'
     },
     {
       text: 'Other',
       collapsed: true,
       items: [
-        {text: 'Svelte', link: '/framework/other/svelte'},
+        {text: 'jQuery', link: '/framework/other/jquery'},
         {text: 'Storybook', link: '/framework/other/storybook'},
         {text: 'miniprogram', link: '/framework/other/miniprogram/'},
         {text: 'officialaccount', link: '/framework/other/officialaccount/'},
@@ -353,9 +375,7 @@ function sidebarBuildTools() {
   return [
     {
       text: 'Build Toolchain',
-      items: [
-        {text: 'Introduction', link: '/build-tools/'}
-      ]
+      link: '/build-tools/',
     },
     {
       text: 'Package Manager',
@@ -363,8 +383,8 @@ function sidebarBuildTools() {
       items: [
         {
           text: 'npm',
+          link: '/build-tools/package-manager/npm/',
           items: [
-            {text: 'npm Notes', link: '/build-tools/package-manager/npm/'},
             {text: 'npm cli', link: '/build-tools/package-manager/npm/cli'},
             {text: 'package.json', link: '/build-tools/package-manager/npm/package.json/'},
           ]
@@ -456,17 +476,12 @@ function sidebarAdvance() {
   return [
     {
       text: 'Nodejs',
-      collapsed: false,
+      link: '/advance/nodejs/',
+      collapsed: true,
       items: [
         {
-          text: 'Nodejs',
-          items: [
-            {text: 'Nodejs Notes', link: '/advance/nodejs/'},
-            {text: 'V8', link: '/advance/nodejs/v8/'},
-          ]
-        },
-        {
           text: 'Web Framework',
+          collapsed: true,
           items: [
             {text: 'Express', link: '/advance/nodejs/express/'},
             {text: 'Koa', link: '/advance/nodejs/koa/'},
@@ -475,12 +490,14 @@ function sidebarAdvance() {
         },
         {
           text: 'Templating Language',
+          collapsed: true,
           items: [
             {text: 'ejs', link: '/advance/nodejs/ejs/'},
           ]
         },
         {
           text: 'Communication',
+          collapsed: true,
           items: [
             {text: 'socket.io', link: '/advance/nodejs/socket-io/'},
           ]
@@ -488,29 +505,31 @@ function sidebarAdvance() {
       ]
     },
     {
+      text: 'Deno',
+      link: '/advance/deno/',
+    },
+    {
+      text: 'Bun',
+      link: '/advance/bun/',
+    },
+    {
       text: 'SSR',
-      collapsed: false,
+      link: '/advance/ssr/',
+      collapsed: true,
       items: [
-        {
-          text: 'Introduction', link: '/advance/ssr/'
-        },
-        {
-          text: 'Framework',
-          items: [
-            {text: 'Nuxt', link: '/advance/ssr/nuxtjs/'},
-            {text: 'Next', link: '/advance/ssr/nextjs/'},
-          ]
-        },
+        {text: 'Nuxt', link: '/framework/nuxt'},
+        {text: 'Next', link: '/framework/nextjs'},
       ]
     },
     {text: 'SSG', link: '/advance/ssg/'},
     {
       text: 'Test',
-      collapsed: false,
+      link: '/advance/test/',
+      collapsed: true,
       items: [
-        {text: 'Introduction', link: '/advance/test/'},
         {
           text: 'unit test',
+          collapsed: true,
           items: [
             {text: 'Jest', link: '/advance/test/unit/jest'},
             {text: 'Mocha', link: '/advance/test/unit/mocha'},
@@ -519,6 +538,7 @@ function sidebarAdvance() {
         },
         {
           text: 'component test',
+          collapsed: true,
           items: [
             {text: 'vue-test-utils', link: '/advance/test/component/vue-test-utils'},
           ]
@@ -528,23 +548,30 @@ function sidebarAdvance() {
         },
       ]
     },
+    {text: 'APM', link: '/advance/apm/'},
+    {text: 'RUM', link: '/advance/rum/'},
+    {text: 'Low Code', link: '/advance/low-code/'},
     {
       text: 'Micro-frontends',
-      collapsed: false,
+      link: '/advance/micro-frontends/',
+      collapsed: true,
       items: [
-        {text: 'Introduction', link: '/advance/micro-frontends/'},
         {text: 'qiankun', link: '/advance/micro-frontends/qiankun'},
         {text: 'single-spa', link: '/advance/micro-frontends/single-spa'},
       ]
     },
+    {text: 'PWA', link: '/advance/pwa/'},
     {
       text: 'WebGL',
-      collapsed: false,
+      link: '/advance/webgl/',
+      collapsed: true,
       items: [
-        {text: 'Introduction', link: '/advance/webgl/'},
         {text: 'Three.js', link: '/advance/webgl/threejs/'},
       ]
     },
+    {text: 'i18n', link: '/advance/i18n/'},
+    {text: 'APP', link: '/advance/app/'},
+    {text: 'Database', link: '/advance/database/'},
     {
       text: 'Web Application Security',
       link: '/advance/security/',
@@ -590,7 +617,7 @@ function sidebarDevOps(): DefaultTheme.SidebarItem[] {
             {text: 'Examples', link: '/advance/devops/kubernetes/examples'},
             {text: 'Rancher', link: '/advance/devops/kubernetes/rancher'},
           ]
-        }
+        },
       ]
     }
   ]

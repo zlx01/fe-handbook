@@ -18,7 +18,7 @@ eXtensible Markup Language
 
 ### [JSON](https://www.json.org/json-en.html)
 
-JavaScript Object Notation
+> JavaScript Object Notation (JSON) is commonly used API response format to transfer data due to its simplicity.
 
 应用举例：
 * npm package.json

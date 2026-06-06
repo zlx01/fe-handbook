@@ -1,5 +1,5 @@
-
 # 开源许可证
+
 > A software license tells others what they can and can't do with your source code. For your repository to truly be open source, you'll need to license it so that others are free to use, change, and distribute the software.
 
 > 版权法默认禁止共享，也就是说，没有许可证的软件，就等同于保留版权，虽然开源了，用户只能看源码，不能用，一用就会侵犯版权。所以软件开源的话，必须明确地授予用户开源许可证。

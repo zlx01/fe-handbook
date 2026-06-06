@@ -1,4 +1,4 @@
-# [npm CLI](https://docs.npmjs.com/cli/commands)
+# [npm cli](https://docs.npmjs.com/cli/commands)
 
 ## npm init
 

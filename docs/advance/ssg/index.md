@@ -47,7 +47,7 @@
 
 ![在这里插入图片描述](assets/3731b52da72d5fc2b2930e7655b84688.png)
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/blog_migrate/4bf5826b53c08cb1215802bfdc141b0c.png)
+![在这里插入图片描述](assets/4bf5826b53c08cb1215802bfdc141b0c.png)
 
 ### **Analytics**
 

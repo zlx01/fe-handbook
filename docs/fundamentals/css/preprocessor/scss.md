@@ -1,9 +1,37 @@
 # [sass/scss](https://sass-lang.com/)
 
+* [playground](https://sass-lang.com/playground/)
+* [github](https://github.com/sass/sass)
+
 ## sass vs scss
 
-* SASS（缩进语法）：采用缩进和换行的方式来表示层级关系
+* SASS（缩进语法）：采用缩进和换行的方式来表示层级关系 :-1:
 * SCSS（Sassy CSS）：是 CSS 的超集，完全兼容 CSS，层级关系通过 {} 和 ; 表示
+
+## Implementations
+
+* Sass：语言本身
+* Dart Sass：官方实现
+* LibSass：旧的 C/C++ 实现，已废弃
+* node-sass：LibSass 的 Node.js 封装，已废弃
+* Ruby Sass：旧的 Ruby 实现，已废弃
+
+## Why Dart Sass?
+
+* 比 Ruby 更快：Sass 早期的参考实现是 Ruby Sass，但 Ruby 在编译性能上不占优势。官方说 Dart VM 性能很好，“比 Ruby 快很多”，并且接近 C++ 实现。
+* 比 C++ 更容易开发：虽然 C++ 也快，但维护成本高，要处理内存管理、构建系统等问题；Dart 作为更高层、静态类型语言，更适合长期演进大型编译器。
+* 可以编译成 JavaScript：这是很关键的一点。Sass 的大量用户在前端生态、Node/npm 里，Dart 可以直接编译到 JS，因此同一套实现既能做原生 CLI，也能发布成 npm 包，甚至能在浏览器里跑。
+
+## How to Use
+
+```bash
+npm install -g sass
+```
+
+```bash
+sass input.scss output.css
+```
+
 
 ## Comment
 
