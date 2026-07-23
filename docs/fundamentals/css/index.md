@@ -68,20 +68,20 @@
 
 ## 选择器
 
-| 选择器       | 说明                       |
-| ------------ | -------------------------- |
-| 类型选择器   | 元素选择器                 |
-| 类选择器     | class，最常用              |
-| ID选择器     | id                         |
-| 属性选择器   | 常用，vue scoped style     |
-| 全局选择器   | *{ }                       |
-| 复合选择器   |                            |
-| 群组选择器   |                            |
-| 后代选择器   | 不一定是直接后代           |
-| 子元素选择器 | >                          |
-| 兄弟选择器   | + 紧后一个<br/>~ 后边所有  |
-| 伪类选择器   | [伪类](./pseudo-class)     |
-| 伪元素选择器 | [伪元素](./pesudo-element) |
+| 选择器       | 说明                             |
+| ------------ |--------------------------------|
+| 类型选择器   | 元素选择器                          |
+| 类选择器     | class，最常用                      |
+| ID选择器     | id                             |
+| 属性选择器   | 常用，vue scoped style            |
+| 全局选择器   | *{ }                           |
+| 复合选择器   |                                |
+| 群组选择器   |                                |
+| 后代选择器   | 不一定是直接后代                       |
+| 子元素选择器 | >                              |
+| 兄弟选择器   | + 紧后一个<br/>~ 后边所有              |
+| 伪类选择器   | [伪类](native/pseudo-class.md)           |
+| 伪元素选择器 | [伪元素](./native/pesudo-element) |
 
 ### 选择器权重
 
@@ -230,21 +230,21 @@ outline，用法和border一模一样，但不会影响到可见框的大小
 * 溢出行为
 * 盒子尺寸，默认content-box，设置border-box可以减少计算
 
-### [Flex布局](./flex)
+### [Flex布局](./native/flex)
 
-### [Grid布局](./grid)
+### [Grid布局](native/grid)
 
-### [居中布局](./center)
+### [居中布局](./native/center)
 
 ### 浮动float
 
 flex、grid等布局的兼容性越来越好，基本不用了。维护一些旧项目可能还用到。
 
-## [变形transform](./transform)
+## [变形transform](native/transform.md)
 
-## [过渡transition](./transition)
+## [过渡transition](native/transition.md)
 
-## [动画animation](./animation)
+## [动画animation](./native/animation)
 
 ## CSS Variable
 
@@ -285,12 +285,12 @@ flex、grid等布局的兼容性越来越好，基本不用了。维护一些旧
 document.documentElement.style.setProperty('--main-color', '#e74c3c');
 ```
 
-## [重置样式](./reset)
+## [重置样式](native/reset.md)
 
-## [BEM](./bem)
+## [BEM](./native/bem)
 
-## [Responsive Design](./responsive-design)
+## [Responsive Design](native/responsive-design.md)
 
-## [Reflow & Repaint](./reflow-repaint)
+## [Reflow & Repaint](native/reflow-repaint.md)
 
-## [绘制图形/动画](./shape)
+## [绘制图形/动画](native/shape.md)

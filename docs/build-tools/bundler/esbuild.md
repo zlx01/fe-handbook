@@ -1,6 +1,6 @@
 # [esbuild](https://esbuild.github.io/)
 
-* written in Go
+* Written in Go
 
 ## [Why is esbuild fast?](https://esbuild.github.io/faq/#why-is-esbuild-fast)
 

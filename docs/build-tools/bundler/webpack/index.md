@@ -1,5 +1,7 @@
 # [Webpack](https://webpack.js.org/)
 
+* Written in JavaScript
+
 * [处理ts](./handle-ts)
 * [构建umd格式的包](./build-umd-pkg)
 
