@@ -1,4 +1,4 @@
-# [Rsbuild](https://rsbuild.dev/)
+# [Rsbuild](https://rsbuild.rs/)
 
 
 

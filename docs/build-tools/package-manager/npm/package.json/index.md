@@ -78,6 +78,24 @@
 
 前置依赖，例如 Element UI 依赖 vue.js
 
+## peerDependenciesMeta
+
+给 peerDependencies 补充元信息
+
+```json
+{
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react-dom": {
+      "optional": true
+    }
+  }
+}
+```
+
 ## optionalDependencies
 
 可选依赖

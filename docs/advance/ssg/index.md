@@ -1,6 +1,29 @@
 # Static Site Generator
 
-## **Blog**
+## 什么是 SSG
+
+SSG（Static Site Generation，静态站点生成）是指在构建阶段将页面预渲染为 HTML 等静态文件。
+
+## SSG 的优势
+
+* 首屏渲染更快：用户无需等待 JavaScript 加载和执行，浏览器加载 HTML 后即可看到完整内容，而不是在用户访问时才进行渲染。
+* SEO 友好：搜索引擎爬虫可以直接抓取到完整的 HTML 内容。
+* 易于部署：产物是纯静态文件，无需部署服务器 API，可直接上传到 CDN 或任何静态托管服务。
+
+## SSG 加载流程
+
+1. 浏览器加载 HTML → 用户立即看到完整内容
+2. JavaScript 加载完成 → React hydrate（水合），绑定事件交互
+3. 后续页面导航 → SPA 模式，客户端渲染
+
+
+## CSR 加载流程
+
+1. 浏览器加载 HTML → 用户看到空白页面
+2. JavaScript 加载完成 → React 渲染页面内容
+3. 后续页面导航 → SPA 模式，客户端渲染
+
+## Blog
 
 ### [**hexo**](https://hexo.io/zh-cn/)
 

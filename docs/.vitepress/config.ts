@@ -436,12 +436,6 @@ function sidebarBuildTools() {
           text: 'Rolldown', link: '/build-tools/bundler/rolldown'
         },
         {
-          text: 'Rspack', link: '/build-tools/bundler/rspack/',
-        },
-        {
-          text: 'Rsbuild', link: '/build-tools/bundler/Rsbuild/',
-        },
-        {
           text: 'snowpack', link: '/build-tools/bundler/snowpack'
         },
         {
@@ -470,6 +464,25 @@ function sidebarBuildTools() {
         }
       ]
     },
+    {
+      text: 'Rstack',
+      link: '/build-tools/rstack/',
+      collapsed: false,
+      items: [
+        {
+          text: 'Rspack', link: '/build-tools/rstack/rspack/',
+        },
+        {
+          text: 'Rsbuild', link: '/build-tools/rstack/rsbuild/',
+        },
+        {
+          text: 'Rslib', link: '/build-tools/rstack/rslib/',
+        },
+        {
+          text: 'Rspress', link: '/build-tools/rstack/rspress/',
+        },
+      ]
+    }
   ]
 }
 

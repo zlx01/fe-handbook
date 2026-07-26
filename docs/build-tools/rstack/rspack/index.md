@@ -1,13 +1,14 @@
-# [Rspack](https://rspack.dev/)
+# [Rspack](https://rspack.rs/)
 
-> A fast Rust-based web bundler
-> 基于 Rust 的高性能 Web 打包工具
+> A fast Rust-based web bundler.基于 Rust 的高性能 Web 打包工具。
 
+## Installation
 
+```bash
+npm create rspack@latest
+```
 
-![img](assets/rspack-stack-layers.png)
-
-
+核心依赖：`@rspack/core` `@rspack/cli` `@rspack/dev-server`
 
 ## 功能
 
@@ -73,11 +74,4 @@ HtmlWebpackPlugin  HtmlRspackPlugin
 ### JavaScript API
 
 
-## Rstack
-
-* Rspack
-* Rsbuild
-* Rspress
-* Rsdoctor
-* Rslib
 

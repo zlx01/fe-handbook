@@ -21,6 +21,15 @@ Search Engine Optimization
 * robots.txt，robots协议，位于网站的根目录，用来告知搜索引擎哪些页面能被抓取，哪些页面不能被抓取。
 * sitemap，站点地图/网站地图，一种xml文件，您可以在其中提供与您网站中的网页、视频或其他文件有关的信息，还可以说明这些内容之间的关系。可以构建后主动提交给搜索引擎。
 
+| 文件                | 常见地址             | 作用                                        |
+| ------------------- | -------------------- | ------------------------------------------- |
+| `robots.txt`        | `/robots.txt`        | 控制爬虫可以抓取哪些路径                    |
+| `sitemap.xml`       | `/sitemap.xml`       | 列出网站 URL，帮助搜索引擎发现页面          |
+| `sitemap-index.xml` | `/sitemap-index.xml` | 管理多个 Sitemap                            |
+| `llms.txt`          | `/llms.txt`          | [给 LLM 提供精选内容导航和语义说明](https://llmstxt.org/)           |
+| `llms-full.txt`     | `/llms-full.txt`     | 某些工具约定的完整 LLM 上下文，并非统一标准 |
+
+
 ### 分词
 * 网页分词在线工具：http://www.78901.net/fenci/
 * 分词算法
