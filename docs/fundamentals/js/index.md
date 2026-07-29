@@ -1,11 +1,8 @@
 # JavaScript
 
-EcmaScript
-
-BOM
-
-DOM
-
+* EcmaScript
+* BOM
+* DOM
 
 ## 变量
 
@@ -17,7 +14,8 @@ DOM
 * 对于var命令来说，JavaScript 的区块不构成单独的作用域（scope）
 
 
-## 数据类型
+## [数据类型](./data-type)
+
 ### 基本数据类型
 
 * undefined
@@ -210,8 +208,11 @@ try {
 }
 ```
 
+## [globalThis](./globalThis)
 
+## [prototype](./prototype)
 
+## [Asynchronous Programming](./asynchronous-programming)
 
 ## 参考教程
 https://wangdoc.com/javascript/

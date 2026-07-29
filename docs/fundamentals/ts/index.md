@@ -23,4 +23,6 @@
 
 https://www.typescriptlang.org/dt/search?search=
 
+## [tsconfig.json](./tsconfig)
+
 ## [declare](./declare)
