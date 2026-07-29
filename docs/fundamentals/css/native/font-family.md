@@ -25,4 +25,3 @@ span {
 >
 > 综上所述，`font-family: Arial, Helvetica, sans-serif;` 声明通过指定一个字体优先级列表，确保文本在不同的系统和设备上都能以合适的无衬线字体显示，同时兼顾了字体的美观性和兼容性。
 >
-> --by doubao

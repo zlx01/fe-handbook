@@ -207,15 +207,22 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
             {text: 'postcss', link: '/fundamentals/css/preprocessor/postcss'},
           ]
         },
+        {text: 'CSS Modules', link: '/fundamentals/css/css-modules'},
+        {
+          text: 'CSS in JS',
+          collapsed: true,
+          items: [
+            {text: 'styled-jsx', link: '/fundamentals/css/css-in-js/styled-jsx'},
+            {text: 'styled-components', link: '/fundamentals/css/css-in-js/styled-components'},
+            {text: 'emotion', link: 'https://emotion.sh/'},
+          ],
+        },
         {
           text: 'CSS Framework',
-          // link: '/fundamentals/css/framework/',
           collapsed: true,
           items: [
             {text: 'tailwindcss', link: '/fundamentals/css/framework/tailwindcss'},
             {text: 'unocss', link: '/fundamentals/css/framework/unocss'},
-            {text: 'styled-jsx', link: '/fundamentals/css/framework/styled-jsx'},
-            {text: 'styled-components', link: '/fundamentals/css/framework/styled-components'},
           ],
         },
         {text: 'Animations Library', link: '/fundamentals/css/animations-lib'},
