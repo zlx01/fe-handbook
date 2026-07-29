@@ -107,7 +107,19 @@ function nav(): DefaultTheme.NavItem[] {
             {text: 'Babel', link: '/build-tools/compiler/babel/'},
             {text: 'swc', link: '/build-tools/compiler/swc'},
           ]
-        }
+        },
+        {
+          text: 'Linter',
+          items: [
+            {text: 'ESLint', link: '/build-tools/linter/eslint/'},
+          ]
+        },
+        {
+          text: 'Formatter',
+          items: [
+            {text: 'Prettier', link: '/build-tools/formatter/prettier/'},
+          ],
+        },
       ]
     },
     {
@@ -472,16 +484,16 @@ function sidebarBuildTools() {
           text: 'ESLint', link: '/build-tools/linter/eslint/',
         },
         {
-          text: 'rslint', link: '/build-tools/linter/rslint'
+          text: 'Rslint', link: '/build-tools/linter/rslint'
         },
         {
-          text: 'oxlint', link: '/build-tools/linter/oxlint'
+          text: 'Oxlint', link: '/build-tools/linter/oxlint'
         },
         {
           text: 'Biome', link: '/build-tools/linter/biome'
         },
         {
-          text: 'stylelint', link: '/build-tools/linter/stylelint',
+          text: 'stylelint', link: 'https://stylelint.io/',
         },
       ]
     },
@@ -493,7 +505,7 @@ function sidebarBuildTools() {
           text: 'Prettier', link: '/build-tools/formatter/prettier/',
         },
         {
-          text: 'oxfmt', link: '/build-tools/formatter/oxfmt'
+          text: 'Oxfmt', link: '/build-tools/formatter/oxfmt'
         },
         {
           text: 'Biome', link: 'https://biomejs.dev/'
