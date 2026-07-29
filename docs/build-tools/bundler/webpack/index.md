@@ -10,3 +10,16 @@
 
 Vue.version = '__VERSION__'
 
+
+## Plugins
+
+### [Image Minimizer Plugin](https://webpack.js.org/plugins/image-minimizer-webpack-plugin/)
+
+需要配合其他图片压缩工具使用，如：
+
+* imagemin
+* sharp
+* svgo
+
+
+## Module Federation

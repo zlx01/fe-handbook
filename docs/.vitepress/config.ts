@@ -418,6 +418,9 @@ function sidebarBuildTools() {
           text: 'Webpack', link: '/build-tools/bundler/webpack/',
         },
         {
+          text: 'Rspack', link: '/build-tools/bundler/rspack/',
+        },
+        {
           text: 'Vite', link: '/build-tools/bundler/vite/',
         },
         {
@@ -430,19 +433,10 @@ function sidebarBuildTools() {
           text: 'Rolldown', link: '/build-tools/bundler/rolldown'
         },
         {
-          text: 'snowpack', link: '/build-tools/bundler/snowpack'
-        },
-        {
           text: 'parcel', link: '/build-tools/bundler/parcel'
         },
         {
           text: 'turbopack', link: '/build-tools/bundler/turbopack'
-        },
-        {
-          text: 'turborepo', link: '/build-tools/bundler/turborepo'
-        },
-        {
-          text: 'out-of-date', link: '/build-tools/bundler/out-of-date'
         },
       ]
     },
@@ -455,28 +449,57 @@ function sidebarBuildTools() {
         },
         {
           text: 'swc', link: '/build-tools/compiler/swc'
-        }
+        },
+        {
+          text: 'Terser', link: '/build-tools/compiler/terser'
+        },
+        {
+          text: 'PostCSS', link: '/build-tools/compiler/postcss'
+        },
+        {
+          text: 'Lightning CSS', link: '/build-tools/compiler/lightning-css'
+        },
+        {
+          text: 'Oxc', link: '/build-tools/compiler/oxc'
+        },
       ]
     },
     {
-      text: 'Rstack',
-      link: '/build-tools/rstack/',
+      text: 'Linter',
       collapsed: false,
       items: [
         {
-          text: 'Rspack', link: '/build-tools/rstack/rspack/',
+          text: 'ESLint', link: '/build-tools/linter/eslint/',
         },
         {
-          text: 'Rsbuild', link: '/build-tools/rstack/rsbuild/',
+          text: 'rslint', link: '/build-tools/linter/rslint'
         },
         {
-          text: 'Rslib', link: '/build-tools/rstack/rslib/',
+          text: 'oxlint', link: '/build-tools/linter/oxlint'
         },
         {
-          text: 'Rspress', link: '/build-tools/rstack/rspress/',
+          text: 'Biome', link: '/build-tools/linter/biome'
+        },
+        {
+          text: 'stylelint', link: '/build-tools/linter/stylelint',
         },
       ]
-    }
+    },
+    {
+      text: 'Formatter',
+      collapsed: false,
+      items: [
+        {
+          text: 'Prettier', link: '/build-tools/formatter/prettier/',
+        },
+        {
+          text: 'oxfmt', link: '/build-tools/formatter/oxfmt'
+        },
+        {
+          text: 'Biome', link: 'https://biomejs.dev/'
+        },
+      ]
+    },
   ]
 }
 

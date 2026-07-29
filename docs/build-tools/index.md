@@ -8,22 +8,22 @@
 * 一个打包器，比如 webpack 或 Parcel
 * 一个编译器，比如 Babel
 
-## 其他工具
+## 前端构建工具进化历程
 
-* [Terser](https://terser.org/)：JavaScript 解析器和压缩器
+* https://mp.weixin.qq.com/s/o8B8HAczZtIZM8V_HHwNqg
+
 
 ## 过时的工具
 
-* gulp：https://gulpjs.com/
-* grunt：https://gruntjs.com/
+### [browserify](https://github.com/browserify/browserify)
 
-## 前端构建工具进化历程
+> Browsers don't have the required method defined, but Node.js does. With Browserify you can write code that uses require in the same way that you would use it in Node.
 
-https://mp.weixin.qq.com/s/o8B8HAczZtIZM8V_HHwNqg
+### [Gulp](https://gulpjs.com/)
 
+### [Grunt](https://gruntjs.com/)
 
-
-
+### [snowpack](https://www.snowpack.dev/)
 
 | Bundler        | Build Tool       |      |
 | -------------- | ---------------- | ---- |
@@ -43,9 +43,6 @@ https://mp.weixin.qq.com/s/o8B8HAczZtIZM8V_HHwNqg
 | 生产一致性   | 开发阶段和生产构建都使用rspack              |               | 开发阶段使用esbuild，生产构建使用rollup           |
 
 
-## 构建方式
-
-* rspack
 * vite + swc
 * webpack + swc
 * webpack + babel
