@@ -6,7 +6,7 @@
 
 * Add vendor prefixes to CSS rules using values from Can I Use. [Autoprefixer](https://github.com/postcss/autoprefixer) will use the data based on current browser popularity and property support to apply prefixes for you.
 * [PostCSS Preset Env](https://preset-env.cssdb.org/), lets you convert modern CSS into something most browsers can understand, determining the polyfills you need based on your targeted browsers or runtime environments, using [cssdb](https://cssdb.org/).
-* [css-modules](./css-modules) means you never need to worry about your names being too generic, just use whatever makes the most sense.
+* [css-modules](https://github.com/css-modules/css-modules) means you never need to worry about your names being too generic, just use whatever makes the most sense.
 * Enforce consistent conventions and avoid errors in your stylesheets with [stylelint](https://github.com/stylelint/stylelint), a modern CSS linter. It supports the latest CSS syntax, as well as CSS-like syntaxes, such as SCSS.
 
 ### 1. 自动添加浏览器前缀（Autoprefixer）
