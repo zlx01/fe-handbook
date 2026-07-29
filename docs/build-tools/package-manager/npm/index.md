@@ -87,6 +87,10 @@ cnpm -v
 cnpm install [package]
 ```
 
+## 版本锁定
+
+package-lock.json
+
 ## dot files
 
 ### .npmrc
@@ -97,3 +101,8 @@ cnpm install [package]
 
 打包上传时，忽略文件
 
+## node_modules
+
+### 依赖关系可视化
+
+* [Node Modules Inspector](https://node-modules.dev/)

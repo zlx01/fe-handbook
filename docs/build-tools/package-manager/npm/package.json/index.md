@@ -1,4 +1,4 @@
-# [package.json](https://docs.npmjs.com/cli/v11/configuring-npm/package-json)
+# [package.json](https://docs.npmjs.com/)
 
 ## version
 
