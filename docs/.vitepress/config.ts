@@ -335,7 +335,7 @@ function sidebarFramework() {
             {text: 'Vue Router', link: '/framework/vue/v2/vue-router/'},
             {text: 'Vuex', link: '/framework/vue/v2/vuex/'},
             {text: 'Vue Test Utils', link: '/framework/vue/v2/vuex/'},
-            // {text: 'Source Code', link: '/framework/vue/v2/source-code/'},
+            {text: 'Source Code', link: '/framework/vue/v2/source-code/'},
           ]
         },
         {
@@ -378,14 +378,17 @@ function sidebarFramework() {
       link: '/framework/svelte/'
     },
     {
-      text: 'Other',
+      text: 'Wxmp',
+      link: '/framework/wxmp/',
       collapsed: true,
       items: [
-        {text: 'jQuery', link: '/framework/other/jquery'},
-        {text: 'Storybook', link: '/framework/other/storybook'},
-        {text: 'miniprogram', link: '/framework/other/miniprogram/'},
-        {text: 'officialaccount', link: '/framework/other/officialaccount/'},
+        {text: 'miniprogram', link: '/framework/wxmp/miniprogram/'},
+        {text: 'officialaccount', link: '/framework/wxmp/officialaccount/'},
       ]
+    },
+    {
+      text: 'Other',
+      link: '/framework/other',
     }
   ]
 }

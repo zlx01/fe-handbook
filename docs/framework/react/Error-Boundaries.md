@@ -46,3 +46,12 @@ class ErrorBoundary extends React.Component {
   }
 }
 ```
+
+## third-party error handling library
+
+* [react-error-boundary](https://www.npmjs.com/package/react-error-boundary)
+  * 统一同步和异步错误处理
+  * 支持用户点击重试
+  * 支持 resetKeys 自动恢复
+  * useErrorBoundary Hook
+
