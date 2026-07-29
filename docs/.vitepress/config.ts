@@ -125,7 +125,6 @@ function nav(): DefaultTheme.NavItem[] {
         {text: 'Nodejs', link: '/advance/nodejs/'},
         {text: 'Deno', link: '/advance/deno/'},
         {text: 'Bun', link: '/advance/Bun/'},
-        {text: 'Nodejs', link: '/advance/nodejs/'},
         {text: 'SSR', link: '/advance/ssr/'},
         {text: 'SSG', link: '/advance/ssg/'},
         {text: 'Test', link: '/advance/test/'},
@@ -397,22 +396,17 @@ function sidebarBuildTools() {
           text: 'pnpm', link: '/build-tools/package-manager/pnpm/',
         },
         {
-          text: 'lerna', link: '/build-tools/package-manager/lerna/',
+          text: 'nvm', link: '/build-tools/package-manager/nvm'
         },
-        {text: 'nvm', link: '/build-tools/package-manager/nvm'},
-        {text: 'nrm', link: '/build-tools/package-manager/nrm'},
+        {
+          text: 'nrm', link: '/build-tools/package-manager/nrm'
+        },
         {
           text: 'corepack', link: '/build-tools/package-manager/corepack/',
         },
+        {text: 'Verdaccio', link: '/build-tools/package-manager/verdaccio/'},
         {
-          text: 'registry',
-          items: [
-            {text: 'Verdaccio', link: '/build-tools/package-manager/verdaccio/'},
-            {text: 'Nexus', link: '/build-tools/package-manager/nexus/'},
-          ]
-        },
-        {
-          text: 'lerna', link: '/build-tools/package-manager/lerna/',
+          text: 'other', link: '/build-tools/package-manager/other/',
         },
       ]
     },
