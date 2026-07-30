@@ -40,11 +40,6 @@ insert_final_newline = false
 trim_trailing_whitespace = false
 ```
 
-## Formatting: [Prettier](./prettier)
-
-## Linting: [ESLint](./eslint)
-
-
 ## husky lint-staged prettier eslint
 
 * vue: https://github.com/zlx01/vue-husky-test
