@@ -20,6 +20,13 @@
 * https://zhuanlan.zhihu.com/p/103642413
 * https://www.cnblogs.com/xuehaoyue/p/14327782.html
 
+### [vConsole](https://github.com/tencent/vconsole)
+
+> A lightweight, extendable front-end developer tool for mobile web page.
+
+### [Eruda](https://github.com/liriliri/eruda)
+
+> Console for mobile browsers
 
 ## Network
 
