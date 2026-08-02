@@ -114,4 +114,4 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name
 <meta http-equiv="Content-Security-Policy" content="default-src https:;worker-src *.test.com 'self' blob:;script-src *.test.com 'unsafe-inline' 'unsafe-eval';object-src 'none'">
 ```
 
-查看[详细介绍](../http/csp)
+查看[详细介绍](../network/http/csp)

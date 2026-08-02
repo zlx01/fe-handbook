@@ -78,9 +78,8 @@ function nav(): DefaultTheme.NavItem[] {
         {text: 'CSS', link: '/fundamentals/css/'},
         {text: 'JavaScript', link: '/fundamentals/js/'},
         {text: 'TypeScript', link: '/fundamentals/ts/'},
-        {text: 'Browser', link: '/fundamentals/browser/'},
-        {text: 'HTTP', link: '/fundamentals/http/'},
         {text: 'Network', link: '/fundamentals/network/'},
+        {text: 'Browser', link: '/fundamentals/browser/'},
       ]
     },
     {
@@ -281,28 +280,27 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
       link: '/fundamentals/ts/',
     },
     {
-      text: 'HTTP',
-      link: '/fundamentals/http/',
-      collapsed: true,
-      items: [
-        {text: 'HTTPS', link: '/fundamentals/http/https'},
-        {text: 'SSL证书部署', link: '/fundamentals/http/ssl-cert-nginx'},
-        {text: 'HTTP Caching', link: '/fundamentals/http/caching'},
-        {text: 'Content Security Policy', link: '/fundamentals/http/csp'},
-        {text: 'Proxy', link: '/fundamentals/http/proxy'},
-      ]
-    },
-    {
       text: 'Network',
       link: '/fundamentals/network/',
       collapsed: true,
       items: [
-        {text: '公网ip', link: '/fundamentals/network/host-ip'},
-        {text: 'NAT', link: '/fundamentals/network/nat'},
+        {text: 'IP', link: '/fundamentals/network/host-ip'},
         {text: 'Domain', link: '/fundamentals/network/domain'},
+        {
+          text: 'HTTP',
+          link: '/fundamentals/network/http/',
+          collapsed: true,
+          items: [
+            {text: 'HTTPS', link: '/fundamentals/network/http/https'},
+            {text: 'SSL证书部署', link: '/fundamentals/network/http/ssl-cert-nginx'},
+            {text: 'HTTP Caching', link: '/fundamentals/network/http/caching'},
+            {text: 'Content Security Policy', link: '/fundamentals/network/http/csp'},
+          ]
+        },
+        {text: 'Proxy', link: '/fundamentals/network/proxy'},
         {text: 'DNS', link: '/fundamentals/network/DNS'},
         {text: 'CNAME', link: '/fundamentals/network/cname'},
-        {text: 'Proxy', link: '/fundamentals/network/proxy'},
+        {text: 'NAT', link: '/fundamentals/network/nat'},
       ]
     },
     {

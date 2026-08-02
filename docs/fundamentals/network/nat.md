@@ -1,6 +1,4 @@
-# NAT
-
-Network Address Translation
+# NAT (Network Address Translation)
 
 基本原理和应用参考[博文](https://www.cnblogs.com/mefj/p/10578639.html)
 

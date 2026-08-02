@@ -1,4 +1,4 @@
-# DNS(Domain Name System)
+# DNS (Domain Name System)
 
 ## DNS 记录类型
 
