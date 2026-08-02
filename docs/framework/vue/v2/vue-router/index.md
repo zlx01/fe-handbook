@@ -123,11 +123,11 @@ const app = new Vue({router}).$mount('#app');
 
 * 要在服务端增加一个覆盖所有情况的候选资源：如果 URL 匹配不到任何静态资源，则应该返回同一个 index.html 页面，这个页面就是你 app 依赖的页面。例如nginx要配置：
 
-  ```conf
+```text
   location / {  
   	try_files $uri $uri/ /index.html;
   }
-  ```
+```
 
 * 这么做以后，你的服务器就不再返回 404 错误页面，因为对于所有路径都会返回 index.html 文件。为了避免这种情况，你应该在 Vue 应用里面覆盖所有的路由情况，然后再给出一个 404 页面。
 

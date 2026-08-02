@@ -62,13 +62,13 @@ yarn config set registry http://localhost:4873
 
 #### .npmrc
 
-```.npmrc
+```text
 registry=http://localhost:4873/
 ```
 
 ####  .yarnrc
 
-```.yarnrc
+```text
 registry "http://localhost:4873"
 ```
 

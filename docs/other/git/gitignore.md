@@ -58,7 +58,7 @@ yarn-error.log*
 
 ## from rspack
 
-```.gitignore
+```text
 # Local
 .DS_Store
 *.local
