@@ -1,8 +1,10 @@
-# Static Site Generator
+# SSG (Static Site Generator)
 
-## 什么是 SSG
-
-SSG（Static Site Generation，静态站点生成）是指在构建阶段将页面预渲染为 HTML 等静态文件。
+> SSG 是 "Static Site Generation"（静态网站生成）的缩写。它表示网页在**构建阶段**被预先渲染成静态的 HTML，然后直接提供给客户端，而不需要服务器实时生成 HTML。
+>
+> 在传统的 SSR 中，每当用户请求一个页面时，服务器就会实时生成 HTML。有了 SSG，HTML 可以在构建过程中被提前生成，并被托管在 CDN 或其他静态资源服务中。
+>
+> 与传统的 SSR 相比，SSG 可以提供更快的加载速度以及更少的服务端开销，因为不需要维护一个服务器来实时生成 HTML。然而，SSG 不适合需要动态内容的网站，因为 HTML 是在构建过程中生成的，不支持实时更新。
 
 ## SSG 的优势
 
@@ -10,61 +12,26 @@ SSG（Static Site Generation，静态站点生成）是指在构建阶段将页�
 * SEO 友好：搜索引擎爬虫可以直接抓取到完整的 HTML 内容。
 * 易于部署：产物是纯静态文件，无需部署服务器 API，可直接上传到 CDN 或任何静态托管服务。
 
-## SSG 加载流程
-
-1. 浏览器加载 HTML → 用户立即看到完整内容
-2. JavaScript 加载完成 → React hydrate（水合），绑定事件交互
-3. 后续页面导航 → SPA 模式，客户端渲染
 
 
-## CSR 加载流程
+## Tools
 
-1. 浏览器加载 HTML → 用户看到空白页面
-2. JavaScript 加载完成 → React 渲染页面内容
-3. 后续页面导航 → SPA 模式，客户端渲染
-
-## Blog
-
-### [**hexo**](https://hexo.io/zh-cn/)
-
-### [**hugo**](https://gohugo.io/)
-
-### [**jekyll**](https://jekyllrb.com/)
-
-## **Documentation**
-
-### [**gitbook**](https://www.gitbook.com/)
-
-### [**vuepress**](https://vuepress.vuejs.org/)
-
-### [**vitepress**](https://vitepress.vuejs.org/)
-
-### [**rspress**](https://rspress.dev/)
-
-### [**docsify**](https://docsify.js.org/)
-
-### [**docute**](https://docute.egoist.dev/)
-
-### [**docusaurus**](https://docusaurus.io/)
-
-## **Tools**
-
-### **Image hosting service**
+### Image hosting service
 
 - [图壳](https://imgkr.com/)
 - GitHub + jsdelivr + PicGo
 - 各大云服务对象存储cos
 
-### **Discussion**
+### Discussion
 
 - [disqus](https://disqus.com/)
 
-### **Search**
+### Search
 
 - [algolia](https://www.algolia.com/) 非常好用
 - [typesense](https://typesense.org/)
 
-### **Badge**
+### Badge
 
 - [bandage](https://shields.io/) 一般用于开源项目，统计 star, fork, issues, pull request, release, deploy, visitors
 
@@ -72,53 +39,28 @@ SSG（Static Site Generation，静态站点生成）是指在构建阶段将页�
 
 ![在这里插入图片描述](assets/4bf5826b53c08cb1215802bfdc141b0c.png)
 
-### **Analytics**
+### Analytics
 
 - [Google Analytics](https://marketingplatform.google.com/about/analytics/)
 
-### **Code Image**
+### Code Image
 
 - [https://www.codepng.app/](https://www.codepng.app/)
 - [https://carbon.now.sh/](https://carbon.now.sh/)
 
----
+- https://live2d.fghrsh.net/demo/1.4.2/waifu-tips.html)
 
-## **Hexo**
 
-NexT主题：
 
-- [https://theme-next.js.org/](https://theme-next.js.org/)
-- [https://github.com/next-theme/hexo-theme-next](https://github.com/next-theme/hexo-theme-next)
+## Deployment
 
-### **参考文章**
+### GitHub Pages
 
-- [https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html](https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html)
-- [https://www.jianshu.com/p/f054333ac9e6](https://www.jianshu.com/p/f054333ac9e6)
-- [https://www.cnblogs.com/ECJTUACM-873284962/category/1198838.html](https://www.cnblogs.com/ECJTUACM-873284962/category/1198838.html)
+### GitLab Pages
 
-### **live2d**
+### Cloudflare Pages
 
-- [https://www.cnblogs.com/wangyuehan/p/9860371.html](https://www.cnblogs.com/wangyuehan/p/9860371.html)
-- [https://www.jianshu.com/p/3a6342e16e57](https://www.jianshu.com/p/3a6342e16e57)
-- [https://www.jianshu.com/p/a7f4a42e4b49](https://www.jianshu.com/p/a7f4a42e4b49)
-- [https://github.com/fghrsh/live2d_api](https://github.com/fghrsh/live2d_api)
-- [https://github.com/evgo2017/vue-live2d](https://github.com/evgo2017/vue-live2d)
-- [https://github.com/evgo2017/live2d-static-api](https://github.com/evgo2017/live2d-static-api)
-- [https://live2d.fghrsh.net/demo/1.4.2/waifu-tips.html](https://live2d.fghrsh.net/demo/1.4.2/waifu-tips.html)
+### [Vercel](https://vercel.com/)
 
-## **Deployment**
+### [Netlify](https://www.netlify.com/)
 
-### **1. GitHub Pages**
-
-### **2. GitLab Pages**
-
-### **3. [vercel](https://vercel.com/)**
-
-### **4. [netlify](https://www.netlify.com/)**
-
-## **Domain**
-
-- 域名注册
-    - [freessl](https://freessl.org/)
-- 域名解析
-- 域名备案

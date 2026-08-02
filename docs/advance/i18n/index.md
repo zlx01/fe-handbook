@@ -1,10 +1,11 @@
 # i18n
 
-internationalization
+> ***internationalization***
 
-vue-i18n: https://kazupon.github.io/vue-i18n/
+## Vue
 
-vue-i18n: https://vue-i18n.intlify.dev/
+* [vue-i18n](https://vue-i18n.intlify.dev/) for vue3
+* [vue-i18n](https://kazupon.github.io/vue-i18n/) for vue2
 
 ## Reference
 

@@ -1,1 +1,0 @@
-# [nuxtjs](https://nuxtjs.org/)

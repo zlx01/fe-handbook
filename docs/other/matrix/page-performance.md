@@ -26,3 +26,8 @@ vue.runtime.js  vue-router.js vuex.js
 
 走cdn缓存
 
+因此 gzip 用于 HTTP 文件传输中，比如 JS、CSS 等，但一般不会压缩图片。在 HTTP Response 报文中，用 Content-Encoding 指明使用 gzip 压缩
+
+
+html设置协商缓存
+静态资源 hash + 强缓存

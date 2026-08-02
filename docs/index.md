@@ -33,12 +33,6 @@
 * https://stackblitz.com/
 * https://jsfiddle.net/
 
-## Git
-
-* https://git-scm.com/
-* https://github.com/
-* https://about.gitlab.com/
-
 ## Useful Libraries
 
 see [link](/other/wheel/)
@@ -55,6 +49,9 @@ see [link](/other/wheel/)
 * [Lorem Ipsum](https://www.lipsum.com/)
 * https://picsum.photos/
 * https://matching.name/
+* https://devtool.tech/
+* [postman](https://www.postman.com/)
+* [Apifox](https://apifox.com/)  = Postman + Swagger + Mock + JMeter
 
 ## CDN
 

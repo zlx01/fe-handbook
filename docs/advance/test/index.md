@@ -4,9 +4,6 @@
 * component test
 * e2e test
 
-## Testing Library
-
-https://testing-library.com/
 
 ## 断言
 

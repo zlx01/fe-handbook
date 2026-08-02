@@ -1,1 +1,0 @@
-# [nextjs](https://nextjs.org/)

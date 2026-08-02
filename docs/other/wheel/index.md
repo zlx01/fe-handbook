@@ -136,6 +136,8 @@
 * [jodit](https://xdsoft.net/jodit/)
 * [kindeditor](http://kindeditor.net/demo.php)  out-of-date
 * [ueditor](http://fex.baidu.com/ueditor/)  out-of-date
+* [slate](https://www.slatejs.org/)  A completely customizable framework for building rich text editors.
+* [ProseMirror](https://prosemirror.net/)  A toolkit for building rich-text editors on the web.
 
 
 ## Markdown Editor

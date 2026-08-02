@@ -18,11 +18,3 @@
 
 ![TypeScript Classes](assets/TypeScript-Classes.png)
 
-
-## Type Search
-
-https://www.typescriptlang.org/dt/search?search=
-
-## [tsconfig.json](./tsconfig)
-
-## [declare](./declare)

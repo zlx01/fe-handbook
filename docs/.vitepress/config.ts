@@ -136,6 +136,7 @@ function nav(): DefaultTheme.NavItem[] {
         {text: 'Nodejs', link: '/advance/nodejs/'},
         {text: 'Deno', link: '/advance/deno/'},
         {text: 'Bun', link: '/advance/Bun/'},
+        {text: 'CSR', link: '/advance/csr/'},
         {text: 'SSR', link: '/advance/ssr/'},
         {text: 'SSG', link: '/advance/ssg/'},
         {text: 'Test', link: '/advance/test/'},
@@ -150,15 +151,16 @@ function nav(): DefaultTheme.NavItem[] {
         {text: 'DevOps', link: '/advance/devops/'},
         {text: 'Database', link: '/advance/database/'},
         {text: 'Web Application Security', link: '/advance/security/'},
+        {text: 'WebAssembly', link: '/advance/webassembly/'},
       ]
     },
     {
       text: 'other',
       items: [
-        {text: 'Useful Libraries', link: '/other/wheel/'},
-        {text: 'Code Style', link: '/other/code-style/'},
-        {text: 'Matrix', link: '/other/matrix/'},
         {text: 'Git', link: '/other/git/'},
+        {text: 'IDE', link: '/other/ide/'},
+        {text: 'Useful Libraries', link: '/other/wheel/'},
+        {text: 'Matrix', link: '/other/matrix/'},
       ]
     },
   ]
@@ -278,6 +280,14 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
     {
       text: 'TypeScript',
       link: '/fundamentals/ts/',
+      collapsed: true,
+      items: [
+        {text: 'tsconfig', link: '/fundamentals/ts/tsconfig'},
+        {text: 'declare', link: '/fundamentals/ts/declare'},
+        {text: 'Type Search', link: 'https://www.typescriptlang.org/dt/search/?search='},
+        {text: 'jsdoc', link: '/fundamentals/js/jsdoc'},
+        {text: 'tsdoc', link: '/fundamentals/ts/tsdoc'},
+      ],
     },
     {
       text: 'Network',
@@ -534,25 +544,21 @@ function sidebarAdvance() {
           text: 'Web Framework',
           collapsed: true,
           items: [
-            {text: 'Express', link: '/advance/nodejs/express/'},
-            {text: 'Koa', link: '/advance/nodejs/koa/'},
-            {text: 'Egg', link: '/advance/nodejs/egg/'},
+            {text: 'Express', link: '/advance/nodejs/framework/express/'},
+            {text: 'Koa', link: '/advance/nodejs/framework/koa'},
+            {text: 'Egg', link: '/advance/nodejs/framework/egg'},
+            {text: 'Nestjs', link: '/advance/nodejs/framework/nestjs/'},
+            {text: 'hapi', link: '/advance/nodejs/framework/hapi'},
+            {text: 'Fastify', link: '/advance/nodejs/framework/fastify'},
+            {text: 'Hono', link: '/advance/nodejs/framework/hono'},
           ]
         },
         {
           text: 'Templating Language',
-          collapsed: true,
-          items: [
-            {text: 'ejs', link: '/advance/nodejs/ejs/'},
-          ]
+          link: '/advance/nodejs/templating/',
         },
-        {
-          text: 'Communication',
-          collapsed: true,
-          items: [
-            {text: 'socket.io', link: '/advance/nodejs/socket-io/'},
-          ]
-        },
+        {text: 'pm2', link: '/advance/nodejs/pm2/'},
+        {text: 'socket.io', link: '/advance/nodejs/socket-io/'},
       ]
     },
     {
@@ -564,6 +570,15 @@ function sidebarAdvance() {
       link: '/advance/bun/',
     },
     {
+      text: 'CSR',
+      link: '/advance/csr/',
+      collapsed: true,
+      items: [
+        {text: 'Vue', link: '/framework/vue'},
+        {text: 'React', link: '/framework/react'},
+      ]
+    },
+    {
       text: 'SSR',
       link: '/advance/ssr/',
       collapsed: true,
@@ -572,7 +587,22 @@ function sidebarAdvance() {
         {text: 'Next', link: '/framework/nextjs'},
       ]
     },
-    {text: 'SSG', link: '/advance/ssg/'},
+    {
+      text: 'SSG',
+      link: '/advance/ssg/',
+      collapsed: true,
+      items: [
+        {text: 'Hexo', link: '/advance/ssg/hexo'},
+        {text: 'Hugo', link: '/advance/ssg/hugo'},
+        {text: 'Jekyll', link: '/advance/ssg/jekyll'},
+        {text: 'Vuepress', link: '/advance/ssg/vuepress'},
+        {text: 'Vitepress', link: '/advance/ssg/vitepress'},
+        {text: 'Rspress', link: '/advance/ssg/rspress'},
+        {text: 'Docusaurus', link: '/advance/ssg/docusaurus'},
+        {text: 'Gatsby', link: '/advance/ssg/gatsby'},
+        {text: 'Astro', link: '/advance/ssg/astro'},
+      ]
+    },
     {
       text: 'Test',
       link: '/advance/test/',
@@ -591,11 +621,22 @@ function sidebarAdvance() {
           text: 'component test',
           collapsed: true,
           items: [
+            {text: 'Testing Library', link: '/advance/test/component/testing-library'},
             {text: 'vue-test-utils', link: '/advance/test/component/vue-test-utils'},
           ]
         },
         {
-          text: 'e2e test', link: '/advance/test/e2e/',
+          text: 'e2e test',
+          link: '/advance/test/e2e/',
+          collapsed: true,
+          items: [
+            {text: 'Cypress', link: '/advance/test/e2e/cypress'},
+            {text: 'Playwright', link: '/advance/test/e2e/playwright'},
+            {text: 'WebdirverIO', link: 'https://webdriver.io/'},
+            {text: 'Nightwatch', link: 'https://nightwatchjs.org/'},
+            {text: 'TestCafe', link: '/advance/test/e2e/testcafe'},
+            {text: 'Puppeteer', link: '/advance/test/e2e/puppeteer'},
+          ]
         },
       ]
     },
@@ -626,7 +667,8 @@ function sidebarAdvance() {
     {
       text: 'Web Application Security',
       link: '/advance/security/',
-    }
+    },
+    {text: 'WebAssembly', link: '/advance/webassembly/'},
   ]
 }
 

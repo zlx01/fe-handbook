@@ -1,0 +1,1 @@
+# [TSDoc](https://tsdoc.org/)

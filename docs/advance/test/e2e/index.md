@@ -1,8 +1,7 @@
 # e2e test
 
-* [cypress](./cypress)
-* [nightwatch](https://nightwatchjs.org/)
-* [webdriverio](https://webdriver.io/)
-* [Puppeteer](./puppeteer)
-* [TestCafe](./testcafe)
-* [playwright](./playwright)
+**E2E Test（End-to-End Test，端到端测试）** 是一种从用户视角出发，测试整个应用完整流程的自动化测试。
+
+简单说：
+
+> **模拟真实用户操作，验证从前端界面到后端服务、数据库等完整链路是否正常。**

@@ -15,7 +15,6 @@
 * [点击完成验证](./click-captcha)
 * [图片转base64](./image-to-base64)
 * [移动端H5混合原生开发问题记录](./hybrid-app-h5-problems)
-* [CTRL+F5 和 F5 两种刷新有什么区别](./refresh-page)
 * [URL后面加不加斜杆的区别](./trailing-slash)
 * [网页性能优化](./page-performance)
 * [移动端适配](./mobile-device-adaptation)

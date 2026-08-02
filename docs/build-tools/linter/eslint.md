@@ -25,3 +25,35 @@
 
 eslint-plugin-simple-import-sort
 
+## husky lint-staged prettier eslint
+
+* vue: https://github.com/zlx01/vue-husky-test
+* react: https://github.com/zlx01/react-husky-test
+
+package.json
+```json
+{
+  "scripts": {
+    "prepare": "husky install",
+    "format": "prettier --write .",
+    "lint": "eslint ."
+  },
+  "lint-staged": {
+    "*.{js,ts,vue,json}": [
+      "prettier --write"
+    ],
+    "*.{js,jsx}": [
+      "eslint --fix"
+    ]
+  }
+}
+```
+相关的库
+
+* eslint
+* @eslint/compat
+* @eslint/js
+* eslint-plugin-vue
+* eslint-plugin-react
+* eslint-plugin-react-hooks
+* typescript-eslint
