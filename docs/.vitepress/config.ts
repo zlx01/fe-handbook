@@ -96,8 +96,8 @@ function nav(): DefaultTheme.NavItem[] {
         {
           text: 'Bundler',
           items: [
-            {text: 'Vite', link: '/build-tools/bundler/vite/'},
             {text: 'Webpack', link: '/build-tools/bundler/webpack/'},
+            {text: 'Vite', link: '/build-tools/bundler/vite/'},
           ]
         },
         {
@@ -530,6 +530,25 @@ function sidebarBuildTools() {
         },
       ]
     },
+    {
+      text: 'Plugin System',
+      collapsed: false,
+      items: [
+        {
+          text: 'Unplugin', link: '/build-tools/plugin/unplugin'
+        },
+      ]
+    },
+    {
+      text: 'Monorepo',
+      link: '/build-tools/monorepo/',
+      collapsed: false,
+      items: [
+        {
+          text: 'Turborepo', link: '/build-tools/monorepo/turborepo'
+        },
+      ]
+    },
   ]
 }
 
@@ -753,10 +772,13 @@ function sidebarGit(): DefaultTheme.SidebarItem[] {
         {text: 'Installing Git', link: '/other/git/installing-git/'},
         {text: 'Operating Mechanism', link: '/other/git/operating-mechanism'},
         {text: 'Workflow', link: '/other/git/workflow'},
+        {text: '.gitignore', link: '/other/git/gitignore'},
         {text: '.gitattributes', link: '/other/git/gitattributes'},
+        {text: 'git-hook', link: '/other/git/git-hook'},
         {
           text: 'GitHub',
           link: '/other/git/github/',
+          collapsed: true,
           items: [
             {text: 'Actions', link: '/other/git/github/actions'},
             {text: 'Pages', link: '/other/git/github/pages'},
@@ -771,6 +793,7 @@ function sidebarGit(): DefaultTheme.SidebarItem[] {
         {
           text: 'GitLab',
           link: '/other/git/gitlab/',
+          collapsed: true,
           items: [
             {text: 'CI/CD', link: '/other/git/gitlab/ci-cd'},
           ]

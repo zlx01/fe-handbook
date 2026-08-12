@@ -1,8 +1,5 @@
 # IDE
 
-## [VSCode](https://code.visualstudio.com/)
-
-## [WebStorm](https://www.jetbrains.com/zh-cn/webstorm/)
 
 
 ## [EditorConfig](https://editorconfig.org/)
