@@ -87,5 +87,3 @@ const myRef = {
 ### jsx
 
 ![jsx](./assets/jsx.jpg)
-
-## [UI](./ui)

@@ -80,3 +80,17 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```shell
 nvm alias default <version>
 ```
+
+更省事的办法是添加命令别名，修改 `~/.zshrc` 文件，添加如下内容：
+
+```shell
+alias nvm16='nvm alias default v16.17.0 && nvm use v16.17.0'
+```
+
+重启终端后生效
+
+```text
+myMacBookPro% nvm16
+default -> v16.17.0
+Now using node v16.17.0 (npm v9.3.0)
+```

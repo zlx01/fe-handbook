@@ -24,6 +24,8 @@ module.exports = {
 
 > Convert pixel units to rem (root em) units using PostCSS
 
+通常搭配 [lib-flexible](https://github.com/amfe/lib-flexible) 设置 rem 基准值
+
 ## [cssnano](https://github.com/cssnano/cssnano)
 
 > A modern, modular CSS minifier.

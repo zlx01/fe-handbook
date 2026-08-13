@@ -21,6 +21,13 @@
 }
 ```
 
+vant 的 `browserslist` 配置
+
+```text
+Chrome >= 51
+iOS >= 10
+```
+
 * "> 1%"：支持市场占有率大于 1% 的浏览器。
 * "last 2 versions"：支持浏览器的最新两个版本。
 * "not dead"：不支持已经停止维护的浏览器。

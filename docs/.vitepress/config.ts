@@ -354,6 +354,7 @@ function sidebarFramework() {
             {text: 'Vue Router', link: '/framework/vue/v3/vue-router/'},
             {text: 'Pinia', link: '/framework/vue/v3/pinia/'},
             {text: 'Vue Test Utils', link: '/framework/vue/v2/vuex/'},
+            {text: 'UI Library', link: '/framework/vue/v3/ui'},
           ]
         },
       ]
