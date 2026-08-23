@@ -1,5 +1,7 @@
 # Front-End Developer HandBook
 
+![](https://github.com/zlx01/fe-handbook/actions/workflows/deploy.yml/badge.svg)
+
 ## Reference
 
 * https://developer.mozilla.org/en-US/

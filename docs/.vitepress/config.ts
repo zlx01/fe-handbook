@@ -783,12 +783,9 @@ function sidebarGit(): DefaultTheme.SidebarItem[] {
           items: [
             {text: 'Actions', link: '/other/git/github/actions'},
             {text: 'Pages', link: '/other/git/github/pages'},
-            {text: 'Copilot Prompts', link: '/other/git/github/copilot-prompts'},
+            {text: 'Copilot', link: '/other/git/github/copilot'},
             {text: 'github.dev', link: '/other/git/github/github-dev'},
             {text: 'Codespaces', link: '/other/git/github/codespaces'},
-            {text: 'Packages', link: '/other/git/github/packages'},
-            {text: 'CLI', link: '/other/git/github/cli'},
-            {text: 'MCP', link: '/other/git/github/mcp'},
           ]
         },
         {

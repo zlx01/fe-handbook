@@ -22,4 +22,4 @@ Vue.version = '__VERSION__'
 * svgo
 
 
-## Module Federation
+## [Module Federation](https://webpack.js.org/concepts/module-federation/)

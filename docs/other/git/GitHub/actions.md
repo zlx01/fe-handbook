@@ -1,16 +1,15 @@
-# GitHub Actions
+# [GitHub Actions](https://github.com/features/actions)
 
-- [https://github.com/marketplace?type=actions](https://github.com/marketplace?type=actions)
-- [https://github.com/marketplace/actions/build-and-push-docker-images](https://github.com/marketplace/actions/build-and-push-docker-images)
-- [https://github.com/marketplace/actions/docker-build-push-action](https://github.com/marketplace/actions/docker-build-push-action)
+## Price
 
-## Examples
+> GitHub Actions is free for public repositories.
 
-- [springboot-dockerfile-demo](https://github.com/zlx01/springboot-dockerfile-demo)
-- [vue3-dockerfile-demo](https://github.com/zlx01/vue3-dockerfile-demo)
-- [react-dockerfile-demo](https://github.com/zlx01/react-dockerfile-demo)
+## The components of GitHub Actions
 
-## yaml文件
+![Diagram of an event triggering Runner 1 to run Job 1, which triggers Runner 2 to run Job 2. Each of the jobs is broken into multiple steps.](assets/overview-actions-simple.png)
+
+
+## `.github/workflows`
 
 ### name
 
@@ -57,7 +56,9 @@ jobs:
       - name: Checking if push changes are duplicated
         run: python scripts/validate/links.py ${FILENAME} --only_duplicate_links_checker
         if: github.event_name == 'push'
+```
 
+```yaml
 jobs:
   unittest:
     name: 'Run tests of validate package'
@@ -79,7 +80,6 @@ jobs:
       run: |
         cd scripts
         python -m unittest discover tests/ --verbose
-
 ```
 
 ### env
@@ -89,6 +89,11 @@ env:
   FILENAME: README.md
 ```
 
-[https://github.com/zlx01/fe-handbook/actions/workflows/deploy.yml/badge.svg](https://github.com/zlx01/fe-handbook/actions/workflows/deploy.yml/badge.svg)
+## [Marketplace](https://github.com/marketplace?type=actions)
 
-![](https://github.com/zlx01/fe-handbook/actions/workflows/deploy.yml/badge.svg)
+- [build-and-push-docker-images](https://github.com/marketplace/actions/build-and-push-docker-images)
+
+
+## [GitHub Packages](https://github.com/orgs/community/packages)
+
+docker npm maven仓库 

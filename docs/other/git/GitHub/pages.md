@@ -1,10 +1,6 @@
-# GitHub Pages
+# [GitHub Pages](https://pages.github.com/)
 
-## Websites for you and your projects.
-
-[GitHub Pages](https://pages.github.com/)
-
-[GitHub Pages Documentation - GitHub Docs](https://docs.github.com/en/pages)
+> Websites for you and your projects.
 
 ## User Site
 
