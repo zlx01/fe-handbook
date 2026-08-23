@@ -44,9 +44,9 @@ export default defineConfig({
       '/build-tools/': sidebarBuildTools(),
       '/framework/': sidebarFramework(),
       '/advance/': sidebarAdvance(),
-      '/advance/app/': sidebarApp(),
-      '/advance/devops/': sidebarDevOps(),
-      '/other/git/': sidebarGit(),
+      '/server/': sidebarServer(),
+      '/app/': sidebarApp(),
+      '/devops/': sidebarDevOps(),
     },
 
     socialLinks: [
@@ -80,6 +80,8 @@ function nav(): DefaultTheme.NavItem[] {
         {text: 'TypeScript', link: '/fundamentals/ts/'},
         {text: 'Network', link: '/fundamentals/network/'},
         {text: 'Browser', link: '/fundamentals/browser/'},
+        {text: 'Git', link: '/fundamentals/git/'},
+        {text: 'IDE', link: '/fundamentals/ide/'},
       ]
     },
     {
@@ -140,25 +142,30 @@ function nav(): DefaultTheme.NavItem[] {
         {text: 'SSR', link: '/advance/ssr/'},
         {text: 'SSG', link: '/advance/ssg/'},
         {text: 'Test', link: '/advance/test/'},
-        {text: 'APM', link: '/advance/apm/'},
-        {text: 'RUM', link: '/advance/rum/'},
         {text: 'Low Code', link: '/advance/low-code/'},
         {text: 'Micro-frontends', link: '/advance/micro-frontends/'},
         {text: 'PWA', link: '/advance/pwa/'},
         {text: 'WebGL', link: '/advance/webgl/'},
         {text: 'i18n', link: '/advance/i18n/'},
-        {text: 'APP', link: '/advance/app/'},
-        {text: 'DevOps', link: '/advance/devops/'},
-        {text: 'Database', link: '/advance/database/'},
         {text: 'Web Application Security', link: '/advance/security/'},
         {text: 'WebAssembly', link: '/advance/webassembly/'},
       ]
     },
     {
+      text: 'Server',
+      link: '/server/'
+    },
+    {
+      text: 'App',
+      link: '/app/',
+    },
+    {
+      text: 'DevOps',
+      link: '/devops/',
+    },
+    {
       text: 'other',
       items: [
-        {text: 'Git', link: '/other/git/'},
-        {text: 'IDE', link: '/other/ide/'},
         {text: 'Useful Libraries', link: '/other/wheel/'},
         {text: 'Matrix', link: '/other/matrix/'},
       ]
@@ -323,6 +330,40 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
         {text: 'Event Loop', link: '/fundamentals/browser/event-loop'},
       ]
     },
+    {
+      text: 'Git',
+      link: '/fundamentals/git/',
+      collapsed: true,
+      items: [
+        {text: 'Installing Git', link: '/fundamentals/git/installing-git/'},
+        {text: 'Operating Mechanism', link: '/fundamentals/git/operating-mechanism'},
+        {text: 'Workflow', link: '/fundamentals/git/workflow'},
+        {text: '.gitignore', link: '/fundamentals/git/gitignore'},
+        {text: '.gitattributes', link: '/fundamentals/git/gitattributes'},
+        {text: 'git-hook', link: '/fundamentals/git/git-hook'},
+        {
+          text: 'GitHub',
+          link: '/fundamentals/git/github/',
+          collapsed: true,
+          items: [
+            {text: 'Actions', link: '/fundamentals/git/github/actions'},
+            {text: 'Pages', link: '/fundamentals/git/github/pages'},
+            {text: 'Copilot', link: '/fundamentals/git/github/copilot'},
+            {text: 'github.dev', link: '/fundamentals/git/github/github-dev'},
+            {text: 'Codespaces', link: '/fundamentals/git/github/codespaces'},
+          ]
+        },
+        {
+          text: 'GitLab',
+          link: '/fundamentals/git/gitlab/',
+          collapsed: true,
+          items: [
+            {text: 'CI/CD', link: '/fundamentals/git/gitlab/ci-cd'},
+          ]
+        },
+      ]
+    },
+    {text: 'IDE', link: '/fundamentals/ide/'},
   ]
 }
 
@@ -660,8 +701,7 @@ function sidebarAdvance() {
         },
       ]
     },
-    {text: 'APM', link: '/advance/apm/'},
-    {text: 'RUM', link: '/advance/rum/'},
+
     {text: 'Low Code', link: '/advance/low-code/'},
     {
       text: 'Micro-frontends',
@@ -682,8 +722,6 @@ function sidebarAdvance() {
       ]
     },
     {text: 'i18n', link: '/advance/i18n/'},
-    {text: 'APP', link: '/advance/app/'},
-    {text: 'Database', link: '/advance/database/'},
     {
       text: 'Web Application Security',
       link: '/advance/security/',
@@ -692,26 +730,63 @@ function sidebarAdvance() {
   ]
 }
 
+function sidebarServer() {
+  return [
+    {text: 'Server', link: '/server/'},
+    {text: 'Database', link: '/server/database/'},
+    {text: 'Redis', link: '/server/redis/'},
+    {text: 'MongoDB', link: '/server/mongodb/'},
+    {
+      text: 'Message Queue',
+      collapsed: true,
+      items: [
+        {text: 'Kafka', link: '/server/mq/kafka'},
+        {text: 'RabbitMQ', link: '/server/mq/rabbitmq'},
+      ]
+    },
+    {
+      text: 'OSS',
+      collapsed: true,
+      items: [
+        {text: 'MinIO', link: '/server/oss/minio'},
+        {text: 'RustFS', link: '/server/oss/rustfs'},
+        {text: 'SeaweedFS', link: '/server/oss/seaweedfs'},
+      ],
+    },
+    {text: 'Nacos', link: '/server/nacos/'},
+    {
+      text: 'Elastic',
+      collapsed: true,
+      items: [
+        {text: 'Elasticsearch', link: '/server/elastic/elasticsearch'},
+        {text: 'Kibana', link: '/server/elastic/kibana'},
+        {text: 'Logstash', link: '/server/elastic/logstash'},
+        {text: 'Beats', link: '/server/elastic/beats'},
+      ]
+    }
+  ]
+}
+
 function sidebarApp(): DefaultTheme.SidebarItem[] {
   return [
     {
       text: 'APP',
-      link: '/advance/app/',
+      link: '/app/',
       items: [
         {
           text: 'Android',
-          link: '/advance/app/android/',
+          link: '/app/android/',
         },
         {
           text: 'iOS',
-          link: '/advance/app/ios/',
+          link: '/app/ios/',
         },
         {
           text: 'Cross-platform',
           items: [
-            {text: 'React Native', link: '/advance/app/react-native/'},
-            {text: 'Flutter', link: '/advance/app/flutter/'},
-            {text: 'Electron', link: '/advance/app/electron/'},
+            {text: 'React Native', link: '/app/react-native/'},
+            {text: 'Flutter', link: '/app/flutter/'},
+            {text: 'Electron', link: '/app/electron/'},
           ]
         },
       ]
@@ -722,81 +797,43 @@ function sidebarApp(): DefaultTheme.SidebarItem[] {
 function sidebarDevOps(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: 'DevOps',
-      link: '/advance/devops/',
-      collapsed: false,
-      items: [
-        {
-          text: 'Docker',
-          link: '/advance/devops/docker/',
-          items: [
-            {text: 'Install Docker', link: '/advance/devops/docker/install-docker'},
-            {text: 'Docker Architecture', link: '/advance/devops/docker/architecture'},
-            {text: 'Docker Command', link: '/advance/devops/docker/command'},
-            {text: 'Docker Build', link: '/advance/devops/docker/build'},
-            {text: 'Docker Compose', link: '/advance/devops/docker/compose'},
-            {text: 'Docker Network', link: '/advance/devops/docker/network'},
-            {text: 'Docker Desktop', link: '/advance/devops/docker/desktop'},
-            {text: 'Docker Hub', link: '/advance/devops/docker/hub'},
-            {text: 'Docker Images Explore', link: '/advance/devops/docker/image-explore'},
-          ]
-        },
-        {
-          text: 'Podman',
-          link: '/advance/devops/podman/',
-        },
-        {
-          text: 'Kubernetes',
-          link: '/advance/devops/kubernetes/',
-          items: [
-            {text: 'Kubernetes Architecture', link: '/advance/devops/kubernetes/architecture'},
-            {text: 'kubectl', link: '/advance/devops/kubernetes/kubectl'},
-            {text: 'Minikube', link: '/advance/devops/kubernetes/minikube'},
-            {text: 'Namespace', link: '/advance/devops/kubernetes/namespace'},
-            {text: 'Configuration File', link: '/advance/devops/kubernetes/configuration-file'},
-            {text: 'Examples', link: '/advance/devops/kubernetes/examples'},
-            {text: 'Rancher', link: '/advance/devops/kubernetes/rancher'},
-          ]
-        },
-      ]
-    }
-  ]
-}
-
-function sidebarGit(): DefaultTheme.SidebarItem[] {
-  return [
+      text: 'DevOps', link: '/devops/'
+    },
     {
-      text: 'Git',
-      link: '/other/git/',
-      collapsed: false,
+      text: 'Docker',
+      link: '/devops/docker/',
+      collapsed: true,
       items: [
-        {text: 'Installing Git', link: '/other/git/installing-git/'},
-        {text: 'Operating Mechanism', link: '/other/git/operating-mechanism'},
-        {text: 'Workflow', link: '/other/git/workflow'},
-        {text: '.gitignore', link: '/other/git/gitignore'},
-        {text: '.gitattributes', link: '/other/git/gitattributes'},
-        {text: 'git-hook', link: '/other/git/git-hook'},
-        {
-          text: 'GitHub',
-          link: '/other/git/github/',
-          collapsed: true,
-          items: [
-            {text: 'Actions', link: '/other/git/github/actions'},
-            {text: 'Pages', link: '/other/git/github/pages'},
-            {text: 'Copilot', link: '/other/git/github/copilot'},
-            {text: 'github.dev', link: '/other/git/github/github-dev'},
-            {text: 'Codespaces', link: '/other/git/github/codespaces'},
-          ]
-        },
-        {
-          text: 'GitLab',
-          link: '/other/git/gitlab/',
-          collapsed: true,
-          items: [
-            {text: 'CI/CD', link: '/other/git/gitlab/ci-cd'},
-          ]
-        },
+        {text: 'Install Docker', link: '/devops/docker/install-docker'},
+        {text: 'Docker Architecture', link: '/devops/docker/architecture'},
+        {text: 'Docker Command', link: '/devops/docker/command'},
+        {text: 'Docker Build', link: '/devops/docker/build'},
+        {text: 'Docker Compose', link: '/devops/docker/compose'},
+        {text: 'Docker Network', link: '/devops/docker/network'},
+        {text: 'Docker Desktop', link: '/devops/docker/desktop'},
+        {text: 'Docker Hub', link: '/devops/docker/hub'},
+        {text: 'Docker Images Explore', link: '/devops/docker/image-explore'},
       ]
-    }
+    },
+    {
+      text: 'Podman',
+      link: '/devops/podman/',
+    },
+    {
+      text: 'Kubernetes',
+      link: '/devops/kubernetes/',
+      collapsed: true,
+      items: [
+        {text: 'Kubernetes Architecture', link: '/devops/kubernetes/architecture'},
+        {text: 'kubectl', link: '/devops/kubernetes/kubectl'},
+        {text: 'Minikube', link: '/devops/kubernetes/minikube'},
+        {text: 'Namespace', link: '/devops/kubernetes/namespace'},
+        {text: 'Configuration File', link: '/devops/kubernetes/configuration-file'},
+        {text: 'Examples', link: '/devops/kubernetes/examples'},
+        {text: 'Rancher', link: '/devops/kubernetes/rancher'},
+      ]
+    },
+    {text: 'APM', link: '/devops/apm/'},
+    {text: 'RUM', link: '/devops/rum/'},
   ]
 }

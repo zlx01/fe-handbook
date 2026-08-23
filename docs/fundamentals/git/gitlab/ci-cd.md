@@ -9,7 +9,6 @@
 
 ## Concepts
 
-- [CI/CD](https://docs.gitlab.com/ee/ci/) [CI/CD](https://www.redhat.com/zh/topics/devops/what-is-ci-cd)
 - pipeline
 - stage
 - job
