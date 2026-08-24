@@ -102,7 +102,7 @@
 
 ## type
 
-规定 .js 文件使用哪个模块系统，默认为 CommonJS。
+规定 .js 文件使用哪个模块系统，默认为“commonjs”。
 不管“type”字段的值是多少，.mjs文件总是被当作ES模块，而.cjs文件总是被当作CommonJS。
 
 ```json
@@ -171,7 +171,8 @@
       "import": "index.js",
       "require": "index.cjs",
       "default": "index.js"
-    }
+    },
+    "./package.json": "./package.json"
   }
 }
 ```
@@ -315,5 +316,68 @@ endLocal & goto #_undefined_# 2>NUL || title %COMSPEC% & "%_prog%"  "%dp0%\node_
 ```json
 {
     "sideEffects": false
+}
+```
+
+> sideEffects: false = “我的模块 import 本身没有意义，只有使用它导出的东西才有意义。”
+
+假设有：
+
+```
+// utils.js
+export function a() {}
+export function b() {}
+```
+
+业务只用了：
+
+```
+import { a } from './utils'
+```
+
+那么 Webpack、Rollup、Rspack 等打包器就可以更放心地把 `b` 删除。
+
+#### 什么叫“副作用”？
+
+副作用就是：**即使你没有使用它导出的东西，仅仅 import 这个模块，也会产生效果。**
+
+例如：
+
+```
+// global.js
+window.foo = 'bar'
+import './global'
+```
+
+这个模块虽然没有任何 export，但执行后修改了 `window`，所以它有副作用。
+
+CSS 也是典型例子：
+
+```
+import './index.css'
+```
+
+你并没有“使用” CSS 的导出值，但这个 import 本身就是为了把样式加载进去。
+
+## publishConfig
+
+```json
+{
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
+```
+
+
+## repository
+
+```json
+{
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xxx/xxx.git"
+  }
 }
 ```
