@@ -1,6 +1,6 @@
 # IDE
 
-
+`Integrated Development Environment`
 
 ## [EditorConfig](https://editorconfig.org/)
 

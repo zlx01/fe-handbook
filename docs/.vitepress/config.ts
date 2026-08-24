@@ -363,7 +363,22 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
         },
       ]
     },
-    {text: 'IDE', link: '/fundamentals/ide/'},
+    {
+      text: 'IDE',
+      link: '/fundamentals/ide/',
+      collapsed: true,
+      items: [
+        {text: 'VSCode', link: '/fundamentals/ide/vscode'},
+        {text: 'WebStorm', link: '/fundamentals/ide/webstorm'},
+      ]
+    },
+    {
+      text: 'ADE',
+      link: '/fundamentals/ade/',
+      collapsed: true,
+      items: [
+      ]
+    }
   ]
 }
 
@@ -798,6 +813,14 @@ function sidebarDevOps(): DefaultTheme.SidebarItem[] {
   return [
     {
       text: 'DevOps', link: '/devops/'
+    },
+    {
+      text: 'Deployment Platform',
+      collapsed: true,
+      items: [
+        {text: 'Vercel', link: '/devops/deployment/vercel'},
+        {text: 'Netlify', link: '/devops/deployment/netlify'},
+      ]
     },
     {
       text: 'Docker',

@@ -1,0 +1,18 @@
+# [Netlify](https://www.netlify.com/)
+
+## netlify.toml
+
+```toml
+[build]
+base = "/"
+publish = "dist"
+command = "pnpm run build"
+
+[build.environment]
+NODE_VERSION = "22"
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+```
