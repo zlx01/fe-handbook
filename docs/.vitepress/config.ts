@@ -1,6 +1,7 @@
 import {DefaultTheme, defineConfig} from 'vitepress'
 import container from 'markdown-it-container'
 import {renderSandbox} from 'vitepress-plugin-sandpack'
+import {text} from "node:stream/consumers";
 
 const base = process.env.DEPLOY_BASE
 
@@ -465,6 +466,10 @@ function sidebarBuildTools() {
       link: '/build-tools/',
     },
     {
+      text: 'VitePlus',
+      link: '/build-tools/viteplus',
+    },
+    {
       text: 'Package Manager',
       collapsed: false,
       items: [
@@ -640,6 +645,11 @@ function sidebarAdvance() {
     {
       text: 'Deno',
       link: '/advance/deno/',
+      collapsed: true,
+      items: [
+        {text: 'Package Registry', link: 'https://jsr.io/'},
+        {text: 'DenoDeploy', link: 'https://deno.com/deploy'},
+      ]
     },
     {
       text: 'Bun',
