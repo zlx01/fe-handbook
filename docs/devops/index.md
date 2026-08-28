@@ -4,7 +4,7 @@
 
 ## 持续集成工具
 
-- [Jenkins](https://www.jenkins.io/)
+- [Jenkins](https://github.com/jenkinsci/jenkins)
 - [Travis CI](https://travis-ci.org/)
 - [CircleCI](https://circleci.com/)
 

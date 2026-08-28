@@ -29,3 +29,8 @@ box.style.animation = 'none';
 ```js
 box.classList.remove('animate');
 ```
+
+## [CSS Animation Principles](https://cssanimation.rocks/principles/)
+
+* 官方demo：https://codepen.io/collection/AxKOdY/
+* 实践demo：https://zlx01.github.io/animation-principles/#/

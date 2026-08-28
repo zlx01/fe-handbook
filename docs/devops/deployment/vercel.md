@@ -1,6 +1,6 @@
 # [Vercel](https://vercel.com/)
 
-## vercel.json
+## [vercel.json](https://vercel.com/docs/project-configuration/vercel-json)
 
 ```json
 {
