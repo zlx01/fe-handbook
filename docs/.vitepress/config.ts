@@ -1,7 +1,6 @@
 import {DefaultTheme, defineConfig} from 'vitepress'
 import container from 'markdown-it-container'
 import {renderSandbox} from 'vitepress-plugin-sandpack'
-import {text} from "node:stream/consumers";
 
 const base = process.env.DEPLOY_BASE
 
@@ -347,8 +346,7 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
           link: '/fundamentals/git/github/',
           collapsed: true,
           items: [
-            {text: 'Actions', link: '/fundamentals/git/github/actions'},
-            {text: 'Pages', link: '/fundamentals/git/github/pages'},
+            {text: 'Actions（DevOps）', link: '/devops/ci-cd/github-actions'},
             {text: 'Copilot', link: '/fundamentals/git/github/copilot'},
             {text: 'github.dev', link: '/fundamentals/git/github/github-dev'},
             {text: 'Codespaces', link: '/fundamentals/git/github/codespaces'},
@@ -359,7 +357,7 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
           link: '/fundamentals/git/gitlab/',
           collapsed: true,
           items: [
-            {text: 'CI/CD', link: '/fundamentals/git/gitlab/ci-cd'},
+            {text: 'CI/CD（DevOps）', link: '/devops/ci-cd/gitlab-ci'},
           ]
         },
       ]
@@ -822,51 +820,108 @@ function sidebarApp(): DefaultTheme.SidebarItem[] {
 function sidebarDevOps(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: 'DevOps', link: '/devops/'
+      text: 'DevOps', link: '/devops/',
     },
     {
-      text: 'Deployment Platform',
+      text: '容器',
+      link: '/devops/containers/',
       collapsed: true,
       items: [
+        {text: 'Docker', link: '/devops/containers/docker/'},
+        {text: 'Install Docker', link: '/devops/containers/docker/install-docker'},
+        {text: 'Docker Desktop', link: '/devops/containers/docker/desktop'},
+        {text: 'Docker Architecture', link: '/devops/containers/docker/architecture'},
+        {text: 'Docker Command', link: '/devops/containers/docker/command'},
+        {text: 'Docker Network', link: '/devops/containers/docker/network'},
+        {text: 'Docker Build', link: '/devops/containers/docker/build'},
+        {text: 'Docker Images Explore', link: '/devops/containers/docker/image-explore'},
+        {text: 'Docker Compose', link: '/devops/containers/docker/compose'},
+        {text: 'Podman', link: '/devops/containers/podman/'},
+      ]
+    },
+    {
+      text: '镜像与制品仓库',
+      link: '/devops/registries/',
+      collapsed: false,
+      items: [
+        {text: 'Docker Hub', link: '/devops/registries/docker-hub'},
+        {text: 'Harbor', link: '/devops/registries/harbor'},
+        {text: 'Nexus Repository', link: '/devops/registries/nexus'},
+        {text: 'JFrog Artifactory', link: '/devops/registries/artifactory'},
+      ]
+    },
+    {
+      text: 'CI/CD',
+      link: '/devops/ci-cd/',
+      collapsed: false,
+      items: [
+        {text: 'GitHub Actions', link: '/devops/ci-cd/github-actions'},
+        {text: 'GitLab CI/CD', link: '/devops/ci-cd/gitlab-ci'},
+        {text: 'Jenkins', link: '/devops/ci-cd/jenkins'},
+
+      ]
+    },
+    {
+      text: '部署与发布',
+      link: '/devops/deployment/',
+      collapsed: false,
+      items: [
+        {text: 'GitHub Pages', link: '/devops/deployment/github-pages'},
+        {text: 'GitLab Pages', link: '/devops/deployment/gitlab-pages'},
         {text: 'Vercel', link: '/devops/deployment/vercel'},
         {text: 'Netlify', link: '/devops/deployment/netlify'},
       ]
     },
     {
-      text: 'Docker',
-      link: '/devops/docker/',
+      text: '编排与Kubernetes',
+      link: '/devops/orchestration/',
       collapsed: true,
       items: [
-        {text: 'Install Docker', link: '/devops/docker/install-docker'},
-        {text: 'Docker Architecture', link: '/devops/docker/architecture'},
-        {text: 'Docker Command', link: '/devops/docker/command'},
-        {text: 'Docker Build', link: '/devops/docker/build'},
-        {text: 'Docker Compose', link: '/devops/docker/compose'},
-        {text: 'Docker Network', link: '/devops/docker/network'},
-        {text: 'Docker Desktop', link: '/devops/docker/desktop'},
-        {text: 'Docker Hub', link: '/devops/docker/hub'},
-        {text: 'Docker Images Explore', link: '/devops/docker/image-explore'},
+        {text: 'Kubernetes', link: '/devops/orchestration/kubernetes/'},
+        {text: 'Architecture', link: '/devops/orchestration/kubernetes/architecture'},
+        {text: 'Minikube', link: '/devops/orchestration/kubernetes/minikube'},
+        {text: 'kubectl', link: '/devops/orchestration/kubernetes/kubectl'},
+        {text: 'Namespace', link: '/devops/orchestration/kubernetes/namespace'},
+        {text: 'Configuration File', link: '/devops/orchestration/kubernetes/configuration-file'},
+        {text: 'Examples', link: '/devops/orchestration/kubernetes/examples'},
+        {text: 'Rancher', link: '/devops/orchestration/kubernetes/rancher'},
+        {text: 'Helm、Kustomize 与 GitOps', link: '/devops/orchestration/helm-kustomize-gitops'},
       ]
     },
     {
-      text: 'Podman',
-      link: '/devops/podman/',
-    },
-    {
-      text: 'Kubernetes',
-      link: '/devops/kubernetes/',
-      collapsed: true,
+      text: '流量治理',
+      link: '/devops/networking/',
+      collapsed: false,
       items: [
-        {text: 'Kubernetes Architecture', link: '/devops/kubernetes/architecture'},
-        {text: 'kubectl', link: '/devops/kubernetes/kubectl'},
-        {text: 'Minikube', link: '/devops/kubernetes/minikube'},
-        {text: 'Namespace', link: '/devops/kubernetes/namespace'},
-        {text: 'Configuration File', link: '/devops/kubernetes/configuration-file'},
-        {text: 'Examples', link: '/devops/kubernetes/examples'},
-        {text: 'Rancher', link: '/devops/kubernetes/rancher'},
+        {text: '流量入口与 Gateway', link: '/devops/networking/traffic-routing'},
+        {text: 'Traefik', link: '/devops/networking/traefik'},
       ]
     },
-    {text: 'APM', link: '/devops/apm/'},
-    {text: 'RUM', link: '/devops/rum/'},
+    {
+      text: '可观测性',
+      link: '/devops/observability/',
+      collapsed: true,
+      items: [
+        {text: '信号与告警', link: '/devops/observability/signals-and-alerting'},
+        {text: 'APM', link: '/devops/observability/apm/'},
+        {text: 'RUM', link: '/devops/observability/rum/'},
+        {text: 'Sentry', link: '/devops/observability/rum/sentry'},
+        {text: 'Grafana Faro', link: '/devops/observability/rum/grafana'},
+        {text: 'Google Analytics', link: '/devops/observability/rum/google-analytics'},
+      ]
+    },
+    {
+      text: '安全与可靠性',
+      link: '/devops/security-reliability/',
+      collapsed: true,
+      items: [
+        {text: 'Secret 管理', link: '/devops/security-reliability/secrets'},
+        {text: 'RBAC 与部署身份', link: '/devops/security-reliability/rbac'},
+        {text: '依赖与镜像安全', link: '/devops/security-reliability/dependency-and-image-security'},
+        {text: 'SBOM 与供应链证明', link: '/devops/security-reliability/sbom'},
+        {text: 'SLI、SLO 与错误预算', link: '/devops/security-reliability/sli-slo'},
+        {text: '事故响应', link: '/devops/security-reliability/incident-response'},
+      ]
+    },
   ]
 }

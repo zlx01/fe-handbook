@@ -6,5 +6,5 @@
 
 officail guide: [https://docs.gitlab.com/ee/user/ssh.html#use-ssh-keys-to-communicate-with-gitlab](https://docs.gitlab.com/ee/user/ssh.html#use-ssh-keys-to-communicate-with-gitlab)
 
-[GitLab CI/CD](./ci-cd)
+[GitLab CI/CD](/devops/ci-cd/gitlab-ci)
 

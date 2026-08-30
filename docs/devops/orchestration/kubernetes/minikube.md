@@ -43,7 +43,7 @@ minikube addons disable <name>
 
 ```bash
 # 升级集群
-minikube start --kubernetes-version=latest
+minikube start
 
 # 删除集群
 minikube delete

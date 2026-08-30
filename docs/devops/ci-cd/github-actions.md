@@ -1,15 +1,17 @@
 # [GitHub Actions](https://github.com/features/actions)
 
-## Price
+* documentation: https://docs.github.com/en/actions
+
+## Is it free?
 
 > GitHub Actions is free for public repositories.
 
 ## The components of GitHub Actions
 
-![Diagram of an event triggering Runner 1 to run Job 1, which triggers Runner 2 to run Job 2. Each of the jobs is broken into multiple steps.](assets/overview-actions-simple.png)
+![GitHub Actions 工作流、Job 与 Step 的关系](./assets/github-actions-overview.png)
 
 
-## `.github/workflows`
+## `.github/workflows/ci-cd.yml`
 
 ### name
 
@@ -89,11 +91,26 @@ env:
   FILENAME: README.md
 ```
 
+
+## [GITHUB_TOKEN](https://docs.github.com/en/actions/concepts/security/github_token)
+
+```yaml
+# 设置 GITHUB_TOKEN 的权限，以允许部署到 GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+env:
+  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+
 ## [Marketplace](https://github.com/marketplace?type=actions)
 
+- [actions/checkout](https://github.com/marketplace/actions/checkout)
+- [actions/setup-node](https://github.com/marketplace/actions/setup-node-js-environment)
+- [actions/setup-java](https://github.com/marketplace/actions/setup-java-jdk)
+- [actions/setup-python](https://github.com/marketplace/actions/setup-python)
+- [peaceiris/actions-gh-pages](https://github.com/marketplace/actions/github-pages-action)
 - [build-and-push-docker-images](https://github.com/marketplace/actions/build-and-push-docker-images)
-
-
-## [GitHub Packages](https://github.com/orgs/community/packages)
-
-docker npm maven仓库 
+- [vuepress-deploy](https://github.com/marketplace/actions/vuepress-deploy)

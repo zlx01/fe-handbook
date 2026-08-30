@@ -33,12 +33,9 @@ Docker Desktop includes the Docker daemon (`dockerd`), the Docker client (`docke
 
 ![2.png](assets/2.png)
 
-## Dev Environments无法从本地目录创建容器环境
+## Dev Environments
 
-![Untitled](assets/desktop4.png)
+Docker Dev Environments 已弃用，并从 Docker Desktop 4.42 及后续版本移除。旧版本故障截图仅适用于历史排查，不应再作为当前配置流程。需要可复现开发环境时，可使用 Compose 或 Development Containers。
 
-## Dev Environments创建的容器环境无法在VS Code打开
-
-![Untitled](assets/desktop5.png)
-
-![Untitled](assets/desktop6.png)
+- [Docker 已退役功能](https://docs.docker.com/retired/)
+- [Development Containers](https://containers.dev/)

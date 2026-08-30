@@ -60,24 +60,21 @@ sudo apt install net-tools
 - 确认ssh-server工作正常：`netstat -tpl`
 
 ```bash
+RANCHER_VERSION=vX.Y.Z
 docker run -d --restart=unless-stopped \
   -p 80:80 -p 443:443 \
-  -v /opt/data/rancher_data:/var/lib/rancher
+  -v /opt/data/rancher_data:/var/lib/rancher \
   --privileged \
-  rancher/rancher:latest
+  "rancher/rancher:${RANCHER_VERSION}"
   
   
-```
-
-```bash
-docker run -d --restart=unless-stopped -p 80:80 -p 443:443 -v /opt/data/rancher_data:/var/lib/rancher --privileged rancher/rancher:latest
 ```
 
 卡在拉取镜像
 
 ![Untitled](assets/rancher10.png)
 
-不用latest，使用 v2.8.1 版本
+不要使用浮动的 `latest`，应根据 Rancher 支持矩阵选择并固定经过验证的版本，将上例中的 `vX.Y.Z` 替换为实际版本。
 
 ![Untitled](assets/rancher11.png)
 

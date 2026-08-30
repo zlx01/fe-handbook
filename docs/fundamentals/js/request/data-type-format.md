@@ -39,3 +39,5 @@ YAML Ain't Markup Language
 
 * https://www.ruanyifeng.com/blog/2009/05/data_types_and_json.html
 * https://yaml.org/spec/1.2.2/#chapter-1-introduction-to-yaml
+* https://en.wikipedia.org/wiki/YAML
+* https://www.ruanyifeng.com/blog/2016/07/yaml.html
