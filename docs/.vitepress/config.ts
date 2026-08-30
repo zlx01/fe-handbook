@@ -1,6 +1,4 @@
 import {DefaultTheme, defineConfig} from 'vitepress'
-import container from 'markdown-it-container'
-import {renderSandbox} from 'vitepress-plugin-sandpack'
 
 const base = process.env.DEPLOY_BASE
 
@@ -24,13 +22,6 @@ export default defineConfig({
     // image: {
     //   lazyLoading: true,
     // }
-    config(md) {
-      md.use(container, 'sandbox', {
-        render(tokens, idx) {
-          return renderSandbox(tokens, idx, 'sandbox')
-        },
-      })
-    },
   },
   ignoreDeadLinks: [
     // ignore all localhost links

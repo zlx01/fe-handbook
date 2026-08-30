@@ -15,8 +15,7 @@
 
 ## 浏览器原生ES模块
 
-::: sandbox {template=static}
-```html index.html
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,7 +48,8 @@
 </body>
 </html>
 ```
-:::
+
+open [link](https://zrqpn2.csb.app/browser-esm-demo.html)
 
 ![image-20260605235204086](assets/image-20260605235204086.png)
 
@@ -113,8 +113,7 @@ import * as sass from './node_modules/sass/sass.default.js';
 
 Import Map Package Manager
 
-::: sandbox {template=static}
-```html index.html
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -135,7 +134,8 @@ Import Map Package Manager
 </body>
 </html>
 ```
-:::
+
+open [link](https://zrqpn2.csb.app/jspm-demo.html)
 
 ![image-20260605235310096](assets/image-20260605235310096.png)
 

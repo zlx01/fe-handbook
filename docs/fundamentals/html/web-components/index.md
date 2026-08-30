@@ -49,9 +49,9 @@
 
 ## 案例
 
-::: sandbox {template=static}
+https://zrqpn2.csb.app/web-components-demo.html
 
-```html index.html
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -157,13 +157,11 @@
   </body>
 </html>
 ```
-:::
 
 
-用lit实现
+用lit实现: https://zrqpn2.csb.app/lit-demo.html
 
-::: sandbox {template=static}
-```html index.html
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -271,8 +269,6 @@
 </body>
 </html>
 ```
-
-
 
 
 ## References
