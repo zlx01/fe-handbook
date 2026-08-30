@@ -12,8 +12,6 @@
 * SEO 友好：搜索引擎爬虫可以直接抓取到完整的 HTML 内容。
 * 易于部署：产物是纯静态文件，无需部署服务器 API，可直接上传到 CDN 或任何静态托管服务。
 
-
-
 ## Tools
 
 ### Image hosting service

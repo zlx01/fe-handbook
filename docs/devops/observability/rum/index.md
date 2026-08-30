@@ -23,3 +23,12 @@ RUM（Real User Monitoring）从真实用户浏览器采集页面性能、JavaSc
 - [Google Analytics](./google-analytics.md)
 
 RUM 与 [APM](../apm/) 通过 Trace ID 和版本关联后，才能从用户错误定位到具体后端调用和发布变更。
+
+
+## 性能指标
+
+* FCP（First Contentful Paint）：用户所请求的内容在屏幕上可见的时间点
+* TTI（Time To Interactive）：页面可交互的时间点
+* TTFB（Time To First Byte）：浏览器向服务器发起请求到接收到第一个字节的时间
+* LCP（Largest Contentful Paint）：页面主要内容加载完成的时间点
+* CLS（Cumulative Layout Shift）：页面布局偏移的累计分数，衡量页面在加载过程中是否发生了意外的布局变化

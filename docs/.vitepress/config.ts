@@ -839,6 +839,7 @@ function sidebarDevOps(): DefaultTheme.SidebarItem[] {
         {text: 'Harbor', link: '/devops/registries/harbor'},
         {text: 'Nexus Repository', link: '/devops/registries/nexus'},
         {text: 'JFrog Artifactory', link: '/devops/registries/artifactory'},
+        {text: 'Distribution Registry', link: '/devops/registries/distribution'},
       ]
     },
     {

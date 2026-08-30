@@ -9,3 +9,8 @@
 1. 浏览器加载 HTML → 用户看到空白页面
 2. JavaScript 加载完成 → React 渲染页面内容
 3. 后续页面导航 → SPA 模式，客户端渲染
+
+## 如何提升首屏性能
+
+* code splitting：将 JavaScript 拆分成多个小文件，按需加载，减少首屏加载的 JS 体积。
+* lazy loading：延迟加载非首屏内容，减少首屏渲染的阻塞。
