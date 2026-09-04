@@ -14,7 +14,7 @@
 
 ## **Defining Routes**
 
-**A file-system based router** 基于文件系统的路由器
+**A file-system based router** 基于文件系统的路由器。约定式路由
 
 ![Untitled](assets/Untitled 4.png)
 

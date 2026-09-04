@@ -129,9 +129,7 @@ function nav(): DefaultTheme.NavItem[] {
         {text: 'Nodejs', link: '/advance/nodejs/'},
         {text: 'Deno', link: '/advance/deno/'},
         {text: 'Bun', link: '/advance/Bun/'},
-        {text: 'CSR', link: '/advance/csr/'},
-        {text: 'SSR', link: '/advance/ssr/'},
-        {text: 'SSG', link: '/advance/ssg/'},
+        {text: '渲染模式', link: '/advance/rendering-mode/' },
         {text: 'Test', link: '/advance/test/'},
         {text: 'Low Code', link: '/advance/low-code/'},
         {text: 'Micro-frontends', link: '/advance/micro-frontends/'},
@@ -645,37 +643,27 @@ function sidebarAdvance() {
       link: '/advance/bun/',
     },
     {
-      text: 'CSR',
-      link: '/advance/csr/',
+      text: 'Rendering Mode',
+      link: '/advance/rendering-mode/',
       collapsed: true,
       items: [
-        {text: 'Vue', link: '/framework/vue'},
-        {text: 'React', link: '/framework/react'},
-      ]
-    },
-    {
-      text: 'SSR',
-      link: '/advance/ssr/',
-      collapsed: true,
-      items: [
-        {text: 'Nuxt', link: '/framework/nuxt'},
-        {text: 'Next', link: '/framework/nextjs'},
-      ]
-    },
-    {
-      text: 'SSG',
-      link: '/advance/ssg/',
-      collapsed: true,
-      items: [
-        {text: 'Hexo', link: '/advance/ssg/hexo'},
-        {text: 'Hugo', link: '/advance/ssg/hugo'},
-        {text: 'Jekyll', link: '/advance/ssg/jekyll'},
-        {text: 'Vuepress', link: '/advance/ssg/vuepress'},
-        {text: 'Vitepress', link: '/advance/ssg/vitepress'},
-        {text: 'Rspress', link: '/advance/ssg/rspress'},
-        {text: 'Docusaurus', link: '/advance/ssg/docusaurus'},
-        {text: 'Gatsby', link: '/advance/ssg/gatsby'},
-        {text: 'Astro', link: '/advance/ssg/astro'},
+        {text: 'CSR', link: '/advance/rendering-mode/csr'},
+        {text: 'SSR', link: '/advance/rendering-mode/ssr'},
+        {
+          text: 'SSG',
+          link: '/advance/rendering-mode/ssg',
+          items: [
+            {text: 'Hexo', link: '/advance/ssg/hexo'},
+            {text: 'Hugo', link: '/advance/ssg/hugo'},
+            {text: 'Jekyll', link: '/advance/ssg/jekyll'},
+            {text: 'Vuepress', link: '/advance/ssg/vuepress'},
+            {text: 'Vitepress', link: '/advance/ssg/vitepress'},
+            {text: 'Rspress', link: '/advance/ssg/rspress'},
+            {text: 'Docusaurus', link: '/advance/ssg/docusaurus'},
+            {text: 'Gatsby', link: '/advance/ssg/gatsby'},
+            {text: 'Astro', link: '/advance/ssg/astro'},
+          ]
+        },
       ]
     },
     {
