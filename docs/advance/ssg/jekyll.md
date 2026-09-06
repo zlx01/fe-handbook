@@ -1,1 +1,0 @@
-# [Jekyll](https://jekyllrb.com/)

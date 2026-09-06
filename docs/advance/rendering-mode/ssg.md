@@ -54,15 +54,14 @@
 * 不适合动态内容：如果网站需要频繁更新内容，SSG 可能不适合，因为每次更新都需要重新构建整个网站。
 
 
-## Deployment
+## SSG 框架 
 
-### GitHub Pages
-
-### GitLab Pages
-
-### Cloudflare Pages
-
-### [Vercel](https://vercel.com/)
-
-### [Netlify](https://www.netlify.com/)
-
+* [Vuepress](https://vuepress.vuejs.org/)
+* [Vitepress](https://vitepress.dev/)
+* [Rspress](https://rspress.rs/)
+* [Hexo](https://hexo.io/zh-cn/)
+* [Hugo](https://gohugo.io/)
+* [Jekyll](https://jekyllrb.com/)
+* [Astro](https://astro.build/)
+* [Docusaurus](https://docusaurus.io/)
+* [Gatsby](https://github.com/gatsbyjs/gatsby)

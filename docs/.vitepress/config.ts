@@ -625,6 +625,10 @@ function sidebarRuntime() {
       text: 'Bun',
       link: '/runtime/bun/',
     },
+  ]
+}
+function sidebarAdvance() {
+  return [
     {
       text: 'Rendering Mode',
       link: '/advance/rendering-mode/',
@@ -632,53 +636,7 @@ function sidebarRuntime() {
       items: [
         {text: 'CSR', link: '/advance/rendering-mode/csr'},
         {text: 'SSR', link: '/advance/rendering-mode/ssr'},
-        {
-          text: 'SSG',
-          link: '/advance/rendering-mode/ssg',
-          items: [
-            {text: 'Hexo', link: '/advance/ssg/hexo'},
-            {text: 'Hugo', link: '/advance/ssg/hugo'},
-            {text: 'Jekyll', link: '/advance/ssg/jekyll'},
-            {text: 'Vuepress', link: '/advance/ssg/vuepress'},
-            {text: 'Vitepress', link: '/advance/ssg/vitepress'},
-            {text: 'Rspress', link: '/advance/ssg/rspress'},
-            {text: 'Docusaurus', link: '/advance/ssg/docusaurus'},
-            {text: 'Gatsby', link: '/advance/ssg/gatsby'},
-            {text: 'Astro', link: '/advance/ssg/astro'},
-          ]
-        },
-      ]
-    },
-  ]
-}
-function sidebarAdvance() {
-  return [
-    {
-      text: 'CSR', link: '/advance/csr/',
-    },
-    {
-      text: 'SSR',
-      link: '/advance/ssr/',
-      collapsed: true,
-      items: [
-        {text: 'Nuxt', link: '/framework/nuxt'},
-        {text: 'Next', link: '/framework/nextjs'},
-      ]
-    },
-    {
-      text: 'SSG',
-      link: '/advance/ssg/',
-      collapsed: true,
-      items: [
-        {text: 'Hexo', link: '/advance/ssg/hexo'},
-        {text: 'Hugo', link: '/advance/ssg/hugo'},
-        {text: 'Jekyll', link: '/advance/ssg/jekyll'},
-        {text: 'Vuepress', link: '/advance/ssg/vuepress'},
-        {text: 'Vitepress', link: '/advance/ssg/vitepress'},
-        {text: 'Rspress', link: '/advance/ssg/rspress'},
-        {text: 'Docusaurus', link: '/advance/ssg/docusaurus'},
-        {text: 'Gatsby', link: '/advance/ssg/gatsby'},
-        {text: 'Astro', link: '/advance/ssg/astro'},
+        {text: 'SSG', link: '/advance/rendering-mode/ssg',},
       ]
     },
     {

@@ -1,6 +1,5 @@
 # 杂货柜
 
-* [WebStorm高效开发](./webstorm)
 * [学习UI组件库](./learn-ui-library)
 * [uniapp学习笔记](./uniapp)
 * [【vant】toast之后跳转页面时，iPhone上显示不出icon](https://github.com/zlx01/vant2-toast-test)

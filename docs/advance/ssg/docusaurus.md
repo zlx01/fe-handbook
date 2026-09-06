@@ -1,1 +1,0 @@
-# [Docusaurus](https://docusaurus.io/)
