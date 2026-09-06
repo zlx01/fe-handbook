@@ -31,3 +31,6 @@ discord
 
 主进程和渲染器的进程不是同一个，所以无法在主进程访问到document，因而也无法修改dom
 
+## [electron-vite](https://electron-vite.org/)
+
+> The Build Tool for Electron

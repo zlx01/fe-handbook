@@ -35,6 +35,7 @@ export default defineConfig({
       '/build-tools/': sidebarBuildTools(),
       '/framework/': sidebarFramework(),
       '/advance/': sidebarAdvance(),
+      '/runtime/': sidebarRuntime(),
       '/server/': sidebarServer(),
       '/app/': sidebarApp(),
       '/devops/': sidebarDevOps(),
@@ -126,9 +127,9 @@ function nav(): DefaultTheme.NavItem[] {
     {
       text: 'advance',
       items: [
-        {text: 'Nodejs', link: '/advance/nodejs/'},
-        {text: 'Deno', link: '/advance/deno/'},
-        {text: 'Bun', link: '/advance/Bun/'},
+        {text: 'Nodejs', link: '/runtime/nodejs/'},
+        {text: 'Deno', link: '/runtime/deno/'},
+        {text: 'Bun', link: '/runtime/bun/'},
         {text: '渲染模式', link: '/advance/rendering-mode/' },
         {text: 'Test', link: '/advance/test/'},
         {text: 'Low Code', link: '/advance/low-code/'},
@@ -138,19 +139,19 @@ function nav(): DefaultTheme.NavItem[] {
         {text: 'i18n', link: '/advance/i18n/'},
         {text: 'Web Application Security', link: '/advance/security/'},
         {text: 'WebAssembly', link: '/advance/webassembly/'},
+        {
+          text: 'Server',
+          link: '/server/'
+        },
+        {
+          text: 'App',
+          link: '/app/',
+        },
+        {
+          text: 'DevOps',
+          link: '/devops/',
+        },
       ]
-    },
-    {
-      text: 'Server',
-      link: '/server/'
-    },
-    {
-      text: 'App',
-      link: '/app/',
-    },
-    {
-      text: 'DevOps',
-      link: '/devops/',
     },
     {
       text: 'other',
@@ -601,37 +602,19 @@ function sidebarBuildTools() {
   ]
 }
 
-function sidebarAdvance() {
+function sidebarRuntime() {
   return [
     {
       text: 'Nodejs',
-      link: '/advance/nodejs/',
+      link: '/runtime/nodejs/',
       collapsed: true,
       items: [
-        {
-          text: 'Web Framework',
-          collapsed: true,
-          items: [
-            {text: 'Express', link: '/advance/nodejs/framework/express/'},
-            {text: 'Koa', link: '/advance/nodejs/framework/koa'},
-            {text: 'Egg', link: '/advance/nodejs/framework/egg'},
-            {text: 'Nestjs', link: '/advance/nodejs/framework/nestjs/'},
-            {text: 'hapi', link: '/advance/nodejs/framework/hapi'},
-            {text: 'Fastify', link: '/advance/nodejs/framework/fastify'},
-            {text: 'Hono', link: '/advance/nodejs/framework/hono'},
-          ]
-        },
-        {
-          text: 'Templating Language',
-          link: '/advance/nodejs/templating/',
-        },
-        {text: 'pm2', link: '/advance/nodejs/pm2/'},
-        {text: 'socket.io', link: '/advance/nodejs/socket-io/'},
+        {text: 'pm2', link: '/runtime/nodejs/pm2/'},
       ]
     },
     {
       text: 'Deno',
-      link: '/advance/deno/',
+      link: '/runtime/deno/',
       collapsed: true,
       items: [
         {text: 'Package Registry', link: 'https://jsr.io/'},
@@ -640,7 +623,7 @@ function sidebarAdvance() {
     },
     {
       text: 'Bun',
-      link: '/advance/bun/',
+      link: '/runtime/bun/',
     },
     {
       text: 'Rendering Mode',
@@ -664,6 +647,38 @@ function sidebarAdvance() {
             {text: 'Astro', link: '/advance/ssg/astro'},
           ]
         },
+      ]
+    },
+  ]
+}
+function sidebarAdvance() {
+  return [
+    {
+      text: 'CSR', link: '/advance/csr/',
+    },
+    {
+      text: 'SSR',
+      link: '/advance/ssr/',
+      collapsed: true,
+      items: [
+        {text: 'Nuxt', link: '/framework/nuxt'},
+        {text: 'Next', link: '/framework/nextjs'},
+      ]
+    },
+    {
+      text: 'SSG',
+      link: '/advance/ssg/',
+      collapsed: true,
+      items: [
+        {text: 'Hexo', link: '/advance/ssg/hexo'},
+        {text: 'Hugo', link: '/advance/ssg/hugo'},
+        {text: 'Jekyll', link: '/advance/ssg/jekyll'},
+        {text: 'Vuepress', link: '/advance/ssg/vuepress'},
+        {text: 'Vitepress', link: '/advance/ssg/vitepress'},
+        {text: 'Rspress', link: '/advance/ssg/rspress'},
+        {text: 'Docusaurus', link: '/advance/ssg/docusaurus'},
+        {text: 'Gatsby', link: '/advance/ssg/gatsby'},
+        {text: 'Astro', link: '/advance/ssg/astro'},
       ]
     },
     {
@@ -729,15 +744,45 @@ function sidebarAdvance() {
       link: '/advance/security/',
     },
     {text: 'WebAssembly', link: '/advance/webassembly/'},
+    {
+      text: 'Extension',
+      collapsed: true,
+      items: [
+        {text: 'Chrome Extensions', link: '/advance/extension/chrome-extensions'},
+        {text: 'VS Code Extensions', link: '/advance/extension/vscode-extensions'},
+      ]
+    },
   ]
 }
 
 function sidebarServer() {
   return [
     {text: 'Server', link: '/server/'},
+    {
+      text: 'Web Framework',
+      collapsed: true,
+      items: [
+        {text: 'Express', link: '/server/framework/express/'},
+        {text: 'Koa', link: '/server/framework/koa'},
+        {text: 'Egg', link: '/server/framework/egg'},
+        {text: 'Nestjs', link: '/server/framework/nestjs/'},
+        {text: 'hapi', link: '/server/framework/hapi'},
+        {text: 'Fastify', link: '/server/framework/fastify'},
+        {text: 'Hono', link: '/server/framework/hono'},
+      ]
+    },
     {text: 'Database', link: '/server/database/'},
     {text: 'Redis', link: '/server/redis/'},
     {text: 'MongoDB', link: '/server/mongodb/'},
+    {
+      text: 'BaaS',
+      collapsed: true,
+      items: [
+        {text: 'Supabase', link: '/server/baas/supabase/'},
+        {text: 'Firebase', link: '/server/baas/firebase/'},
+        {text: 'Appwrite', link: '/server/baas/appwrite/'},
+      ]
+    },
     {
       text: 'Message Queue',
       collapsed: true,
