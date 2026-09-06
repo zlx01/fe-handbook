@@ -412,6 +412,7 @@ function sidebarFramework() {
         {
           text: 'Create React App', link: '/framework/react/create-react-app',
         },
+        {text: 'UI Library', link: '/framework/react/ui'},
       ]
     },
     {
