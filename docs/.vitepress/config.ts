@@ -131,6 +131,7 @@ function nav(): DefaultTheme.NavItem[] {
         {text: 'Deno', link: '/runtime/deno/'},
         {text: 'Bun', link: '/runtime/bun/'},
         {text: '渲染模式', link: '/advance/rendering-mode/' },
+        {text: '性能优化', link: '/advance/performance/'},
         {text: 'Test', link: '/advance/test/'},
         {text: 'Low Code', link: '/advance/low-code/'},
         {text: 'Micro-frontends', link: '/advance/micro-frontends/'},
@@ -655,6 +656,7 @@ function sidebarAdvance() {
         {text: 'SSG', link: '/advance/rendering-mode/ssg',},
       ]
     },
+    {text: '性能优化', link: '/advance/performance/'},
     {
       text: 'Test',
       link: '/advance/test/',

@@ -1,4 +1,4 @@
-# SSG (Static Site Generator)
+# SSG (Static Site Generation)
 
 > SSG 是 "Static Site Generation"（静态网站生成）的缩写。它表示网页在**构建阶段**被预先渲染成静态的 HTML，然后直接提供给客户端，而不需要服务器实时生成 HTML。
 >
@@ -31,15 +31,7 @@
 
 ### Badge
 
-- [bandage](https://shields.io/) 一般用于开源项目，统计 star, fork, issues, pull request, release, deploy, visitors
-
-![在这里插入图片描述](assets/3731b52da72d5fc2b2930e7655b84688.png)
-
-![在这里插入图片描述](assets/4bf5826b53c08cb1215802bfdc141b0c.png)
-
-### Analytics
-
-- [Google Analytics](https://marketingplatform.google.com/about/analytics/)
+- [badge](https://shields.io/) 一般用于开源项目，统计 star, fork, issues, pull request, release, deploy, visitors
 
 ### Code Image
 
