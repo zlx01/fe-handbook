@@ -233,6 +233,14 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
       items: [
         {text: '正则表达式', link: '/fundamentals/js/regular-expression'},
         {
+          text: '异步编程',
+          link: '/fundamentals/js/asynchronous-programming',
+          collapsed: true,
+          items: [
+            {text: 'RxJS', link: '/fundamentals/js/async/rxjs'},
+          ]
+        },
+        {
           text: '模块化',
           link: '/fundamentals/js/modular/',
           collapsed: true,
@@ -413,6 +421,13 @@ function sidebarFramework() {
           text: 'Create React App', link: '/framework/react/create-react-app',
         },
         {text: 'UI Library', link: '/framework/react/ui'},
+        {
+          text: '状态管理',
+          items: [
+            {text: 'Redux', link: '/framework/react/redux/'},
+            {text: 'Zustand', link: '/framework/react/zustand/'},
+          ]
+        },
       ]
     },
     {
