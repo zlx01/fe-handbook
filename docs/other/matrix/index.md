@@ -21,4 +21,4 @@
 * [开源许可证](./license)
 * [Vue2 项目兼容 iOS 9](./vue2-ios9)
 * [Open Graph Protocol（OGP）](./ogp)
-* [模板引擎](./templating-languages)
+* [模板引擎](./template-languages)
