@@ -73,7 +73,7 @@ function nav(): DefaultTheme.NavItem[] {
         {text: 'Network', link: '/fundamentals/network/'},
         {text: 'Browser', link: '/fundamentals/browser/'},
         {text: 'Git', link: '/fundamentals/git/'},
-        {text: 'IDE', link: '/fundamentals/ide/'},
+        {text: 'IDE', link: '/fundamentals/IDE/'},
       ]
     },
     {
@@ -104,13 +104,13 @@ function nav(): DefaultTheme.NavItem[] {
         {
           text: 'Linter',
           items: [
-            {text: 'ESLint', link: '/build-tools/linter/eslint/'},
+            {text: 'ESLint', link: '/build-tools/linter/eslint'},
           ]
         },
         {
           text: 'Formatter',
           items: [
-            {text: 'Prettier', link: '/build-tools/formatter/prettier/'},
+            {text: 'Prettier', link: '/build-tools/formatter/prettier'},
           ],
         },
       ]
@@ -334,7 +334,7 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
       link: '/fundamentals/git/',
       collapsed: true,
       items: [
-        {text: 'Installing Git', link: '/fundamentals/git/installing-git/'},
+        {text: 'Installing Git', link: '/fundamentals/git/installing-git'},
         {text: 'Operating Mechanism', link: '/fundamentals/git/operating-mechanism'},
         {text: 'Workflow', link: '/fundamentals/git/workflow'},
         {text: '.gitignore', link: '/fundamentals/git/gitignore'},
@@ -363,16 +363,16 @@ function sidebarFundamentals(): DefaultTheme.SidebarItem[] {
     },
     {
       text: 'IDE',
-      link: '/fundamentals/ide/',
+      link: '/fundamentals/IDE/',
       collapsed: true,
       items: [
-        {text: 'VSCode', link: '/fundamentals/ide/vscode'},
-        {text: 'WebStorm', link: '/fundamentals/ide/webstorm'},
+        {text: 'VSCode', link: '/fundamentals/IDE/vscode'},
+        {text: 'WebStorm', link: '/fundamentals/IDE/webstorm'},
       ]
     },
     {
       text: 'ADE',
-      link: '/fundamentals/ade/',
+      link: '/fundamentals/ADE/',
       collapsed: true,
       items: [
       ]
@@ -419,7 +419,7 @@ function sidebarFramework() {
       collapsed: true,
       items: [
         {
-          text: 'Create React App', link: '/framework/react/create-react-app',
+          text: 'Create React App', link: '/framework/react/create-react-app/',
         },
         {text: 'UI Library', link: '/framework/react/ui'},
         {
@@ -499,11 +499,11 @@ function sidebarBuildTools() {
           text: 'nrm', link: '/build-tools/package-manager/nrm'
         },
         {
-          text: 'corepack', link: '/build-tools/package-manager/corepack/',
+          text: 'corepack', link: '/build-tools/package-manager/corepack',
         },
         {text: 'Verdaccio', link: '/build-tools/package-manager/verdaccio/'},
         {
-          text: 'other', link: '/build-tools/package-manager/other/',
+          text: 'other', link: '/build-tools/package-manager/other',
         },
       ]
     },
@@ -566,7 +566,7 @@ function sidebarBuildTools() {
       collapsed: false,
       items: [
         {
-          text: 'ESLint', link: '/build-tools/linter/eslint/',
+          text: 'ESLint', link: '/build-tools/linter/eslint',
         },
         {
           text: 'Rslint', link: '/build-tools/linter/rslint'
@@ -587,7 +587,7 @@ function sidebarBuildTools() {
       collapsed: false,
       items: [
         {
-          text: 'Prettier', link: '/build-tools/formatter/prettier/',
+          text: 'Prettier', link: '/build-tools/formatter/prettier',
         },
         {
           text: 'Oxfmt', link: '/build-tools/formatter/oxfmt'
@@ -626,7 +626,7 @@ function sidebarRuntime() {
       link: '/runtime/nodejs/',
       collapsed: true,
       items: [
-        {text: 'pm2', link: '/runtime/nodejs/pm2/'},
+        {text: 'pm2', link: '/runtime/nodejs/pm2'},
       ]
     },
     {
@@ -784,7 +784,6 @@ function sidebarServer() {
         {text: 'Elasticsearch', link: '/server/elastic/elasticsearch'},
         {text: 'Kibana', link: '/server/elastic/kibana'},
         {text: 'Logstash', link: '/server/elastic/logstash'},
-        {text: 'Beats', link: '/server/elastic/beats'},
       ]
     }
   ]
@@ -870,7 +869,7 @@ function sidebarDevOps(): DefaultTheme.SidebarItem[] {
         {text: 'GitHub Pages', link: '/devops/deployment/github-pages'},
         {text: 'GitLab Pages', link: '/devops/deployment/gitlab-pages'},
         {text: 'Vercel', link: '/devops/deployment/vercel'},
-        {text: 'Netlify', link: '/devops/deployment/netlify'},
+        {text: 'Netlify', link: '/devops/deployment/Netlify'},
       ]
     },
     {
