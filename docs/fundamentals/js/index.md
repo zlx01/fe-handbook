@@ -214,5 +214,7 @@ try {
 
 ## [Asynchronous Programming](./asynchronous-programming)
 
+## [Function](./function)
+
 ## 参考教程
 https://wangdoc.com/javascript/
