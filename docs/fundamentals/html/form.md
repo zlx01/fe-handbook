@@ -28,17 +28,12 @@ https://zhuanlan.zhihu.com/p/260775688
 <input type="password" autocomplete="new-password"/>
 ```
 
-<iframe src="https://codesandbox.io/embed/n4dd8h?view=editor"
-style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden;"
-title="form"
-allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-></iframe>
+https://codesandbox.io/embed/n4dd8h?view=editor
 
 
 ## v-model 无法检测 Chrome 自动填充问题
 
-https://deepinout.com/vue-js/vue-js-questions/509_vuejs_vue_vmodel_not_detecting_chrome_autocompletion.html
+https://stackoverflow.com/questions/65413917/vue-v-model-not-detecting-chrome-auto-completion
 
 原因：v-model是监听输入框的input事件，Chrome自动填充功能会通过更改DOM的方式将值填充到输入框中，而不会触发input事件。
 

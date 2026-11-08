@@ -422,6 +422,7 @@ function sidebarFramework() {
           text: 'Create React App', link: '/framework/react/create-react-app',
         },
         {text: 'UI Library', link: '/framework/react/ui'},
+        {text: 'React Router', link: 'https://reactrouter.com/'},
         {
           text: '状态管理',
           items: [
@@ -429,6 +430,7 @@ function sidebarFramework() {
             {text: 'Zustand', link: '/framework/react/zustand/'},
           ]
         },
+        {text: 'Preact', link: 'https://preactjs.com/'},
       ]
     },
     {
@@ -469,10 +471,6 @@ function sidebarBuildTools() {
     {
       text: 'Build Toolchain',
       link: '/build-tools/',
-    },
-    {
-      text: 'VitePlus',
-      link: '/build-tools/viteplus',
     },
     {
       text: 'Package Manager',
@@ -601,9 +599,6 @@ function sidebarBuildTools() {
       text: 'Plugin System',
       collapsed: false,
       items: [
-        {
-          text: 'Unplugin', link: '/build-tools/plugin/unplugin'
-        },
       ]
     },
     {
@@ -612,10 +607,21 @@ function sidebarBuildTools() {
       collapsed: false,
       items: [
         {
-          text: 'Turborepo', link: '/build-tools/monorepo/turborepo'
+          text: 'Lerna', link: '/build-tools/monorepo/lerna',
+        },
+        {
+          text: 'Turborepo', link: '/build-tools/monorepo/turborepo',
         },
       ]
     },
+    {
+      text: 'Other',
+      collapsed: true,
+      items: [
+        {text: 'Unplugin', link: '/build-tools/plugin/unplugin'},
+        {text: 'VitePlus', link: '/build-tools/other/viteplus'},
+      ]
+    }
   ]
 }
 
@@ -630,13 +636,7 @@ function sidebarRuntime() {
       ]
     },
     {
-      text: 'Deno',
-      link: '/runtime/deno/',
-      collapsed: true,
-      items: [
-        {text: 'Package Registry', link: 'https://jsr.io/'},
-        {text: 'DenoDeploy', link: 'https://deno.com/deploy'},
-      ]
+      text: 'Deno', link: '/runtime/deno/',
     },
     {
       text: 'Bun',

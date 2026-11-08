@@ -80,6 +80,8 @@ By default Deno stores dependencies in a global cache and creates a local node_m
 
 ## deno.json
 
-
-
 ## deno.lock
+
+## [Package Registry](https://jsr.io/)
+
+## [Deno Deploy](https://deno.com/deploy)
