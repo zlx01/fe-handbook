@@ -72,6 +72,7 @@ function nav(): DefaultTheme.NavItem[] {
         {text: 'Browser', link: '/fundamentals/browser/'},
         {text: 'Git', link: '/fundamentals/git/'},
         {text: 'IDE', link: '/fundamentals/IDE/'},
+        {text: 'ADE', link: '/fundamentals/ADE/'},
       ]
     },
     {
