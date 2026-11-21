@@ -12,10 +12,10 @@
 * https://caniuse.com/
 * https://css-tricks.com/
 * https://web.dev/
+* https://www.runoob.com/
 * https://wangchujiang.com/reference/
 * https://quickref.me/
 * Learn X in Y minutes: https://learnxinyminutes.com/
-* DevDocs API: https://devdocs.io/
 
 ## Road Map
 
@@ -67,9 +67,4 @@ see [link](/other/wheel/)
 * https://awesomejs.dev/
 * https://awesome-vue.js.org/
 
-## Other Resources
-
-* https://docschina.org/
-* https://www.w3school.com.cn/
-* https://www.runoob.com/
-* https://how2j.cn/
+  

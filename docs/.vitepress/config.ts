@@ -35,9 +35,7 @@ export default defineConfig({
       '/build-tools/': sidebarBuildTools(),
       '/framework/': sidebarFramework(),
       '/advance/': sidebarAdvance(),
-      '/runtime/': sidebarRuntime(),
       '/server/': sidebarServer(),
-      '/app/': sidebarApp(),
       '/devops/': sidebarDevOps(),
     },
 
@@ -127,27 +125,13 @@ function nav(): DefaultTheme.NavItem[] {
     {
       text: 'advance',
       items: [
-        {text: 'Nodejs', link: '/runtime/nodejs/'},
-        {text: 'Deno', link: '/runtime/deno/'},
-        {text: 'Bun', link: '/runtime/bun/'},
+        {text: 'Nodejs', link: '/server/nodejs/'},
+        {text: 'Web Framework', link: '/server/framework/express/'},
         {text: '渲染模式', link: '/advance/rendering-mode/' },
         {text: '性能优化', link: '/advance/performance/'},
         {text: 'Test', link: '/advance/test/'},
-        {text: 'Low Code', link: '/advance/low-code/'},
         {text: 'Micro-frontends', link: '/advance/micro-frontends/'},
-        {text: 'PWA', link: '/advance/pwa/'},
-        {text: 'WebGL', link: '/advance/webgl/'},
-        {text: 'i18n', link: '/advance/i18n/'},
         {text: 'Web Application Security', link: '/advance/security/'},
-        {text: 'WebAssembly', link: '/advance/webassembly/'},
-        {
-          text: 'Server',
-          link: '/server/'
-        },
-        {
-          text: 'App',
-          link: '/app/',
-        },
         {
           text: 'DevOps',
           link: '/devops/',
@@ -422,6 +406,7 @@ function sidebarFramework() {
           text: 'Create React App', link: '/framework/react/create-react-app/',
         },
         {text: 'UI Library', link: '/framework/react/ui'},
+        {text: 'React Router', link: 'https://reactrouter.com/'},
         {
           text: '状态管理',
           items: [
@@ -429,6 +414,7 @@ function sidebarFramework() {
             {text: 'Zustand', link: '/framework/react/zustand/'},
           ]
         },
+        {text: 'Preact', link: 'https://preactjs.com/'},
       ]
     },
     {
@@ -469,10 +455,6 @@ function sidebarBuildTools() {
     {
       text: 'Build Toolchain',
       link: '/build-tools/',
-    },
-    {
-      text: 'VitePlus',
-      link: '/build-tools/viteplus',
     },
     {
       text: 'Package Manager',
@@ -598,52 +580,29 @@ function sidebarBuildTools() {
       ]
     },
     {
-      text: 'Plugin System',
-      collapsed: false,
-      items: [
-        {
-          text: 'Unplugin', link: '/build-tools/plugin/unplugin'
-        },
-      ]
-    },
-    {
       text: 'Monorepo',
       link: '/build-tools/monorepo/',
       collapsed: false,
       items: [
         {
-          text: 'Turborepo', link: '/build-tools/monorepo/turborepo'
+          text: 'Lerna', link: 'https://github.com/lerna/lerna',
+        },
+        {
+          text: 'Turborepo', link: '/build-tools/monorepo/turborepo',
         },
       ]
     },
+    {
+      text: 'Other',
+      collapsed: true,
+      items: [
+        {text: 'Unplugin', link: 'https://github.com/unjs/unplugin'},
+        {text: 'VitePlus', link: '/build-tools/other/viteplus'},
+      ]
+    }
   ]
 }
 
-function sidebarRuntime() {
-  return [
-    {
-      text: 'Nodejs',
-      link: '/runtime/nodejs/',
-      collapsed: true,
-      items: [
-        {text: 'pm2', link: '/runtime/nodejs/pm2'},
-      ]
-    },
-    {
-      text: 'Deno',
-      link: '/runtime/deno/',
-      collapsed: true,
-      items: [
-        {text: 'Package Registry', link: 'https://jsr.io/'},
-        {text: 'DenoDeploy', link: 'https://deno.com/deploy'},
-      ]
-    },
-    {
-      text: 'Bun',
-      link: '/runtime/bun/',
-    },
-  ]
-}
 function sidebarAdvance() {
   return [
     {
@@ -694,8 +653,6 @@ function sidebarAdvance() {
         },
       ]
     },
-
-    {text: 'Low Code', link: '/advance/low-code/'},
     {
       text: 'Micro-frontends',
       link: '/advance/micro-frontends/',
@@ -705,112 +662,34 @@ function sidebarAdvance() {
         {text: 'single-spa', link: '/advance/micro-frontends/single-spa'},
       ]
     },
-    {text: 'PWA', link: '/advance/pwa/'},
-    {
-      text: 'WebGL',
-      link: '/advance/webgl/',
-      collapsed: true,
-      items: [
-        {text: 'Three.js', link: '/advance/webgl/threejs/'},
-      ]
-    },
-    {text: 'i18n', link: '/advance/i18n/'},
     {
       text: 'Web Application Security',
       link: '/advance/security/',
-    },
-    {text: 'WebAssembly', link: '/advance/webassembly/'},
-    {
-      text: 'Extension',
-      collapsed: true,
-      items: [
-        {text: 'Chrome Extensions', link: '/advance/extension/chrome-extensions'},
-        {text: 'VS Code Extensions', link: '/advance/extension/vscode-extensions'},
-      ]
     },
   ]
 }
 
 function sidebarServer() {
   return [
-    {text: 'Server', link: '/server/'},
+    {
+      text: 'Nodejs',
+      link: '/server/nodejs/',
+      collapsed: false,
+      items: [
+        {text: 'pm2', link: '/server/nodejs/pm2/'},
+      ]
+    },
     {
       text: 'Web Framework',
-      collapsed: true,
+      collapsed: false,
       items: [
         {text: 'Express', link: '/server/framework/express/'},
         {text: 'Koa', link: '/server/framework/koa'},
         {text: 'Egg', link: '/server/framework/egg'},
         {text: 'Nestjs', link: '/server/framework/nestjs/'},
-        {text: 'hapi', link: '/server/framework/hapi'},
         {text: 'Fastify', link: '/server/framework/fastify'},
         {text: 'Hono', link: '/server/framework/hono'},
-      ]
-    },
-    {text: 'Database', link: '/server/database/'},
-    {text: 'Redis', link: '/server/redis/'},
-    {text: 'MongoDB', link: '/server/mongodb/'},
-    {
-      text: 'BaaS',
-      collapsed: true,
-      items: [
-        {text: 'Supabase', link: '/server/baas/supabase/'},
-        {text: 'Firebase', link: '/server/baas/firebase/'},
-        {text: 'Appwrite', link: '/server/baas/appwrite/'},
-      ]
-    },
-    {
-      text: 'Message Queue',
-      collapsed: true,
-      items: [
-        {text: 'Kafka', link: '/server/mq/kafka'},
-        {text: 'RabbitMQ', link: '/server/mq/rabbitmq'},
-      ]
-    },
-    {
-      text: 'OSS',
-      collapsed: true,
-      items: [
-        {text: 'MinIO', link: '/server/oss/minio'},
-        {text: 'RustFS', link: '/server/oss/rustfs'},
-        {text: 'SeaweedFS', link: '/server/oss/seaweedfs'},
-      ],
-    },
-    {text: 'Nacos', link: '/server/nacos/'},
-    {
-      text: 'Elastic',
-      collapsed: true,
-      items: [
-        {text: 'Elasticsearch', link: '/server/elastic/elasticsearch'},
-        {text: 'Kibana', link: '/server/elastic/kibana'},
-        {text: 'Logstash', link: '/server/elastic/logstash'},
-      ]
-    }
-  ]
-}
-
-function sidebarApp(): DefaultTheme.SidebarItem[] {
-  return [
-    {
-      text: 'APP',
-      link: '/app/',
-      items: [
-        {
-          text: 'Android',
-          link: '/app/android/',
-        },
-        {
-          text: 'iOS',
-          link: '/app/ios/',
-        },
-        {
-          text: 'Cross-platform',
-          items: [
-            {text: 'React Native', link: '/app/react-native/'},
-            {text: 'Flutter', link: '/app/flutter/'},
-            {text: 'Electron', link: '/app/electron/'},
-          ]
-        },
+        {text: 'Adonisjs', link: '/server/framework/adonisjs'},
       ]
     },
   ]
@@ -835,7 +714,6 @@ function sidebarDevOps(): DefaultTheme.SidebarItem[] {
         {text: 'Docker Build', link: '/devops/containers/docker/build'},
         {text: 'Docker Images Explore', link: '/devops/containers/docker/image-explore'},
         {text: 'Docker Compose', link: '/devops/containers/docker/compose'},
-        {text: 'Podman', link: '/devops/containers/podman/'},
       ]
     },
     {
@@ -845,9 +723,6 @@ function sidebarDevOps(): DefaultTheme.SidebarItem[] {
       items: [
         {text: 'Docker Hub', link: '/devops/registries/docker-hub'},
         {text: 'Harbor', link: '/devops/registries/harbor'},
-        {text: 'Nexus Repository', link: '/devops/registries/nexus'},
-        {text: 'JFrog Artifactory', link: '/devops/registries/artifactory'},
-        {text: 'Distribution Registry', link: '/devops/registries/distribution'},
       ]
     },
     {
@@ -869,7 +744,6 @@ function sidebarDevOps(): DefaultTheme.SidebarItem[] {
         {text: 'GitHub Pages', link: '/devops/deployment/github-pages'},
         {text: 'GitLab Pages', link: '/devops/deployment/gitlab-pages'},
         {text: 'Vercel', link: '/devops/deployment/vercel'},
-        {text: 'Netlify', link: '/devops/deployment/Netlify'},
       ]
     },
     {

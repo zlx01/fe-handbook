@@ -1,0 +1,104 @@
+# 深究 Safari 下 border-radius & overflow 不生效的问题
+
+> 作者：越前君
+> 来源：https://www.jianshu.com/p/687779212eef
+
+## 背景
+
+前两天在做需求的时候，发现了 Safari 浏览器（包括 iOS 平台各浏览器）下有一个渲染的 Bug，其他则没问题。
+
+复现示例如下：
+
+```html
+<div class="box">
+  <img src="https://gw.alipayobjects.com/mdn/rms_08e378/afts/img/A*lEtuTZi2GvIAAAAAAAAAAABkARQnAQ" alt="picture" />
+</div>
+```
+
+```css
+.box {
+  width: 270px;
+  height: 169px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 30px;
+  border: 4px solid #000;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  transform: translateZ(10px);
+}
+```
+
+![示意图2](images/02-5128488-50a4e637c93bb388.png)
+
+[CodeSandbox Demo](https://codesandbox.io/s/overflow-hidden-border-radius-bu-sheng-xiao-demo-qesus8?file=/index.html)
+
+其实就是简单地在 `.box` 中添加了 `overflow: hidden; border-radius: 30px;` 做一个圆角处理。上图为预期表现。  
+但是在 Apple 的 WebKit 平台（不包含 Chrome 的 Blink 平台），就出现问题了 👇
+
+![示意图3](images/03-5128488-eb0e59ac87220290.png)
+
+是 overflow: hidden 处理无效？还是 border-radius 的问题？
+
+## 原因
+
+解决方法很多，我们先深究下原因。
+
+前面，我们给 `<img>` 添加了 `transform: translateZ(10px)`，于是该元素产生了 Composite Layer（合成层）。
+
+```css
+.box img {
+  width: 100%;
+  height: 100%;
+  transform: translateZ(10px);
+}
+```
+
+![示意图4](images/04-5128488-5682227f829b3855.png)
+
+而 Webkit 内核中，`border-radius` 对含有 Composite Layer 的元素的裁剪是存在 Bug 的，该问题可以追溯到 2011 年，很早就有人提出问题了。
+
+> [Bug 68196: border-radius clipping of composited layers doesn't work](https://bugs.webkit.org/show_bug.cgi?id=68196)
+
+发现该 Bug 在 2022 年 9 月 7 日已被标记为「RESOLVED FIXED」，在 2022 年 10 月 19 日发布的 [Safari Technology Preview 156](https://webkit.org/blog/13394/release-notes-for-safari-technology-preview-156/) 中已修复。好家伙，这问题整整十多年才解决。
+
+隔壁 Blink 内核（基于 Webkit 的一个分支）则在 2017 年 1 月 24 日修复。
+
+> [Issue 157218: border-radius clipping without a stacking context does not apply to composited children](https://bugs.chromium.org/p/chromium/issues/detail?id=157218)
+
+## 解决方法
+
+我们只要在 `border-radius` 的元素上添加一个可创建 Stacking Context（层叠上下文）的 CSS 属性即可。比如 `transform: scale(1)`、`transform: translateZ(1px)`、`isolation: isolate`、`position: relative; z-index: 0` 等等。
+
+- 从语义角度考虑，个人更偏向使用 [isolation](https://developer.mozilla.org/zh-CN/docs/Web/CSS/isolation)，它表示该元素是否必须创建一个新的层叠上下文。
+- 从兼容性角度考虑，相比 isolation，transform 或 position + z-index 会更好一些。
+
+```css
+.box {
+  width: 270px;
+  height: 169px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 30px;
+  border: 4px solid #000;
+  isolation: isolate; /* 新增 */
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  transform: translateZ(10px);
+}
+```
+
+![示意图5](images/05-5128488-09e96a5fbf95ba9f.png)
+
+## 相关链接
+
+- [border-radius clipping of composited layers doesn't work](https://bugs.webkit.org/show_bug.cgi?id=68196)
+- [border-radius clipping of composited layers doesn't work #3883](https://github.com/WebKit/WebKit/pull/3883)
+- [Issue 157218: border-radius clipping without a stacking context does not apply to composited children](https://bugs.chromium.org/p/chromium/issues/detail?id=157218)
+- [Overflow: hidden with border radius not working on Safari](https://stackoverflow.com/questions/49066011/overflow-hidden-with-border-radius-not-working-on-safari)

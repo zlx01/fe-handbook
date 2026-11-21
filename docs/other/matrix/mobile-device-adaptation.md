@@ -49,4 +49,7 @@ safari禁止音视频自动播放的问题、视频编码格式不支持、视�
 * h5页面上传图片安卓手机无法调用摄像头：https://blog.csdn.net/smile_life_/article/details/139658542   https://github.com/youzan/vant-weapp/issues/4868
 
 
+## Safari 下 border-radius & overflow 不生效
+
+* https://www.jianshu.com/p/687779212eef
 

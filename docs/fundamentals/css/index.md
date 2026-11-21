@@ -108,10 +108,13 @@
 
 ### 尺寸
 
-* px
+* px pixel，像素
 * % 相对于父元素
 * em 相对于父元素 1em=100%
 * rem 相对于html。默认 `1rem = 16px`	
+* rpx https://segmentfault.com/a/1190000009497004
+* PPI (Pixels per inch 每英尺像素)
+* DPR (Device pixel ratio)，设备像素比。
 
 ```js
 const htmlElement = document.documentElement;

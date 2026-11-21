@@ -34,3 +34,7 @@ box.classList.remove('animate');
 
 * 官方demo：https://codepen.io/collection/AxKOdY/
 * 实践demo：https://zlx01.github.io/animation-principles/#/
+
+## 数字滚动效果
+
+https://blog.csdn.net/guizi0809/article/details/125857260
