@@ -24,4 +24,4 @@ APM（Application Performance Monitoring/Management）从服务端观察请求�
 - Prometheus 主要存储时序指标；ELK/Elastic Stack 常用于日志检索和分析。
 - APM 不能替代业务埋点、基础设施监控或真实用户监控。
 
-Elastic 组件原理参见 [Server/Elastic](../../../server/elastic/apm.md)，浏览器侧参见 [RUM](../rum/)。
+浏览器侧参见 [RUM](../rum/)。

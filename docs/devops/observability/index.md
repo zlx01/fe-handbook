@@ -17,5 +17,3 @@
 - [RUM](./rum/)
 - [SLI、SLO 与错误预算](../security-reliability/sli-slo.md)
 - [事故响应](../security-reliability/incident-response.md)
-
-Elastic 等后端服务的安装与原理参见 [Server/Elastic](../../server/elastic/elasticsearch.md)，本节只介绍它们在观测链路中的职责。
